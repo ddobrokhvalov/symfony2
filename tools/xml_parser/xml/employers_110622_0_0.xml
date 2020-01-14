@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08801">
+		<SirName>ГЛИНСКАЯ</SirName>
+		<FirstName>АНАСТАСИЯ</FirstName>
+		<PatronymicName>ВЛАДИМИРОВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>Главный бухгалтер</Post>
+		<IDPost>00015</IDPost>
+		<Email>aglinskaya@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08836">
+		<SirName>ПРЯДКО</SirName>
+		<FirstName>СЕРГЕЙ</FirstName>
+		<PatronymicName>АЛЕКСЕЕВИЧ</PatronymicName>
+		<IDManager>04527</IDManager>
+		<Department>Отдел комплексных проектов 1 (Тарасов)</Department>
+		<IDDepartment>01170</IDDepartment>
+		<Post>Руководитель проектов</Post>
+		<IDPost>00285</IDPost>
+		<Email/>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08758">
+		<SirName>САЛТЫКОВА</SirName>
+		<FirstName>НАТАЛЬЯ</FirstName>
+		<PatronymicName>АНАТОЛЬЕВНА</PatronymicName>
+		<IDManager>06976</IDManager>
+		<Department>Отдел портальных решений (Драгалин)</Department>
+		<IDDepartment>01316</IDDepartment>
+		<Post>ведущий аналитик</Post>
+		<IDPost>00211</IDPost>
+		<Email>nsaltykova@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

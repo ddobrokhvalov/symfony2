@@ -1,0 +1,8 @@
+[26.10.2011 12:41:24] Found 2 employees in file ./employers_110604_0_0.xml
+[26.10.2011 12:41:27] Employee 7289 РЫЖКОВ ВЛАДИМИР ВЛАДИМИРОВИЧ updated in table employees
+[26.10.2011 12:41:27] Employee 7289 РЫЖКОВ ВЛАДИМИР ВЛАДИМИРОВИЧ inserted in table employees_history
+[26.10.2011 12:41:28] Employee 7175 ЦУЛИН АЛЕКСАНДР ВАСИЛЬЕВИЧ updated in table employees
+[26.10.2011 12:41:28] Employee 7175 ЦУЛИН АЛЕКСАНДР ВАСИЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:41:29] In table employees inserted: 0 records, updated: 2 records.
+[26.10.2011 12:41:29] Old records in table employees: 333. Total: 335 records.
+[26.10.2011 12:41:29] In table employees_history inserted: 2 records, copied from table employees: 333 records.

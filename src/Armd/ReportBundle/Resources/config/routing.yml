@@ -1,0 +1,3 @@
+ArmdReportBundle_homepage:
+    pattern:  /
+    defaults: { _controller: ArmdReportBundle:Report:index }

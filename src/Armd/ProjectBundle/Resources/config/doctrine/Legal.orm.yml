@@ -1,0 +1,12 @@
+Armd\ProjectBundle\Entity\Legal:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+  lifecycleCallbacks: {  }

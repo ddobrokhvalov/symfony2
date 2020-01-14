@@ -1,0 +1,4 @@
+"Наименование работ";"Трудоемкость";"Исполнитель";"Средняя ставка";"Стоимость работы";"Обоснование привлечения";
+{% for subcontract in subcontracts %}"{{subcontract['title']}}";"{{subcontract['hours']}}";"{{subcontract['name']}}";"{{subcontract['salary']}}";"{{subcontract['total_cost']}} руб.";
+{% endfor %}
+;"{{subcontracts_total_hours}}";;;"{{subcontracts_total_sum}} руб.";;

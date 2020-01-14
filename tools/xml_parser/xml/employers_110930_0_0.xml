@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08897">
+		<SirName>ЕВТЮХИН</SirName>
+		<FirstName>ИВАН</FirstName>
+		<PatronymicName>ВАЛЕНТИНОВИЧ</PatronymicName>
+		<IDManager>01103</IDManager>
+		<Department>Отдел систем бизнес-анализа</Department>
+		<IDDepartment>01330</IDDepartment>
+		<Post>Директор проектов</Post>
+		<IDPost>00239</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08724">
+		<SirName>ЛАВРЕНОВА</SirName>
+		<FirstName>ТАТЬЯНА</FirstName>
+		<PatronymicName>АНАТОЛЬЕВНА</PatronymicName>
+		<IDManager>08575</IDManager>
+		<Department>Отдел внедрения систем управления предприятием (Титарев)</Department>
+		<IDDepartment>01227</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email>tlavrenova@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

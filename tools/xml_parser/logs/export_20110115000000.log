@@ -1,0 +1,6 @@
+[26.10.2011 12:30:32] Found 1 employees in file ./employers_110115_0_0.xml
+[26.10.2011 12:30:33] Employee 8759 КУЗНЕЦОВА СВЕТЛАНА ВЯЧЕСЛАВОВНА updated in table employees
+[26.10.2011 12:30:33] Employee 8759 КУЗНЕЦОВА СВЕТЛАНА ВЯЧЕСЛАВОВНА inserted in table employees_history
+[26.10.2011 12:30:36] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:30:36] Old records in table employees: 296. Total: 297 records.
+[26.10.2011 12:30:36] In table employees_history inserted: 1 records, copied from table employees: 296 records.

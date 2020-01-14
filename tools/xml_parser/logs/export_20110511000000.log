@@ -1,0 +1,6 @@
+[26.10.2011 12:39:23] Found 1 employees in file ./employers_110511_0_0.xml
+[26.10.2011 12:39:27] Employee 7797 СОЛОВЬЕВ АЛЕКСЕЙ АЛЕКСАНДРОВИЧ updated in table employees
+[26.10.2011 12:39:27] Employee 7797 СОЛОВЬЕВ АЛЕКСЕЙ АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:39:28] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:39:28] Old records in table employees: 328. Total: 329 records.
+[26.10.2011 12:39:28] In table employees_history inserted: 1 records, copied from table employees: 328 records.

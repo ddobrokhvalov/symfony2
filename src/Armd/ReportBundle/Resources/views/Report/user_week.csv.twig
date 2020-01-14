@@ -1,0 +1,5 @@
+Сотрудник;{% for week in weeks %}"{{ week }}";{% endfor %}Сумма;
+
+{% for entity in entities%}"{{entity['employee']}}";{% for week,key in weeks %}"{{entity[weeks[key]]|replace({'.': ','})}}";{% endfor %}{{entity['sum']|replace({'.': ','})}}
+{% endfor %}
+Сумма;{% for week, key in weeks %}{{week_sums[weeks[key]]|replace({'.': ','})}};{% endfor %}{{full_sum|replace({'.': ','})}}

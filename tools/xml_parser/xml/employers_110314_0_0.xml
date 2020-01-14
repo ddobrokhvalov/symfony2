@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08804">
+		<SirName>ЗАХАРОВА</SirName>
+		<FirstName>ВАЛЕРИЯ</FirstName>
+		<PatronymicName>СЕРГЕЕВНА</PatronymicName>
+		<IDManager>08650</IDManager>
+		<Department>Департамент региональной автоматизации государственных услуг</Department>
+		<IDDepartment>01318</IDDepartment>
+		<Post>менеджер по работе с клиентами</Post>
+		<IDPost>00051</IDPost>
+		<Email>vzaharova@armd.ru</Email>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08803">
+		<SirName>ЛУКИЯН</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>СЕРГЕЕВИЧ</PatronymicName>
+		<IDManager>04527</IDManager>
+		<Department>Отдел комплексных проектов 1 (Тарасов)</Department>
+		<IDDepartment>01170</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email>dlukiyan@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08805">
+		<SirName>ПАСТУХОВ</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>ЕВГЕНЬЕВИЧ</PatronymicName>
+		<IDManager>08650</IDManager>
+		<Department>Департамент региональной автоматизации государственных услуг</Department>
+		<IDDepartment>01318</IDDepartment>
+		<Post>менеджер по работе с клиентами</Post>
+		<IDPost>00051</IDPost>
+		<Email>dpastuhov@armd.ru</Email>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

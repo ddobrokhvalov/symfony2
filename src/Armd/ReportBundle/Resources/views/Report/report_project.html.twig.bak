@@ -1,0 +1,267 @@
+{% extends '::base.html.twig' %}
+{% block title %}Корпоративная система отчетов {% endblock %}
+{% block header %}Корпоративная система отчетов. {{ user }}, <a href="{{ path('fos_user_security_logout') }}">выйти</a>. {% endblock %}
+{% block body %}
+<style>
+    table,tr,td {
+        border-collapse: collapse;
+    }
+	#legend {
+		bottom: 50px;
+		right: 20px;
+		margin: 0;
+		padding: 5px;
+		text-align: left;
+		border: 1px solid;
+		background: #FFFFFF;
+		cursor: move;
+		width:200px;
+	}
+	.tableTop{clear:both;}
+	#hor-minimalist-b{margin-top:6px;}
+	#hor-minimalist-b td{padding:4px; background:#eeeeee!important;border-bottom:3px #ffffff solid;}
+	#hor-minimalist-b tr td.not_full_report {background:#FBC2C4!important;}
+	#hor-minimalist-b tr.discharged td{background:#ECE0F9!important;}
+	
+	#hor-minimalist-b th{border-bottom:3px #ffffff solid;}
+	.tblHd{float:left;margin:0px;padding:0px 40px 0px 0px;font-size:13px;font-weight:bold;}
+</style>
+<script type="text/javascript" src="/js/jquery-ui-draggable.custom.min.js"></script>
+<script type="text/javascript"> 
+	jQuery(document).ready(function(){
+        $('#department').change(function(){
+			var params = '';
+			if ($('#hide_empty').is(':checked')) {
+				params = params + '&hide_empty=1';
+			}
+			
+			if ($('#hide_closed').is(':checked')) {
+				params = params + '&hide_closed=1';
+			}
+			window.location.search = '?department='+$(this).val()+'&employee='+$('#employee').val()+'&proj_search='+$('#proj_search').val()+'&from={{from}}&to={{to}}'+params;
+        });
+		$('#employee').change(function(){
+			$('#department').change();
+		});
+		$('#search_proj_button').click(function(){
+			$('#department').change();
+		});
+		
+		$("#legend").draggable();
+		
+		var link1 = $('#report_link1').attr('href');
+		var link2 = $('#report_link2').attr('href');
+		var link3 = $('#report_link3').attr('href');
+		var link_prev =  $('#prev_link').attr('href');
+		var link_next =  $('#next_link').attr('href');
+		var link = $('#export_link').attr('href');
+		
+		function updateLinks()
+		{
+			var result = '';
+			if ($('#hide_empty').is(':checked')) {
+				result = result + '&hide_empty=1';
+			} 
+			
+			if ($('#hide_closed').is(':checked')) {
+				result = result + '&hide_closed=1';
+			} 
+
+			$('#report_link1').attr('href', link1+result);
+			$('#report_link2').attr('href', link2+result);
+			$('#report_link3').attr('href', link3+result);
+			$('#prev_link').attr('href', link_prev+result);
+			$('#next_link').attr('href', link_next+result);
+			$('.export_link').attr('href', link+result);
+		}
+		
+		$('#hide_empty').change(function(){
+			if ($(this).is(':checked')) {
+				$('.empty_report').hide();
+			} else {
+				$('.empty_report').show();
+			}
+			updateLinks();
+			makeCoolColorDifferentiation();
+		});
+		
+		
+		
+		$('#hide_closed').change(function(){
+			if ($(this).is(':checked')) {
+				$('.closed').hide();
+			} else {
+				$('.closed').show();
+			}
+			updateLinks();
+			makeCoolColorDifferentiation();
+			countOneMoreTime();
+		});
+		
+		{% if hide_closed %}
+			$('#hide_closed').attr('checked', 'checked');
+			$('#hide_closed').change();
+		{% endif %}
+		
+		 
+		{% if hide_empty %}
+			$('#hide_empty').attr('checked', 'checked');
+			$('#hide_empty').change();
+		{% endif %}
+    });
+	
+	function makeCoolColorDifferentiation()
+	{
+		$('.employee:visible').each(function(index, element){
+			if (index % 2 == 0) {
+				$(this).css('background', '#EEEEEE');
+			} else {
+				$(this).css('background', '#FFFFFF');
+			}
+		});
+	}
+	
+	function countOneMoreTime()
+	{
+		var times = new Array();
+		$('.employee:visible').each(function(index, element){
+			$(this).children('.time').each(function(idx){
+				if (times[idx] == undefined) {
+					times[idx] = 0;
+				}
+				var report_time = parseFloat($(this).text());
+				if (isNaN(report_time)) {
+					report_time = 0;
+				}
+				times[idx] = times[idx] + report_time;
+			});
+		});
+		
+		$('.sum').each(function(index, element){
+			$(this).text(times[index]);
+		});
+		
+		var total = 0;
+		$('.total:visible').each(function(index, element){
+			total = total + parseFloat($(this).text());
+		});
+		$('#full_sum').text(total);
+	}
+	
+	function checkMac()
+	{
+		if	(navigator.userAgent.indexOf('Mac') != -1) {
+			return true;
+		}
+		return false;
+	}
+  </script>
+{% include "ArmdReportBundle:Report:breadcrumbs.html.twig" %}
+<div class="append-1 prepend-1">
+<div class="span-26">
+<div class="span-5" style="width:290px;">
+            {# список подразделений #}
+            <label>Подразделение</label>
+            <p><select class="filter" id="department" style="width:250px;">
+                <option value="">
+                {%for department in departments%}
+                    <option value="{{department.id}}" {% if department.selected %} selected {%endif%}>{{department.title|raw}}
+				{%endfor%}
+            </select></p>
+            {# /список подразделений #}
+</div>
+<div class="span-5" style="width:290px;">
+            {# список сотрудников #}
+            <label>Сотрудник</label>
+            <p><select class="filter" id="employee" style="width:250px;">
+                <option value="">
+                {%for employee in employees%}
+                    <option value="{{employee.id}}" {% if employee.selected %} selected {%endif%}>{{employee}}
+				{%endfor%}
+            </select></p>
+            {# /список сотрудников #}
+</div>
+<div class="span-5" style="width:255px;">
+	<label>Поиск</label><br>
+		<p><input class="search" name="proj_search" id="proj_search" value="{{proj_search}}" style="width:250px;margin: 0.5em 0"></p>
+	       
+	  	
+</div>
+<div class="span-5" style="width:250px;">
+	<label>&nbsp;</label><br>
+	<p><input type="submit" id="search_proj_button" value="Применить" style="margin: 0.5em 0"></p>
+</div>
+<div class="span-8">
+        <p><input type="checkbox" id="hide_empty"> <label for="hide_empty">Скрыть пустые строки</label></p>
+        <p><input type="checkbox" id="hide_closed"> <label for="hide_discharged">Скрыть закрытые проекты</label></p>
+</div>
+<div class="span-5">
+            <p>
+				{% if by == 'day' %}
+					<b>по дням</b>
+				{% else %}
+					<a id="report_link1" href="/report_project/day{% if department %}?department={{department}}{%endif%}">по дням</a>
+				{% endif %}
+				<br>
+				{% if by == 'week' %}
+					<b>по неделям</b>
+				{% else %}
+					<a id="report_link2" href="/report_project/week{% if department %}?department={{department}}{%endif%}">по неделям</a>
+				{% endif %}
+				<br>	
+				{% if by == 'month' %}
+					<b>по месяцам</b>
+				{% else %}
+					<a id="report_link3" href="/report_project/month{% if department %}?department={{department}}{%endif%}">по месяцам</a>
+				{% endif %}
+            
+</div>
+<div class="tableTop">
+<h2 class="tblHd">Заполняемость ежедневных отчетов по проектам</h2>
+<div class="span-7">
+            <a href="?from={{prev_from}}&to={{prev_to}}{%if department %}&department={{department}}{%endif%}{% if employee %}&employee={{employee}}{%endif%}" id="prev_link">&larr; Назад</a>
+            <b>{{from}}</b> - <b>{{to}}</b>
+            <a href="?from={{next_from}}&to={{next_to}}{%if department %}&department={{department}}{%endif%}{% if employee %}&employee={{employee}}{%endif%}" id="next_link">Вперед &rarr;</a>
+</div>
+<div class="span-14" style="width:150px;float:right;margin-right:0px;">
+<div class="span-2" style="width:150px;margin-right:0px;">
+Экспортировать в
+<a class="export_link" href="?from={{from}}&to={{to}}&export=csv{% if department %}&department={{department}}{%endif%}{% if employee %}&employee={{employee}}{%endif%}"><img border="0" src="/css/blueprint/plugins/link-icons/icons/xls.png"/></a>
+<a class="export_link" href="?from={{from}}&to={{to}}&export=csv{% if department %}&department={{department}}{%endif%}{% if employee %}&employee={{employee}}{%endif%}" id="export_link">CSV</a>
+</div>
+</div>
+</div>
+</div>
+<table id="hor-minimalist-b" width="100%">
+    <thead>
+    <tr>
+        <th>Проект</th>
+    
+{% for day in human_days %}
+        <th>{{ day }}</th>
+{% endfor %}
+<th>&sum;</th>
+    </tr>
+    </thead>
+    <tbody>
+{% for entity in entities%}
+    <tr  {%if loop.index is odd%}style="background:#EEEEEE;"{%endif%} class="employee {% if entity['sum'] == 0 %}empty_report{%endif%} {% if entity['closed'] %}closed{%endif%}">
+        <td>{{entity['title']}}</td>
+
+        {% for day in human_days %}
+            <td>{{entity[human_days[loop.index0]]['time']}}</td>
+        {% endfor %}
+        <td class="total">{{entity['sum']}}</td>
+    </tr>
+{% endfor %}
+<tr>
+    <td>&sum;</td>
+    {% for day in human_days %}
+        <td class="sum">{{day_sums[human_days[loop.index0]]}}</td>
+    {% endfor %}
+    <td id="full_sum">{{full_sum}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+{% endblock %}

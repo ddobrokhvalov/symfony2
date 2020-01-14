@@ -1,0 +1,8 @@
+[26.10.2011 12:54:40] Found 2 employees in file ./employers_111018_0_0.xml
+[26.10.2011 12:54:43] Employee 6016 ПАЧАЙ АНДРЕЙ ВАДИМОВИЧ updated in table employees
+[26.10.2011 12:54:43] Employee 6016 ПАЧАЙ АНДРЕЙ ВАДИМОВИЧ inserted in table employees_history
+[26.10.2011 12:54:46] Employee 8903 БОХОНОВА ЕЛЕНА ВЛАДИМИРОВНА inserted in table employees
+[26.10.2011 12:54:46] Employee 8903 БОХОНОВА ЕЛЕНА ВЛАДИМИРОВНА inserted in table employees_history
+[26.10.2011 12:54:46] In table employees inserted: 1 records, updated: 1 records.
+[26.10.2011 12:54:46] Old records in table employees: 407. Total: 409 records.
+[26.10.2011 12:54:46] In table employees_history inserted: 2 records, copied from table employees: 407 records.

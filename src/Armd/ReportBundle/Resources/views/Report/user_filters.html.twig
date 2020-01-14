@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="/css/smoothness/jquery-ui-1.8.14.custom.css">
+<script type="text/javascript" src="/js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="/js/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+<script type="text/javascript"> 
+	jQuery(document).ready(function(){
+		$( "#begin" ).datepicker();
+		$( "#end" ).datepicker();
+	});
+</script>
+<form method="get">
+	<div class="span-5" style="width:290px;">
+	    {# список подразделений #}
+	    <label>Подразделение</label>
+	    <p><select class="filter" name="department" style="width:250px;">
+	        <option value="">
+	        {%for department in departments%}
+	            <option value="{{department.id}}" {% if department.selected %} selected {%endif%}>{{department.title|raw}}
+			{%endfor%}
+	    </select></p>
+	    {# /список подразделений #}
+	</div>
+
+	<div class="span-5" style="width:220px;">
+	<label>Период</label><br>
+		с <input type="text" id="begin" name="begin" style="width:80px; margin-right:10px;" value="{{from}}"/>
+	  	по <input type="text" id="end" name="end" style="width:80px;" value="{{to}}"/>
+	</div>
+
+	<div class="span-5" style="width:255px;">
+	<label>Сотрудник</label><br>
+		<p><select class="filter" name="employee" id="employee" style="width:250px;">
+	        <option value="">
+	        {%for employee in employees%}
+	            <option value="{{employee.id}}" {% if employee.selected %} selected {%endif%}>{{employee|raw}}
+			{%endfor%}
+	    </select></p>
+	  	
+	</div>
+
+	<div class="span-5" style="width:255px;">
+	<label>Проект</label><br>
+		<p><select class="filter" name="project" id="project" style="width:250px;">
+	        <option value="">
+	        {%for project in projects%}
+	            <option value="{{project.id}}" {% if project.selected %} selected {%endif%}>{{project|raw}}
+			{%endfor%}
+	    </select></p>
+	  	
+	</div>
+
+	<div class="span-5" style="width:255px;">
+	<label>Менеджер проекта</label><br>
+		<p><select class="filter" name="manager" id="manager" style="width:250px;">
+	        <option value="">
+	        {%for manager in managers%}
+	            <option value="{{manager.id}}" {% if manager.selected %} selected {%endif%}>{{manager.title|raw}}
+			{%endfor%}
+	    </select></p>
+	</div>
+
+	<div class="span-5" style="width:255px;">
+	<label>Менеджер по продажам</label><br>
+		<p><select class="filter" name="sales" id="sales" style="width:250px;">
+	        <option value="">
+	        {%for sales in saleses%}
+	            <option value="{{sales.id}}" {% if sales.selected %} selected {%endif%}>{{sales.title|raw}}
+			{%endfor%}
+	    </select></p>
+	</div>
+
+	<div class="span-5" style="width:255px;">
+	<label>Тип работ</label><br>
+		<p><select class="filter" name="task" id="task" style="width:250px;">
+	        <option value="">
+	        {%for task in tasks%}
+	            <option value="{{task.id}}" {% if task.selected %} selected {%endif%}>{{task.title|raw}}
+			{%endfor%}
+	    </select></p>
+	</div>
+
+	<div class="span-5" style="width:255px;">
+	<label>Поиск</label><br>
+		<p><input class="search" name="employee_search" id="employee_search" value="{{employee_search}}" style="width:250px;margin: 0.5em 0"></p>
+	       
+	  	
+	</div>
+
+	
+
+	<div class="span-5" style="width:450px;">
+	<br>
+		<input type="submit" value="Применить">
+	</div>
+
+	
+	<div class="span-5" style="width:255px;">
+	    <p><input type="checkbox" id="hide_empty" name="hide_empty"> <laber for="hide_empty">Скрыть пустые строки</label></p>
+	    <p><input type="checkbox" id="hide_discharged" name="hide_discharged"> <laber for="hide_discharged">Скрыть уволенных сотрудников</label></p>
+	</div>
+
+	
+</form>

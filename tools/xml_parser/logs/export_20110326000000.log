@@ -1,0 +1,6 @@
+[26.10.2011 12:35:36] Found 1 employees in file ./employers_110326_0_0.xml
+[26.10.2011 12:35:39] Employee 8734 МИНАЕВ АЛЕКСЕЙ ГЕННАДЬЕВИЧ updated in table employees
+[26.10.2011 12:35:39] Employee 8734 МИНАЕВ АЛЕКСЕЙ ГЕННАДЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:35:41] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:35:41] Old records in table employees: 313. Total: 314 records.
+[26.10.2011 12:35:41] In table employees_history inserted: 1 records, copied from table employees: 313 records.

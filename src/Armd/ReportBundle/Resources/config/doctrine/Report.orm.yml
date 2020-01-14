@@ -1,0 +1,49 @@
+Armd\ReportBundle\Entity\Report:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    day:
+      type: date
+    minutes:
+      type: float
+    description:
+      type: text
+    generated:
+      type: integer
+  manyToOne:
+    task:
+      targetEntity: Armd\ProjectBundle\Entity\Task
+      cascade: {  }
+      mappedBy: null
+      inversedBy: reports
+      unique: false
+      joinColumns:
+        task_id:
+          referencedColumnName: id
+      orphanRemoval: false
+    project:
+      targetEntity: Armd\ProjectBundle\Entity\Project
+      cascade: {  }
+      mappedBy: null
+      inversedBy: reports
+      unique: false
+      joinColumns:
+        project_id:
+          referencedColumnName: id
+      orphanRemoval: false
+    employee:
+      targetEntity: Armd\ProjectBundle\Entity\Employee
+      cascade: {  }
+      mappedBy: null
+      inversedBy: reports
+      unique: false
+      joinColumns:
+        employee_id:
+          referencedColumnName: id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08832">
+		<SirName>ГАВРИКОВ</SirName>
+		<FirstName>МИХАИЛ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>08366</IDManager>
+		<Department>Отдел систем сбора информации 1 (Поздняков)</Department>
+		<IDDepartment>01296</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email/>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08830">
+		<SirName>МАТВЕЕВА</SirName>
+		<FirstName>АННА</FirstName>
+		<PatronymicName>ВЛАДИМИРОВНА</PatronymicName>
+		<IDManager>01074</IDManager>
+		<Department>Департамент корпоративных решений</Department>
+		<IDDepartment>00732</IDDepartment>
+		<Post>ведущий аналитик</Post>
+		<IDPost>00211</IDPost>
+		<Email>amatveeva@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

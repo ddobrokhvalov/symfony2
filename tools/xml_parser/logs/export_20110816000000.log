@@ -1,0 +1,4 @@
+[26.10.2011 12:48:24] Found 0 employees in file ./employers_110816_0_0.xml
+[26.10.2011 12:48:29] In table employees inserted: 0 records, updated: 0 records.
+[26.10.2011 12:48:29] Old records in table employees: 373. Total: 373 records.
+[26.10.2011 12:48:29] In table employees_history inserted: 0 records, copied from table employees: 373 records.

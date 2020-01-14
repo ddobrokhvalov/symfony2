@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08844">
+		<SirName>АНДРЮЩЕНКО</SirName>
+		<FirstName>ИГОРЬ</FirstName>
+		<PatronymicName>ВИКТОРОВИЧ</PatronymicName>
+		<IDManager>04527</IDManager>
+		<Department>Отдел комплексных проектов 1 (Тарасов)</Department>
+		<IDDepartment>01170</IDDepartment>
+		<Post>Системный аналитик</Post>
+		<IDPost>00209</IDPost>
+		<Email/>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08703">
+		<SirName>КУКСИН</SirName>
+		<FirstName>АЛЕКСЕЙ</FirstName>
+		<PatronymicName>АНАТОЛЬЕВИЧ</PatronymicName>
+		<IDManager/>
+		<Department>Отдел тендеров</Department>
+		<IDDepartment>00804</IDDepartment>
+		<Post>Главный специалист</Post>
+		<IDPost>00190</IDPost>
+		<Email>akuksin@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

@@ -1,0 +1,25 @@
+Armd\ProjectBundle\Entity\Post:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+      length: 255
+ 
+  manyToMany:
+    task:
+      targetEntity: Armd\ProjectBundle\Entity\Task
+      joinTable:
+        name: post_task
+        joinColumns:
+          post_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          task_id:
+            referencedColumnName: id
+  lifecycleCallbacks: {  }

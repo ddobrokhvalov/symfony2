@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08819">
+		<SirName>АРХИПОВ</SirName>
+		<FirstName>СЕРГЕЙ</FirstName>
+		<PatronymicName>НИКОЛАЕВИЧ</PatronymicName>
+		<IDManager>08051</IDManager>
+		<Department>Отдел контент-проектов</Department>
+		<IDDepartment>01314</IDDepartment>
+		<Post>Начальник отдела разработки № 1</Post>
+		<IDPost>00493</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>1</Outside>
+	</User>
+	<User ID="08679">
+		<SirName>БАСОВ</SirName>
+		<FirstName>АЛЕКСЕЙ</FirstName>
+		<PatronymicName>ВЛАДИМИРОВИЧ</PatronymicName>
+		<IDManager>01074</IDManager>
+		<Department>Отдел интеграционных решений</Department>
+		<IDDepartment>01234</IDDepartment>
+		<Post>инженер-программист</Post>
+		<IDPost>00035</IDPost>
+		<Email>abasov@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08791">
+		<SirName>ДРУЖКОВА</SirName>
+		<FirstName>ЕЛЕНА</FirstName>
+		<PatronymicName>ГРИГОРЬЕВНА</PatronymicName>
+		<IDManager>08575</IDManager>
+		<Department>Отдел внедрения систем управления предприятием (Титарев)</Department>
+		<IDDepartment>01227</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email>edruzhkova@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08822">
+		<SirName>ИРХИНА</SirName>
+		<FirstName>ОЛЬГА</FirstName>
+		<PatronymicName>АНАТОЛЬЕВНА</PatronymicName>
+		<IDManager>06566</IDManager>
+		<Department>Зам.генерального директора по финансовым вопросам (Кубай)</Department>
+		<IDDepartment>01298</IDDepartment>
+		<Post>бухгалтер</Post>
+		<IDPost>00005</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>1</Outside>
+	</User>
+	<User ID="08820">
+		<SirName>КАДЗАСОВ</SirName>
+		<FirstName>АНТОН</FirstName>
+		<PatronymicName>АЛЕКСЕЕВИЧ</PatronymicName>
+		<IDManager>08051</IDManager>
+		<Department>Отдел контент-проектов</Department>
+		<IDDepartment>01314</IDDepartment>
+		<Post>Программист</Post>
+		<IDPost>00662</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>1</Outside>
+	</User>
+	<User ID="00979">
+		<SirName>КРУГЛЯКОВ</SirName>
+		<FirstName>РОМАН</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>00945</IDManager>
+		<Department>Генеральный директор Кругляков Р.А.</Department>
+		<IDDepartment>00733</IDDepartment>
+		<Post>Технический директор</Post>
+		<IDPost>00184</IDPost>
+		<Email>kpc@armd.ru</Email>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08821">
+		<SirName>МАРТЫНОВ</SirName>
+		<FirstName>НИКОЛАЙ</FirstName>
+		<PatronymicName>СЕРГЕЕВИЧ</PatronymicName>
+		<IDManager>08051</IDManager>
+		<Department>Отдел контент-проектов</Department>
+		<IDDepartment>01314</IDDepartment>
+		<Post>инженер-программист</Post>
+		<IDPost>00035</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>1</Outside>
+	</User>
+	<User ID="01103">
+		<SirName>МИРАКОВ</SirName>
+		<FirstName>АЛЕКСАНДР</FirstName>
+		<PatronymicName>ВЛАДИМИРОВИЧ</PatronymicName>
+		<IDManager>00979</IDManager>
+		<Department>Генеральный директор Кругляков Р.А.</Department>
+		<IDDepartment>00733</IDDepartment>
+		<Post>Заместитель генерального директора</Post>
+		<IDPost>00451</IDPost>
+		<Email>daa@armd.ru</Email>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08644">
+		<SirName>СТЕПАНОВ</SirName>
+		<FirstName>АНДРЕЙ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел комплексных проектов</Department>
+		<IDDepartment>01293</IDDepartment>
+		<Post>ведущий программист</Post>
+		<IDPost>00649</IDPost>
+		<Email>astepanov@armd.ru</Email>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="04527">
+		<SirName>ТАРАСОВ</SirName>
+		<FirstName>АЛЕКСАНДР</FirstName>
+		<PatronymicName>СЕРГЕЕВИЧ</PatronymicName>
+		<IDManager>01103</IDManager>
+		<Department>Отдел комплексных проектов 1 (Тарасов)</Department>
+		<IDDepartment>01170</IDDepartment>
+		<Post>Директор проектов</Post>
+		<IDPost>00239</IDPost>
+		<Email>atarasov@armd.ru</Email>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

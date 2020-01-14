@@ -1,0 +1,148 @@
+Armd\ProjectBundle\Entity\Project:
+  type: entity
+  table: null
+  repositoryClass: Armd\ProjectBundle\Repository\ProjectRepository
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+      length: 255
+    redmine:
+      type: string
+      length: 255
+      nullable: true
+    contract_cost:
+      type: integer
+    begin:
+      type: date
+    end:
+      type: date
+    real_end:
+      type: date
+      nullable: true
+    fzp:
+      type: float
+      nullable: true
+    ratio_subcontract:
+      type: float
+    ratio_inside:
+      type: float
+    ratio_bonus:
+      type: float
+    ratio_outsourcing:
+      type: float
+    other_cost:
+      type: float
+      nullable: true
+    open:
+      type: boolean
+  manyToOne:
+    project_group:
+      targetEntity: Armd\ProjectBundle\Entity\ProjectGroup
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        project_group_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+    project_type:
+      targetEntity: Armd\ProjectBundle\Entity\ProjectType
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        project_type_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+    client:
+      targetEntity: Armd\ProjectBundle\Entity\Client
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        client_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+    manager:
+      targetEntity: Armd\ProjectBundle\Entity\Employee
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        manager_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+    sales_manager:
+      targetEntity: Armd\ProjectBundle\Entity\Employee
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        sales_manager_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+    owner:
+      targetEntity: Armd\ProjectBundle\Entity\Employee
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        owner_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+    #department:
+    #  targetEntity: Armd\ProjectBundle\Entity\Department
+    #  cascade: {  }
+    #  mappedBy: null
+    #  inversedBy: null
+    #  joinColumns:
+    #    department_id:
+    #      referencedColumnName: id
+    #      onDelete: SET NULL
+    #  orphanRemoval: false
+    legal:
+      targetEntity: Armd\ProjectBundle\Entity\Legal
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        legal_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+  oneToMany:
+    project_employee:
+      targetEntity: Armd\ProjectBundle\Entity\ProjectEmployee
+      cascade: [ all ]
+      mappedBy: project
+    project_subcontract:
+      targetEntity: Armd\ProjectBundle\Entity\ProjectSubcontract
+      cascade: [ all ]
+      mappedBy: project
+    project_stage:
+      targetEntity: Armd\ProjectBundle\Entity\ProjectStage
+      cascade: {  }
+      mappedBy: project
+  manyToMany:
+    tag:
+      targetEntity: Armd\ProjectBundle\Entity\Tag
+      joinTable:
+        name: project_tag
+        joinColumns:
+          project_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          tag_id:
+            referencedColumnName: id
+  lifecycleCallbacks: {  }

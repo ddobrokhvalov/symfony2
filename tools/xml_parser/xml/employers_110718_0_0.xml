@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08624">
+		<SirName>ВИХРОВА</SirName>
+		<FirstName>ОКСАНА</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>Старший бухгалтер</Post>
+		<IDPost>00199</IDPost>
+		<Email>ovihrova@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="04658">
+		<SirName>КУЛТАШЕВА</SirName>
+		<FirstName>ЕЛЕНА</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>Заместитель директора департамента</Post>
+		<IDPost>00422</IDPost>
+		<Email>ekultasheva@armd.ru</Email>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08853">
+		<SirName>МАКЕЕВА</SirName>
+		<FirstName>ИРИНА</FirstName>
+		<PatronymicName>АЛЕКСЕЕВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>Заместитель директора департамента</Post>
+		<IDPost>00422</IDPost>
+		<Email/>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08854">
+		<SirName>ТАРАСОВА</SirName>
+		<FirstName>ОКСАНА</FirstName>
+		<PatronymicName>ИВАНОВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>Старший бухгалтер</Post>
+		<IDPost>00199</IDPost>
+		<Email/>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08852">
+		<SirName>ЩЕРБАКОВ</SirName>
+		<FirstName>АЛЕКСАНДР</FirstName>
+		<PatronymicName>ВЛАДИМИРОВИЧ</PatronymicName>
+		<IDManager>01088</IDManager>
+		<Department>Департамент информационных систем управления (Каушанский)</Department>
+		<IDDepartment>01226</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email/>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

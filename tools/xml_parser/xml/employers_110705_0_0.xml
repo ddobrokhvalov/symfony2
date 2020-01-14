@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08846">
+		<SirName>БОГОМОЛОВА</SirName>
+		<FirstName>МАРИЯ</FirstName>
+		<PatronymicName>ЛЬВОВНА</PatronymicName>
+		<IDManager>01074</IDManager>
+		<Department>Отдел интеграционных решений</Department>
+		<IDDepartment>01234</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email/>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08845">
+		<SirName>КАЗАКОВА</SirName>
+		<FirstName>ВАСИЛИСА</FirstName>
+		<PatronymicName>ГЕННАДЬЕВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>Главный бухгалтер</Post>
+		<IDPost>00015</IDPost>
+		<Email/>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

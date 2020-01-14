@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08049">
+		<SirName>ВИЛЬДАНОВА</SirName>
+		<FirstName>АЛФИЕ</FirstName>
+		<PatronymicName>ХАСЯНОВНА</PatronymicName>
+		<IDManager>07233</IDManager>
+		<Department>Административно-хозяйственный департамент (СОФТ)</Department>
+		<IDDepartment>01209</IDDepartment>
+		<Post>уборщица</Post>
+		<IDPost>00104</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08682">
+		<SirName>ТРИФОНОВА</SirName>
+		<FirstName>ЮЛИЯ</FirstName>
+		<PatronymicName>ДМИТРИЕВНА</PatronymicName>
+		<IDManager>01074</IDManager>
+		<Department>Отдел интеграционных решений</Department>
+		<IDDepartment>01234</IDDepartment>
+		<Post>Бизнес-аналитик</Post>
+		<IDPost>00375</IDPost>
+		<Email>jtrifonova@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08625">
+		<SirName>ЧУДНОВСКИЙ</SirName>
+		<FirstName>АНДРЕЙ</FirstName>
+		<PatronymicName>ЮРЬЕВИЧ</PatronymicName>
+		<IDManager>04527</IDManager>
+		<Department>Отдел комплексных проектов 1 (Тарасов)</Department>
+		<IDDepartment>01170</IDDepartment>
+		<Post>Ведущий инженер-программист</Post>
+		<IDPost>00267</IDPost>
+		<Email>achudnovsky@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

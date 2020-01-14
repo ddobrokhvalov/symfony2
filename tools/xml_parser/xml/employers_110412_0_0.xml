@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08715">
+		<SirName>ДАВЫДОВ</SirName>
+		<FirstName>МАРК</FirstName>
+		<PatronymicName>МИХАЙЛОВИЧ</PatronymicName>
+		<IDManager>04527</IDManager>
+		<Department>Отдел комплексных проектов 1 (Тарасов)</Department>
+		<IDDepartment>01170</IDDepartment>
+		<Post>Помощник аналитика</Post>
+		<IDPost>00746</IDPost>
+		<Email>mdavydov@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08814">
+		<SirName>ПОСПЕЛОВ</SirName>
+		<FirstName>СЕРГЕЙ</FirstName>
+		<PatronymicName>ВИКТОРОВИЧ</PatronymicName>
+		<IDManager>01026</IDManager>
+		<Department>Департамент корпоративных продаж (Савчук)</Department>
+		<IDDepartment>00747</IDDepartment>
+		<Post>менеджер по работе с клиентами</Post>
+		<IDPost>00051</IDPost>
+		<Email>spospelov@armd.ru</Email>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

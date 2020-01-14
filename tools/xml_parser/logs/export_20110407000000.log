@@ -1,0 +1,6 @@
+[26.10.2011 12:36:33] Found 1 employees in file ./employers_110407_0_0.xml
+[26.10.2011 12:36:34] Employee 8661 ДАНИЛОВ АРТЕМ ДМИТРИЕВИЧ updated in table employees
+[26.10.2011 12:36:34] Employee 8661 ДАНИЛОВ АРТЕМ ДМИТРИЕВИЧ inserted in table employees_history
+[26.10.2011 12:36:38] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:36:38] Old records in table employees: 321. Total: 322 records.
+[26.10.2011 12:36:38] In table employees_history inserted: 1 records, copied from table employees: 321 records.

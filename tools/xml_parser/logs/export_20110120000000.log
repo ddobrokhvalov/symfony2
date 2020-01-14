@@ -1,0 +1,6 @@
+[26.10.2011 12:30:52] Found 1 employees in file ./employers_110120_0_0.xml
+[26.10.2011 12:30:56] Employee 8792 УРЕЦКИЙ АНАТОЛИЙ ЮРЬЕВИЧ inserted in table employees
+[26.10.2011 12:30:56] Employee 8792 УРЕЦКИЙ АНАТОЛИЙ ЮРЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:30:56] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:30:56] Old records in table employees: 298. Total: 299 records.
+[26.10.2011 12:30:56] In table employees_history inserted: 1 records, copied from table employees: 298 records.

@@ -1,0 +1,8 @@
+[26.10.2011 12:44:55] Found 2 employees in file ./employers_110711_0_0.xml
+[26.10.2011 12:45:01] Employee 8848 САЛТЫКОВ ЕВГЕНИЙ АЛЕКСАНДРОВИЧ inserted in table employees
+[26.10.2011 12:45:01] Employee 8848 САЛТЫКОВ ЕВГЕНИЙ АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:45:01] Employee 8849 ФРОЛОВ ИГОРЬ ВЯЧЕСЛАВОВИЧ inserted in table employees
+[26.10.2011 12:45:01] Employee 8849 ФРОЛОВ ИГОРЬ ВЯЧЕСЛАВОВИЧ inserted in table employees_history
+[26.10.2011 12:45:01] In table employees inserted: 2 records, updated: 0 records.
+[26.10.2011 12:45:01] Old records in table employees: 353. Total: 355 records.
+[26.10.2011 12:45:01] In table employees_history inserted: 2 records, copied from table employees: 353 records.

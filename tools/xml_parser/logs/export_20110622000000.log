@@ -1,0 +1,10 @@
+[26.10.2011 12:43:06] Found 3 employees in file ./employers_110622_0_0.xml
+[26.10.2011 12:43:10] Employee 8758 САЛТЫКОВА НАТАЛЬЯ АНАТОЛЬЕВНА updated in table employees
+[26.10.2011 12:43:10] Employee 8758 САЛТЫКОВА НАТАЛЬЯ АНАТОЛЬЕВНА inserted in table employees_history
+[26.10.2011 12:43:11] Employee 8801 ГЛИНСКАЯ АНАСТАСИЯ ВЛАДИМИРОВНА updated in table employees
+[26.10.2011 12:43:11] Employee 8801 ГЛИНСКАЯ АНАСТАСИЯ ВЛАДИМИРОВНА inserted in table employees_history
+[26.10.2011 12:43:12] Employee 8836 ПРЯДКО СЕРГЕЙ АЛЕКСЕЕВИЧ inserted in table employees
+[26.10.2011 12:43:12] Employee 8836 ПРЯДКО СЕРГЕЙ АЛЕКСЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:43:12] In table employees inserted: 1 records, updated: 2 records.
+[26.10.2011 12:43:12] Old records in table employees: 340. Total: 343 records.
+[26.10.2011 12:43:12] In table employees_history inserted: 3 records, copied from table employees: 340 records.

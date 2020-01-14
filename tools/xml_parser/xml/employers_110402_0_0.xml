@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08380">
+		<SirName>ГЛАГОЛЕВ</SirName>
+		<FirstName>ИЛЬЯ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>08809</IDManager>
+		<Department>Отдел системного администрирования</Department>
+		<IDDepartment>01307</IDDepartment>
+		<Post>системный администратор Юникс систем</Post>
+		<IDPost>00694</IDPost>
+		<Email>iglagolev@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

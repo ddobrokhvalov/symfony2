@@ -1,0 +1,15 @@
+<div class="request-cont">
+<form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
+    <div class="border-cont">
+	<p>Для сброса пароля укажите имя пользователя в домене, которое вы используете для авторизации на рабочем компьютере</p>
+        {% if invalid_username is defined %}
+            <p>{{ 'resetting.request.invalid_username'|trans({'%username%': invalid_username}, 'FOSUserBundle') }}</p>
+        {% endif %}
+        <label for="username">{{ 'resetting.request.username'|trans({}, 'FOSUserBundle') }}</label>
+        <p><input type="text" id="username" name="username" /></p>
+    </div>
+    <div>
+        <input type="submit" value="{{ 'resetting.request.submit'|trans({}, 'FOSUserBundle') }}" />
+    </div>
+</form>
+</div>

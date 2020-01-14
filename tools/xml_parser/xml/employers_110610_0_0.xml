@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08815">
+		<SirName>ЛАРИНА</SirName>
+		<FirstName>ЯНА</FirstName>
+		<PatronymicName>ЕВГЕНЬЕВНА</PatronymicName>
+		<IDManager>00945</IDManager>
+		<Department>Секретариат</Department>
+		<IDDepartment>01294</IDDepartment>
+		<Post>секретарь</Post>
+		<IDPost>00090</IDPost>
+		<Email>yalarina@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08831">
+		<SirName>УРЮКОВА</SirName>
+		<FirstName>ИННА</FirstName>
+		<PatronymicName>АЛЕКСЕЕВНА</PatronymicName>
+		<IDManager>00945</IDManager>
+		<Department>Секретариат</Department>
+		<IDDepartment>01294</IDDepartment>
+		<Post>секретарь</Post>
+		<IDPost>00090</IDPost>
+		<Email/>
+		<Category>1</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

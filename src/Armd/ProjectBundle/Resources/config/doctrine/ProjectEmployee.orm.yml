@@ -1,0 +1,34 @@
+Armd\ProjectBundle\Entity\ProjectEmployee:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    hours:
+      type: integer
+    title:
+      type: string
+  manyToOne:
+    employee:
+      targetEntity: Armd\ProjectBundle\Entity\Employee
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        employee_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+      
+    project:
+      targetEntity: Armd\ProjectBundle\Entity\Project
+      cascade: {  }
+      joinColumns:
+        project_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+  
+  lifecycleCallbacks: {  }

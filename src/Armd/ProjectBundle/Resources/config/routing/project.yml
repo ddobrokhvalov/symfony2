@@ -1,0 +1,30 @@
+project:
+    pattern:  /
+    defaults: { _controller: "ArmdProjectBundle:Project:index" }
+
+project_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ArmdProjectBundle:Project:show" }
+
+project_new:
+    pattern:  /new
+    defaults: { _controller: "ArmdProjectBundle:Project:new" }
+
+project_create:
+    pattern:  /create
+    defaults: { _controller: "ArmdProjectBundle:Project:create" }
+    requirements: { _method: post }
+
+project_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ArmdProjectBundle:Project:edit" }
+
+project_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ArmdProjectBundle:Project:update" }
+    requirements: { _method: post }
+
+project_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ArmdProjectBundle:Project:delete" }
+    requirements: { _method: post }

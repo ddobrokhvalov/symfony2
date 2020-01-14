@@ -1,0 +1,10 @@
+[26.10.2011 12:32:23] Found 3 employees in file ./employers_110210_0_0.xml
+[26.10.2011 12:32:26] Employee 8595 РУСАКОВ АЛЕКСАНДР ИВАНОВИЧ updated in table employees
+[26.10.2011 12:32:26] Employee 8595 РУСАКОВ АЛЕКСАНДР ИВАНОВИЧ inserted in table employees_history
+[26.10.2011 12:32:26] Employee 920 СЕМЕНОВА ЕЛЕНА ГЕОРГИЕВНА updated in table employees
+[26.10.2011 12:32:26] Employee 920 СЕМЕНОВА ЕЛЕНА ГЕОРГИЕВНА inserted in table employees_history
+[26.10.2011 12:32:26] Employee 8378 СТРЕЛАВИНА ЕКАТЕРИНА МИХАЙЛОВНА updated in table employees
+[26.10.2011 12:32:26] Employee 8378 СТРЕЛАВИНА ЕКАТЕРИНА МИХАЙЛОВНА inserted in table employees_history
+[26.10.2011 12:32:27] In table employees inserted: 0 records, updated: 3 records.
+[26.10.2011 12:32:27] Old records in table employees: 300. Total: 303 records.
+[26.10.2011 12:32:27] In table employees_history inserted: 3 records, copied from table employees: 300 records.

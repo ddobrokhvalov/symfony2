@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>phpDocumentor Parser Errors and Warnings</title>
+			<link rel="stylesheet" href="media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<a href="#Post-parsing">Post-parsing</a><br>
+<a href="#ArmdProjectExtension.php">ArmdProjectExtension.php</a><br>
+<a href="#ArmdReportBundle.php">ArmdReportBundle.php</a><br>
+<a href="#ArmdReportExtension.php">ArmdReportExtension.php</a><br>
+<a href="#Client.php">Client.php</a><br>
+<a href="#ClientAdmin.php">ClientAdmin.php</a><br>
+<a href="#ClientAdminController.php">ClientAdminController.php</a><br>
+<a href="#ClientController.php">ClientController.php</a><br>
+<a href="#ClientType.php">ClientType.php</a><br>
+<a href="#CompetenceController.php">CompetenceController.php</a><br>
+<a href="#Configuration.php">Configuration.php</a><br>
+<a href="#CostController.php">CostController.php</a><br>
+<a href="#DefaultController.php">DefaultController.php</a><br>
+<a href="#Department.php">Department.php</a><br>
+<a href="#DepartmentAdmin.php">DepartmentAdmin.php</a><br>
+<a href="#DepartmentAdminController.php">DepartmentAdminController.php</a><br>
+<a href="#DepartmentController.php">DepartmentController.php</a><br>
+<a href="#Employee.php">Employee.php</a><br>
+<a href="#EmployeeAdmin.php">EmployeeAdmin.php</a><br>
+<a href="#EmployeeAdminController.php">EmployeeAdminController.php</a><br>
+<a href="#EmployeeController.php">EmployeeController.php</a><br>
+<a href="#EmployeeRepository.php">EmployeeRepository.php</a><br>
+<a href="#Help.php">Help.php</a><br>
+<a href="#HelpAdmin.php">HelpAdmin.php</a><br>
+<a href="#HelpAdminController.php">HelpAdminController.php</a><br>
+<a href="#HelpController.php">HelpController.php</a><br>
+<a href="#Holiday.php">Holiday.php</a><br>
+<a href="#HolidayAdmin.php">HolidayAdmin.php</a><br>
+<a href="#HolidayAdminController.php">HolidayAdminController.php</a><br>
+<a href="#HolidayController.php">HolidayController.php</a><br>
+<a href="#ImportBrCommand.php">ImportBrCommand.php</a><br>
+<a href="#ImportEmployeesCommand.php">ImportEmployeesCommand.php</a><br>
+<a href="#ImportRptCommand.php">ImportRptCommand.php</a><br>
+<a href="#Legal.php">Legal.php</a><br>
+<a href="#LegalAdmin.php">LegalAdmin.php</a><br>
+<a href="#LegalAdminController.php">LegalAdminController.php</a><br>
+<a href="#LegalController.php">LegalController.php</a><br>
+<a href="#MoneyFlow.php">MoneyFlow.php</a><br>
+<a href="#MoneyFlowController.php">MoneyFlowController.php</a><br>
+<a href="#MtController.php">MtController.php</a><br>
+<a href="#NotifyBossesCommand.php">NotifyBossesCommand.php</a><br>
+<a href="#NotifyEmptyCommand.php">NotifyEmptyCommand.php</a><br>
+<a href="#NotifyManagersCommand.php">NotifyManagersCommand.php</a><br>
+<a href="#NotifyProjectStagesCommand.php">NotifyProjectStagesCommand.php</a><br>
+<a href="#Post.php">Post.php</a><br>
+<a href="#PostAdmin.php">PostAdmin.php</a><br>
+<a href="#PostAdminController.php">PostAdminController.php</a><br>
+<a href="#PostController.php">PostController.php</a><br>
+<a href="#Project.php">Project.php</a><br>
+<a href="#ProjectAdmin.php">ProjectAdmin.php</a><br>
+<a href="#ProjectAdminController.php">ProjectAdminController.php</a><br>
+<a href="#ProjectCardController.php">ProjectCardController.php</a><br>
+<a href="#ProjectController.php">ProjectController.php</a><br>
+<a href="#ProjectEmployee.php">ProjectEmployee.php</a><br>
+<a href="#ProjectEmployeeAdmin.php">ProjectEmployeeAdmin.php</a><br>
+<a href="#ProjectEmployeeAdminController.php">ProjectEmployeeAdminController.php</a><br>
+<a href="#ProjectEmployeeController.php">ProjectEmployeeController.php</a><br>
+<a href="#ProjectGroup.php">ProjectGroup.php</a><br>
+<a href="#ProjectGroupAdmin.php">ProjectGroupAdmin.php</a><br>
+<a href="#ProjectGroupAdminController.php">ProjectGroupAdminController.php</a><br>
+<a href="#ProjectGroupController.php">ProjectGroupController.php</a><br>
+<a href="#ProjectGroupType.php">ProjectGroupType.php</a><br>
+<a href="#ProjectRepository.php">ProjectRepository.php</a><br>
+<a href="#ProjectStage.php">ProjectStage.php</a><br>
+<a href="#ProjectStageAdmin.php">ProjectStageAdmin.php</a><br>
+<a href="#ProjectStageAdminController.php">ProjectStageAdminController.php</a><br>
+<a href="#ProjectStageController.php">ProjectStageController.php</a><br>
+<a href="#ProjectSubcontract.php">ProjectSubcontract.php</a><br>
+<a href="#ProjectSubcontractAdmin.php">ProjectSubcontractAdmin.php</a><br>
+<a href="#ProjectSubcontractAdminController.php">ProjectSubcontractAdminController.php</a><br>
+<a href="#ProjectSubcontractController.php">ProjectSubcontractController.php</a><br>
+<a href="#ProjectType.php">ProjectType.php</a><br>
+<a href="#ProjectTypeAdmin.php">ProjectTypeAdmin.php</a><br>
+<a href="#ProjectTypeAdminController.php">ProjectTypeAdminController.php</a><br>
+<a href="#ProjectTypeController.php">ProjectTypeController.php</a><br>
+<a href="#Rate.php">Rate.php</a><br>
+<a href="#RateAdmin.php">RateAdmin.php</a><br>
+<a href="#RateAdminController.php">RateAdminController.php</a><br>
+<a href="#RateController.php">RateController.php</a><br>
+<a href="#RegistrationController.php">RegistrationController.php</a><br>
+<a href="#RegistrationFormType.php">RegistrationFormType.php</a><br>
+<a href="#Report.php">Report.php</a><br>
+<a href="#ReportActionsController.php">ReportActionsController.php</a><br>
+<a href="#ReportController.php">ReportController.php</a><br>
+<a href="#ReportControllerTest.php">ReportControllerTest.php</a><br>
+<a href="#ReportGenerateCommand.php">ReportGenerateCommand.php</a><br>
+<a href="#ReportTemplate.php">ReportTemplate.php</a><br>
+<a href="#ReportTemplateAdmin.php">ReportTemplateAdmin.php</a><br>
+<a href="#ReportTemplateAdminController.php">ReportTemplateAdminController.php</a><br>
+<a href="#ReportTemplateController.php">ReportTemplateController.php</a><br>
+<a href="#ReportType.php">ReportType.php</a><br>
+<a href="#Subcontract.php">Subcontract.php</a><br>
+<a href="#SubcontractAdmin.php">SubcontractAdmin.php</a><br>
+<a href="#SubcontractAdminController.php">SubcontractAdminController.php</a><br>
+<a href="#SubcontractController.php">SubcontractController.php</a><br>
+<a href="#SubcontractType.php">SubcontractType.php</a><br>
+<a href="#Tag.php">Tag.php</a><br>
+<a href="#TagAdmin.php">TagAdmin.php</a><br>
+<a href="#TagAdminController.php">TagAdminController.php</a><br>
+<a href="#TagController.php">TagController.php</a><br>
+<a href="#Task.php">Task.php</a><br>
+<a href="#TaskAdmin.php">TaskAdmin.php</a><br>
+<a href="#TaskAdminController.php">TaskAdminController.php</a><br>
+<a href="#TaskController.php">TaskController.php</a><br>
+<a href="#User.php">User.php</a><br>
+<a href="#UserAdmin.php">UserAdmin.php</a><br>
+<a href="#UserAdminController.php">UserAdminController.php</a><br>
+<a href="#UserController.php">UserController.php</a><br>
+<a href="#UserDayController.php">UserDayController.php</a><br>
+<a href="#UserMonthController.php">UserMonthController.php</a><br>
+<a href="#UserWeekController.php">UserWeekController.php</a><br>
+<a name="Post-parsing"></a>
+<h1>Post-parsing</h1>
+<h2>Warnings:</h2><br>
+<b>Warning</b> - Class ReportTemplateAdminController parent Controller not found<br>
+<b>Warning</b> - Class HolidayController parent Controller not found<br>
+<b>Warning</b> - Class ProjectGroupAdminController parent Controller not found<br>
+<b>Warning</b> - Class ProjectAdminController parent Controller not found<br>
+<b>Warning</b> - Class SubcontractController parent Controller not found<br>
+<b>Warning</b> - Class EmployeeAdminController parent Controller not found<br>
+<b>Warning</b> - Class DepartmentAdminController parent Controller not found<br>
+<b>Warning</b> - Class EmployeeController parent Controller not found<br>
+<b>Warning</b> - Class ClientController parent Controller not found<br>
+<b>Warning</b> - Class LegalAdminController parent Controller not found<br>
+<b>Warning</b> - Class ProjectSubcontractAdminController parent Controller not found<br>
+<b>Warning</b> - Class HolidayAdminController parent Controller not found<br>
+<b>Warning</b> - Class TagAdminController parent Controller not found<br>
+<b>Warning</b> - Class UserAdminController parent Controller not found<br>
+<b>Warning</b> - Class TaskController parent Controller not found<br>
+<b>Warning</b> - Class PostAdminController parent Controller not found<br>
+<b>Warning</b> - Class TagController parent Controller not found<br>
+<b>Warning</b> - Class DefaultController parent Controller not found<br>
+<b>Warning</b> - Class ProjectEmployeeController parent Controller not found<br>
+<b>Warning</b> - Class ProjectController parent Controller not found<br>
+<b>Warning</b> - Class ProjectTypeController parent Controller not found<br>
+<b>Warning</b> - Class ProjectSubcontractController parent Controller not found<br>
+<b>Warning</b> - Class EmployeeRepository parent EntityRepository not found<br>
+<b>Warning</b> - Class ProjectEmployeeAdmin parent Admin not found<br>
+<b>Warning</b> - Class UserAdmin parent Admin not found<br>
+<b>Warning</b> - Class RateAdmin parent Admin not found<br>
+<b>Warning</b> - Class LegalAdmin parent Admin not found<br>
+<b>Warning</b> - Class ReportTemplateAdmin parent Admin not found<br>
+<b>Warning</b> - Class ProjectGroupAdmin parent Admin not found<br>
+<b>Warning</b> - Class ProjectStageAdmin parent Admin not found<br>
+<b>Warning</b> - Class PostAdmin parent Admin not found<br>
+<b>Warning</b> - Class ProjectAdmin parent Admin not found<br>
+<b>Warning</b> - Class DepartmentAdmin parent Admin not found<br>
+<b>Warning</b> - Class ClientAdmin parent Admin not found<br>
+<b>Warning</b> - Class HelpAdmin parent Admin not found<br>
+<b>Warning</b> - Class TagAdmin parent Admin not found<br>
+<b>Warning</b> - Class HolidayAdmin parent Admin not found<br>
+<b>Warning</b> - Class User parent BaseUser not found<br>
+<b>Warning</b> - Class ProjectRepository parent EntityRepository not found<br>
+<b>Warning</b> - Class EmployeeAdmin parent Admin not found<br>
+<b>Warning</b> - Class ProjectTypeAdmin parent Admin not found<br>
+<b>Warning</b> - Class ProjectSubcontractAdmin parent Admin not found<br>
+<b>Warning</b> - Class SubcontractAdmin parent Admin not found<br>
+<b>Warning</b> - Class TaskAdmin parent Admin not found<br>
+<b>Warning</b> - Class RateAdminController parent Controller not found<br>
+<b>Warning</b> - Class ProjectEmployeeAdminController parent Controller not found<br>
+<b>Warning</b> - Class ImportRptCommand parent ContainerAwareCommand not found<br>
+<b>Warning</b> - Class ReportControllerTest parent WebTestCase not found<br>
+<b>Warning</b> - Class DefaultController parent Controller not found<br>
+<b>Warning</b> - Class HelpController parent Controller not found<br>
+<b>Warning</b> - Class NotifyManagersCommand parent ContainerAwareCommand not found<br>
+<b>Warning</b> - Class NotifyProjectStagesCommand parent ContainerAwareCommand not found<br>
+<b>Warning</b> - Class NotifyEmptyCommand parent ContainerAwareCommand not found<br>
+<b>Warning</b> - Class NotifyBossesCommand parent ContainerAwareCommand not found<br>
+<b>Warning</b> - Class HelpAdminController parent Controller not found<br>
+<b>Warning</b> - Class ImportEmployeesCommand parent ContainerAwareCommand not found<br>
+<b>Warning</b> - Class ReportController parent Controller not found<br>
+<b>Warning</b> - Class RegistrationController parent BaseRegistrationController not found<br>
+<b>Warning</b> - 
+duplicate class element "Configuration" in file /home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/DependencyInjection/Configuration.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate class element "EmployeeController" in file /home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/HelpController.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate class element "EmployeeController" in file /home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/EmployeeController.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate class element "DefaultController" in file /home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/DefaultController.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate class element "ProjectType" in file /home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Form/ProjectType.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - Class ArmdReportBundle parent Bundle not found<br>
+<b>Warning</b> - Class ArmdReportExtension parent Extension not found<br>
+<b>Warning</b> - Class ReportType parent AbstractType not found<br>
+<b>Warning</b> - Class RegistrationFormType parent AbstractType not found<br>
+<b>Warning</b> - Class ImportBrCommand parent ContainerAwareCommand not found<br>
+<b>Warning</b> - Class ReportGenerateCommand parent ContainerAwareCommand not found<br>
+<b>Warning</b> - Class PostController parent Controller not found<br>
+<b>Warning</b> - Class ReportTemplateController parent Controller not found<br>
+<b>Warning</b> - Class ProjectGroupType parent AbstractType not found<br>
+<b>Warning</b> - Class ProjectStageAdminController parent Controller not found<br>
+<b>Warning</b> - Class RateController parent Controller not found<br>
+<b>Warning</b> - Class LegalController parent Controller not found<br>
+<b>Warning</b> - Class ProjectGroupController parent Controller not found<br>
+<b>Warning</b> - Class DepartmentController parent Controller not found<br>
+<b>Warning</b> - Class EmployeeController parent Controller not found<br>
+<b>Warning</b> - Class EmployeeController parent Controller not found<br>
+<b>Warning</b> - Class ProjectTypeAdminController parent Controller not found<br>
+<b>Warning</b> - Class SubcontractAdminController parent Controller not found<br>
+<b>Warning</b> - Class ProjectStageController parent Controller not found<br>
+<b>Warning</b> - Class ProjectType parent AbstractType not found<br>
+<b>Warning</b> - Class SubcontractType parent AbstractType not found<br>
+<b>Warning</b> - Class ClientType parent AbstractType not found<br>
+<b>Warning</b> - Class TaskAdminController parent Controller not found<br>
+<b>Warning</b> - Class ArmdProjectBundle parent Bundle not found<br>
+<b>Warning</b> - Class ClientAdminController parent Controller not found<br>
+<b>Warning</b> - Class ArmdProjectExtension parent Extension not found<br>
+<a name="ArmdProjectBundle.php"></a>
+<h1>ArmdProjectBundle.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 7</b> - no @package tag was used in a DocBlock for class ArmdProjectBundle<br>
+<b>Warning on line 8</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/ArmdProjectBundle.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ArmdProjectExtension.php"></a>
+<h1>ArmdProjectExtension.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class ArmdProjectExtension<br>
+<b>Warning on line 27</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/DependencyInjection/ArmdProjectExtension.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ArmdReportBundle.php"></a>
+<h1>ArmdReportBundle.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 7</b> - no @package tag was used in a DocBlock for class ArmdReportBundle<br>
+<b>Warning on line 8</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/ArmdReportBundle.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ArmdReportExtension.php"></a>
+<h1>ArmdReportExtension.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class ArmdReportExtension<br>
+<b>Warning on line 27</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/DependencyInjection/ArmdReportExtension.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Client.php"></a>
+<h1>Client.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Client<br>
+<b>Warning on line 86</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Client.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ClientAdmin.php"></a>
+<h1>ClientAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class ClientAdmin<br>
+<b>Warning on line 37</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/ClientAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ClientAdminController.php"></a>
+<h1>ClientAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class ClientAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ClientAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ClientController.php"></a>
+<h1>ClientController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class ClientController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ClientController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ClientType.php"></a>
+<h1>ClientType.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class ClientType<br>
+<b>Warning on line 20</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Form/ClientType.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="CompetenceController.php"></a>
+<h1>CompetenceController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class CompetenceController<br>
+<b>Warning on line 149</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/CompetenceController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Configuration.php"></a>
+<h1>Configuration.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - no @package tag was used in a DocBlock for class Configuration<br>
+<b>Warning on line 13</b> - no @package tag was used in a DocBlock for class Configuration<br>
+<b>Warning on line 28</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/DependencyInjection/Configuration.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 28</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/DependencyInjection/Configuration.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="CostController.php"></a>
+<h1>CostController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class CostController<br>
+<b>Warning on line 252</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/CostController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="DefaultController.php"></a>
+<h1>DefaultController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class DefaultController<br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class DefaultController<br>
+<b>Warning on line 14</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/DefaultController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 14</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/DefaultController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Department.php"></a>
+<h1>Department.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Department<br>
+<b>Warning on line 131</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Department.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="DepartmentAdmin.php"></a>
+<h1>DepartmentAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class DepartmentAdmin<br>
+<b>Warning on line 45</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/DepartmentAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="DepartmentAdminController.php"></a>
+<h1>DepartmentAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class DepartmentAdminController<br>
+<b>Warning on line 32</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/DepartmentAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="DepartmentController.php"></a>
+<h1>DepartmentController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class DepartmentController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/DepartmentController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Employee.php"></a>
+<h1>Employee.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - no @package tag was used in a DocBlock for class Employee<br>
+<b>Warning on line 363</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Employee.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="EmployeeAdmin.php"></a>
+<h1>EmployeeAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class EmployeeAdmin<br>
+<b>Warning on line 60</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/EmployeeAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="EmployeeAdminController.php"></a>
+<h1>EmployeeAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class EmployeeAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/EmployeeAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="EmployeeController.php"></a>
+<h1>EmployeeController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class EmployeeController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/EmployeeController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="EmployeeRepository.php"></a>
+<h1>EmployeeRepository.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - no @package tag was used in a DocBlock for class EmployeeRepository<br>
+<b>Warning on line 21</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Repository/EmployeeRepository.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Help.php"></a>
+<h1>Help.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Help<br>
+<b>Warning on line 101</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Help.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="HelpAdmin.php"></a>
+<h1>HelpAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class HelpAdmin<br>
+<b>Warning on line 47</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/HelpAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="HelpAdminController.php"></a>
+<h1>HelpAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class HelpAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/HelpAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="HelpController.php"></a>
+<h1>HelpController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class HelpController<br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class EmployeeController<br>
+<b>Warning on line 31</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/HelpController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/HelpController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Holiday.php"></a>
+<h1>Holiday.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Holiday<br>
+<b>Warning on line 51</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Holiday.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="HolidayAdmin.php"></a>
+<h1>HolidayAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class HolidayAdmin<br>
+<b>Warning on line 27</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/HolidayAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="HolidayAdminController.php"></a>
+<h1>HolidayAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class HolidayAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/HolidayAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="HolidayController.php"></a>
+<h1>HolidayController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class HolidayController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/HolidayController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ImportBrCommand.php"></a>
+<h1>ImportBrCommand.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - no @package tag was used in a DocBlock for class ImportBrCommand<br>
+<b>Warning on line 155</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Command/ImportBrCommand.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ImportEmployeesCommand.php"></a>
+<h1>ImportEmployeesCommand.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - no @package tag was used in a DocBlock for class ImportEmployeesCommand<br>
+<b>Warning on line 256</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Command/ImportEmployeesCommand.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ImportRptCommand.php"></a>
+<h1>ImportRptCommand.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - no @package tag was used in a DocBlock for class ImportRptCommand<br>
+<b>Warning on line 302</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Command/ImportRptCommand.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Legal.php"></a>
+<h1>Legal.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Legal<br>
+<b>Warning on line 56</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Legal.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="LegalAdmin.php"></a>
+<h1>LegalAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class LegalAdmin<br>
+<b>Warning on line 27</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/LegalAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="LegalAdminController.php"></a>
+<h1>LegalAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class LegalAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/LegalAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="LegalController.php"></a>
+<h1>LegalController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class LegalController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/LegalController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="MoneyFlow.php"></a>
+<h1>MoneyFlow.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class MoneyFlow<br>
+<b>Warning on line 226</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/MoneyFlow.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="MoneyFlowController.php"></a>
+<h1>MoneyFlowController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class MoneyFlowController<br>
+<b>Warning on line 54</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/MoneyFlowController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="MtController.php"></a>
+<h1>MtController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class MtController<br>
+<b>Warning on line 280</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/MtController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="NotifyBossesCommand.php"></a>
+<h1>NotifyBossesCommand.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class NotifyBossesCommand<br>
+<b>Warning on line 162</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Command/NotifyBossesCommand.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="NotifyEmptyCommand.php"></a>
+<h1>NotifyEmptyCommand.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - no @package tag was used in a DocBlock for class NotifyEmptyCommand<br>
+<b>Warning on line 137</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Command/NotifyEmptyCommand.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="NotifyManagersCommand.php"></a>
+<h1>NotifyManagersCommand.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class NotifyManagersCommand<br>
+<b>Warning on line 196</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Command/NotifyManagersCommand.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="NotifyProjectStagesCommand.php"></a>
+<h1>NotifyProjectStagesCommand.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class NotifyProjectStagesCommand<br>
+<b>Warning on line 96</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Command/NotifyProjectStagesCommand.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Post.php"></a>
+<h1>Post.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Post<br>
+<b>Warning on line 85</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Post.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="PostAdmin.php"></a>
+<h1>PostAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class PostAdmin<br>
+<b>Warning on line 43</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/PostAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="PostAdminController.php"></a>
+<h1>PostAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class PostAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/PostAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="PostController.php"></a>
+<h1>PostController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class PostController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/PostController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Project.php"></a>
+<h1>Project.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Project<br>
+<b>Warning on line 714</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Project.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectAdmin.php"></a>
+<h1>ProjectAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class ProjectAdmin<br>
+<b>Warning on line 145</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/ProjectAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectAdminController.php"></a>
+<h1>ProjectAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class ProjectAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectCardController.php"></a>
+<h1>ProjectCardController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class ProjectCardController<br>
+<b>Warning on line 259</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/ProjectCardController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectController.php"></a>
+<h1>ProjectController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class ProjectController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectEmployee.php"></a>
+<h1>ProjectEmployee.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class ProjectEmployee<br>
+<b>Warning on line 131</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/ProjectEmployee.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectEmployeeAdmin.php"></a>
+<h1>ProjectEmployeeAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - no @package tag was used in a DocBlock for class ProjectEmployeeAdmin<br>
+<b>Warning on line 56</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/ProjectEmployeeAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectEmployeeAdminController.php"></a>
+<h1>ProjectEmployeeAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class ProjectEmployeeAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectEmployeeAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectEmployeeController.php"></a>
+<h1>ProjectEmployeeController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class ProjectEmployeeController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectEmployeeController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectGroup.php"></a>
+<h1>ProjectGroup.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class ProjectGroup<br>
+<b>Warning on line 86</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/ProjectGroup.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectGroupAdmin.php"></a>
+<h1>ProjectGroupAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class ProjectGroupAdmin<br>
+<b>Warning on line 34</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/ProjectGroupAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectGroupAdminController.php"></a>
+<h1>ProjectGroupAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class ProjectGroupAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectGroupAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectGroupController.php"></a>
+<h1>ProjectGroupController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class ProjectGroupController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectGroupController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectGroupType.php"></a>
+<h1>ProjectGroupType.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class ProjectGroupType<br>
+<b>Warning on line 20</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Form/ProjectGroupType.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectRepository.php"></a>
+<h1>ProjectRepository.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - no @package tag was used in a DocBlock for class ProjectRepository<br>
+<b>Warning on line 21</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Repository/ProjectRepository.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectStage.php"></a>
+<h1>ProjectStage.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class ProjectStage<br>
+<b>Warning on line 126</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/ProjectStage.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectStageAdmin.php"></a>
+<h1>ProjectStageAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - no @package tag was used in a DocBlock for class ProjectStageAdmin<br>
+<b>Warning on line 44</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/ProjectStageAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectStageAdminController.php"></a>
+<h1>ProjectStageAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class ProjectStageAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectStageAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectStageController.php"></a>
+<h1>ProjectStageController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class ProjectStageController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectStageController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectSubcontract.php"></a>
+<h1>ProjectSubcontract.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class ProjectSubcontract<br>
+<b>Warning on line 152</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/ProjectSubcontract.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectSubcontractAdmin.php"></a>
+<h1>ProjectSubcontractAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - no @package tag was used in a DocBlock for class ProjectSubcontractAdmin<br>
+<b>Warning on line 48</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/ProjectSubcontractAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectSubcontractAdminController.php"></a>
+<h1>ProjectSubcontractAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class ProjectSubcontractAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectSubcontractAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectSubcontractController.php"></a>
+<h1>ProjectSubcontractController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class ProjectSubcontractController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectSubcontractController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectType.php"></a>
+<h1>ProjectType.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class ProjectType<br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class ProjectType<br>
+<b>Warning on line 23</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Form/ProjectType.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 56</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/ProjectType.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectTypeAdmin.php"></a>
+<h1>ProjectTypeAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class ProjectTypeAdmin<br>
+<b>Warning on line 34</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/ProjectTypeAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectTypeAdminController.php"></a>
+<h1>ProjectTypeAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class ProjectTypeAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectTypeAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ProjectTypeController.php"></a>
+<h1>ProjectTypeController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class ProjectTypeController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ProjectTypeController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Rate.php"></a>
+<h1>Rate.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Rate<br>
+<b>Warning on line 76</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Rate.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="RateAdmin.php"></a>
+<h1>RateAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class RateAdmin<br>
+<b>Warning on line 29</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/RateAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="RateAdminController.php"></a>
+<h1>RateAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class RateAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/RateAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="RateController.php"></a>
+<h1>RateController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class RateController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/RateController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="RegistrationController.php"></a>
+<h1>RegistrationController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 19</b> - no @package tag was used in a DocBlock for class RegistrationController<br>
+<b>Warning on line 28</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/RegistrationController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="RegistrationFormType.php"></a>
+<h1>RegistrationFormType.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class RegistrationFormType<br>
+<b>Warning on line 27</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Form/RegistrationFormType.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Report.php"></a>
+<h1>Report.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Report<br>
+<b>Warning on line 109</b> - Unknown tag "@ORM\ManyToOne(targetEntity="Task"," used<br>
+<b>Warning on line 109</b> - Unknown tag "@ORM\JoinColumn(name="task_id"," used<br>
+<b>Warning on line 134</b> - Unknown tag "@ORM\ManyToOne(targetEntity="Project"," used<br>
+<b>Warning on line 134</b> - Unknown tag "@ORM\JoinColumn(name="project_id"," used<br>
+<b>Warning on line 160</b> - Unknown tag "@ORM\ManyToOne(targetEntity="Employee"," used<br>
+<b>Warning on line 160</b> - Unknown tag "@ORM\JoinColumn(name="employee_id"," used<br>
+<b>Warning on line 207</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Entity/Report.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ReportActionsController.php"></a>
+<h1>ReportActionsController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class ReportActionsController<br>
+<b>Warning on line 736</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/ReportActionsController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ReportController.php"></a>
+<h1>ReportController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 18</b> - no @package tag was used in a DocBlock for class ReportController<br>
+<b>Warning on line 1079</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/ReportController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ReportControllerTest.php"></a>
+<h1>ReportControllerTest.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 7</b> - no @package tag was used in a DocBlock for class ReportControllerTest<br>
+<b>Warning on line 38</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Tests/Controller/ReportControllerTest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ReportGenerateCommand.php"></a>
+<h1>ReportGenerateCommand.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - no @package tag was used in a DocBlock for class ReportGenerateCommand<br>
+<b>Warning on line 214</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Command/ReportGenerateCommand.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ReportTemplate.php"></a>
+<h1>ReportTemplate.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class ReportTemplate<br>
+<b>Warning on line 76</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/ReportTemplate.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ReportTemplateAdmin.php"></a>
+<h1>ReportTemplateAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class ReportTemplateAdmin<br>
+<b>Warning on line 29</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/ReportTemplateAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ReportTemplateAdminController.php"></a>
+<h1>ReportTemplateAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class ReportTemplateAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ReportTemplateAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ReportTemplateController.php"></a>
+<h1>ReportTemplateController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class ReportTemplateController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/ReportTemplateController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ReportType.php"></a>
+<h1>ReportType.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class ReportType<br>
+<b>Warning on line 26</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Form/ReportType.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Subcontract.php"></a>
+<h1>Subcontract.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Subcontract<br>
+<b>Warning on line 112</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Subcontract.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="SubcontractAdmin.php"></a>
+<h1>SubcontractAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class SubcontractAdmin<br>
+<b>Warning on line 37</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/SubcontractAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="SubcontractAdminController.php"></a>
+<h1>SubcontractAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class SubcontractAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/SubcontractAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="SubcontractController.php"></a>
+<h1>SubcontractController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class SubcontractController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/SubcontractController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="SubcontractType.php"></a>
+<h1>SubcontractType.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - no @package tag was used in a DocBlock for class SubcontractType<br>
+<b>Warning on line 20</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Form/SubcontractType.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Tag.php"></a>
+<h1>Tag.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Tag<br>
+<b>Warning on line 56</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Tag.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="TagAdmin.php"></a>
+<h1>TagAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class TagAdmin<br>
+<b>Warning on line 40</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/TagAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="TagAdminController.php"></a>
+<h1>TagAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class TagAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/TagAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="TagController.php"></a>
+<h1>TagController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class TagController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/TagController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Task.php"></a>
+<h1>Task.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - Unknown tag "@ORM\Table()" used<br>
+<b>Warning on line 13</b> - Unknown tag "@ORM\Entity" used<br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class Task<br>
+<b>Warning on line 22</b> - Unknown tag "@ORM\GeneratedValue(strategy="AUTO")" used<br>
+<b>Warning on line 22</b> - Unknown tag "@ORM\Column(name="id"," used<br>
+<b>Warning on line 22</b> - Unknown tag "@ORM\Id" used<br>
+<b>Warning on line 29</b> - Unknown tag "@ORM\Column(name="title"," used<br>
+<b>Warning on line 75</b> - Unknown tag "@ORM\OneToMany(targetEntity="Report"," used<br>
+<b>Warning on line 81</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/Task.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="TaskAdmin.php"></a>
+<h1>TaskAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class TaskAdmin<br>
+<b>Warning on line 34</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/TaskAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="TaskAdminController.php"></a>
+<h1>TaskAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class TaskAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/TaskAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="TaskController.php"></a>
+<h1>TaskController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class TaskController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/TaskController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="User.php"></a>
+<h1>User.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - no @package tag was used in a DocBlock for class User<br>
+<b>Warning on line 74</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Entity/User.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="UserAdmin.php"></a>
+<h1>UserAdmin.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class UserAdmin<br>
+<b>Warning on line 45</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Admin/UserAdmin.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="UserAdminController.php"></a>
+<h1>UserAdminController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - no @package tag was used in a DocBlock for class UserAdminController<br>
+<b>Warning on line 7</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/UserAdminController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="UserController.php"></a>
+<h1>UserController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class EmployeeController<br>
+<b>Warning on line 185</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ProjectBundle/Controller/UserController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="UserDayController.php"></a>
+<h1>UserDayController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 16</b> - no @package tag was used in a DocBlock for class UserDayController<br>
+<b>Warning on line 179</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/UserDayController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="UserMonthController.php"></a>
+<h1>UserMonthController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class UserMonthController<br>
+<b>Warning on line 175</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/UserMonthController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="UserWeekController.php"></a>
+<h1>UserWeekController.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class UserWeekController<br>
+<b>Warning on line 180</b> - File "/home/kpotemichev/www/k.report.armd.ru/src/Armd/ReportBundle/Controller/UserWeekController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 07 Oct 2011 11:31:00 +0400 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</body>
+</html>

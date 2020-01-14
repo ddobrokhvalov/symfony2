@@ -1,0 +1,14 @@
+Armd\ProjectBundle\Entity\ReportTemplate:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+    body:
+      type: text
+  lifecycleCallbacks: {  }

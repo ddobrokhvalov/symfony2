@@ -1,0 +1,14 @@
+Armd\ProjectBundle\Entity\Rate:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: integer
+    salary:
+      type: integer
+  lifecycleCallbacks: {  }

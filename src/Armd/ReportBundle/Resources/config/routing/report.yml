@@ -1,0 +1,87 @@
+report:
+    pattern:  /
+    defaults: { _controller: "ArmdReportBundle:ReportActions:index" }
+
+report_profile:
+    pattern:  /profile
+    defaults: { _controller: "ArmdReportBundle:ReportActions:profile" }
+
+report_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ArmdReportBundle:ReportActions:show" }
+
+report_new:
+    pattern:  /new
+    defaults: { _controller: "ArmdReportBundle:ReportActions:new" }
+
+report_create:
+    pattern:  /create
+    defaults: { _controller: "ArmdReportBundle:ReportActions:create" }
+    requirements: { _method: post }
+
+report_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ArmdReportBundle:ReportActions:edit" }
+
+report_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ArmdReportBundle:ReportActions:update" }
+    requirements: { _method: post }
+
+report_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ArmdReportBundle:ReportActions:delete" }
+    requirements: { _method: post }
+
+report_search:
+    pattern:  /search
+    defaults: { _controller: "ArmdReportBundle:ReportActions:search" }
+
+report_user_day:
+    pattern:  /user_day
+    defaults: { _controller: "ArmdReportBundle:UserDay:index" }
+    
+report_user_week:
+    pattern:  /user_week
+    defaults: { _controller: "ArmdReportBundle:UserWeek:index" }
+    
+report_user_month:
+    pattern:  /user_month
+    defaults: { _controller: "ArmdReportBundle:UserMonth:index" }
+
+report_cost:
+    pattern:  /cost
+    defaults: { _controller: "ArmdReportBundle:Cost:index" }
+
+report_project_card:
+    pattern:  /project_card
+    defaults: { _controller: "ArmdReportBundle:ProjectCard:index" }
+
+report_money_flow:
+    pattern:  /money_flow
+    defaults: { _controller: "ArmdReportBundle:MoneyFlow:index" }
+
+report_ajax_get_days:
+    pattern:  /ajax/getDays
+    defaults: { _controller: "ArmdReportBundle:ReportActions:ajaxGetDays" }
+
+report_help:
+    pattern:  /help
+    defaults: { _controller: "ArmdReportBundle:Help:index" }
+    
+report_competence:
+    pattern:  /competence
+    defaults: { _controller: "ArmdReportBundle:Competence:index" }
+
+report_mt:
+    pattern:  /mt
+    defaults: { _controller: "ArmdReportBundle:Mt:index" }
+    
+report_project:
+    pattern:  /report_project/{by}
+    defaults: { _controller: "ArmdReportBundle:ReportProject:index", by: day }
+    
+report_task:
+    pattern:  /report_task/{by}
+    defaults: { _controller: "ArmdReportBundle:ReportTask:index", by: day }
+   

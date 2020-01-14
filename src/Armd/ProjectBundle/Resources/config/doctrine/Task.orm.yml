@@ -1,0 +1,14 @@
+Armd\ProjectBundle\Entity\Task:
+  type: entity
+  table: null
+  repositoryClass: Armd\ProjectBundle\Repository\TaskRepository
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+      length: 255
+  lifecycleCallbacks: {  }

@@ -1,0 +1,8 @@
+[26.10.2011 12:40:42] Found 2 employees in file ./employers_110527_0_0.xml
+[26.10.2011 12:40:42] Employee 8610 БУНЬКОВ АЛЕКСЕЙ ВАСИЛЬЕВИЧ updated in table employees
+[26.10.2011 12:40:42] Employee 8610 БУНЬКОВ АЛЕКСЕЙ ВАСИЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:40:43] Employee 8393 ЕРОФЕЕВ ИЛЬЯ ИВАНОВИЧ updated in table employees
+[26.10.2011 12:40:43] Employee 8393 ЕРОФЕЕВ ИЛЬЯ ИВАНОВИЧ inserted in table employees_history
+[26.10.2011 12:40:47] In table employees inserted: 0 records, updated: 2 records.
+[26.10.2011 12:40:47] Old records in table employees: 331. Total: 333 records.
+[26.10.2011 12:40:47] In table employees_history inserted: 2 records, copied from table employees: 331 records.

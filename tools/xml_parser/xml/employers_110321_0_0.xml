@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08808">
+		<SirName>АЛЕКСЕЕВ</SirName>
+		<FirstName>НИКОЛАЙ</FirstName>
+		<PatronymicName>ВАЛЕРЬЕВИЧ</PatronymicName>
+		<IDManager>01088</IDManager>
+		<Department>Департамент информационных систем управления (Каушанский)</Department>
+		<IDDepartment>01226</IDDepartment>
+		<Post>инженер-программист</Post>
+		<IDPost>00035</IDPost>
+		<Email>nalekseev@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

@@ -1,0 +1,41 @@
+Armd\ProjectBundle\Entity\MoneyFlow:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    date:
+      type: date
+    value:
+      type: float
+    contractor:
+      type: string
+      length: 255
+    client:
+      type: string
+      length: 255
+    ticker:
+      type: string
+      length: 255
+    legal:
+      type: string
+      length: 255
+    analytics:
+      type: string
+      length: 255
+  manyToOne:
+    project:
+      targetEntity: Armd\ProjectBundle\Entity\Project
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        project_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+
+  lifecycleCallbacks: {  }

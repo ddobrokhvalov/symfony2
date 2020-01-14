@@ -1,0 +1,10 @@
+[26.10.2011 12:32:40] Found 3 employees in file ./employers_110214_0_0.xml
+[26.10.2011 12:32:43] Employee 8667 НАДТОЧИЙ ТАТЬЯНА ЮРЬЕВНА updated in table employees
+[26.10.2011 12:32:43] Employee 8667 НАДТОЧИЙ ТАТЬЯНА ЮРЬЕВНА inserted in table employees_history
+[26.10.2011 12:32:44] Employee 8645 ЧУРМАСОВА ВИКТОРИЯ ОЛЕГОВНА updated in table employees
+[26.10.2011 12:32:44] Employee 8645 ЧУРМАСОВА ВИКТОРИЯ ОЛЕГОВНА inserted in table employees_history
+[26.10.2011 12:32:45] Employee 8796 МАШАРОВА ТАТЬЯНА НИКОЛАЕВНА inserted in table employees
+[26.10.2011 12:32:45] Employee 8796 МАШАРОВА ТАТЬЯНА НИКОЛАЕВНА inserted in table employees_history
+[26.10.2011 12:32:45] In table employees inserted: 1 records, updated: 2 records.
+[26.10.2011 12:32:45] Old records in table employees: 301. Total: 304 records.
+[26.10.2011 12:32:45] In table employees_history inserted: 3 records, copied from table employees: 301 records.

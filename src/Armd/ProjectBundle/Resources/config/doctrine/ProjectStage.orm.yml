@@ -1,0 +1,25 @@
+Armd\ProjectBundle\Entity\ProjectStage:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+    date:
+      type: date
+    description:
+      type: text
+      nullable: true
+  manyToOne:
+    project:
+      targetEntity: Armd\ProjectBundle\Entity\Project
+      cascade: {  }
+      joinColumns:
+        project_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+  lifecycleCallbacks: {  }

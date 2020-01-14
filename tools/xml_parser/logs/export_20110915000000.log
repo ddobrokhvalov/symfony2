@@ -1,0 +1,8 @@
+[26.10.2011 12:51:25] Found 2 employees in file ./employers_110915_0_0.xml
+[26.10.2011 12:51:31] Employee 8888 ГУБАНОВ ПЕТР НИКОЛАЕВИЧ inserted in table employees
+[26.10.2011 12:51:31] Employee 8888 ГУБАНОВ ПЕТР НИКОЛАЕВИЧ inserted in table employees_history
+[26.10.2011 12:51:31] Employee 8889 КУШНИКОВ АЛЕКСАНДР АЛЕКСАНДРОВИЧ inserted in table employees
+[26.10.2011 12:51:31] Employee 8889 КУШНИКОВ АЛЕКСАНДР АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:51:31] In table employees inserted: 2 records, updated: 0 records.
+[26.10.2011 12:51:31] Old records in table employees: 392. Total: 394 records.
+[26.10.2011 12:51:31] In table employees_history inserted: 2 records, copied from table employees: 392 records.

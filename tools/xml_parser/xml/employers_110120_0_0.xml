@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08792">
+		<SirName>УРЕЦКИЙ</SirName>
+		<FirstName>АНАТОЛИЙ</FirstName>
+		<PatronymicName>ЮРЬЕВИЧ</PatronymicName>
+		<IDManager>07233</IDManager>
+		<Department>Административно-хозяйственный департамент (СОФТ)</Department>
+		<IDDepartment>01209</IDDepartment>
+		<Post>Заместитель директора департамента</Post>
+		<IDPost>00422</IDPost>
+		<Email>auretskiy@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

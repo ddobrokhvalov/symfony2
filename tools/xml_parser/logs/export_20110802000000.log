@@ -1,0 +1,6 @@
+[26.10.2011 12:47:04] Found 1 employees in file ./employers_110802_0_0.xml
+[26.10.2011 12:47:09] Employee 8858 ЕЛИСЕЕВА ОЛЬГА АЛЕКСАНДРОВНА updated in table employees
+[26.10.2011 12:47:09] Employee 8858 ЕЛИСЕЕВА ОЛЬГА АЛЕКСАНДРОВНА inserted in table employees_history
+[26.10.2011 12:47:09] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:47:09] Old records in table employees: 363. Total: 364 records.
+[26.10.2011 12:47:09] In table employees_history inserted: 1 records, copied from table employees: 363 records.

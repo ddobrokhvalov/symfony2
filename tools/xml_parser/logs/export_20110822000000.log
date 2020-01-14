@@ -1,0 +1,10 @@
+[26.10.2011 12:48:57] Found 3 employees in file ./employers_110822_0_0.xml
+[26.10.2011 12:49:02] Employee 8797 ПРОНЯКИНА АЛИНА СЕРГЕЕВНА updated in table employees
+[26.10.2011 12:49:02] Employee 8797 ПРОНЯКИНА АЛИНА СЕРГЕЕВНА inserted in table employees_history
+[26.10.2011 12:49:03] Employee 8870 ВАСИЛЬЕВА ЕКАТЕРИНА СЕРГЕЕВНА inserted in table employees
+[26.10.2011 12:49:03] Employee 8870 ВАСИЛЬЕВА ЕКАТЕРИНА СЕРГЕЕВНА inserted in table employees_history
+[26.10.2011 12:49:03] Employee 8871 ХАИТ МАРИНА ЛЕОНИДОВНА inserted in table employees
+[26.10.2011 12:49:03] Employee 8871 ХАИТ МАРИНА ЛЕОНИДОВНА inserted in table employees_history
+[26.10.2011 12:49:03] In table employees inserted: 2 records, updated: 1 records.
+[26.10.2011 12:49:03] Old records in table employees: 373. Total: 376 records.
+[26.10.2011 12:49:03] In table employees_history inserted: 3 records, copied from table employees: 373 records.

@@ -1,0 +1,25 @@
+Armd\ProjectBundle\Entity\Subcontract:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+      length: 255
+  manyToOne:
+    parent:
+      targetEntity: Armd\ProjectBundle\Entity\Subcontract
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        parent_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+      nullable: true
+  lifecycleCallbacks: {  }

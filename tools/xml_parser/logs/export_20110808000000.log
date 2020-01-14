@@ -1,0 +1,10 @@
+[26.10.2011 12:47:38] Found 3 employees in file ./employers_110808_0_0.xml
+[26.10.2011 12:47:43] Employee 8818 ТЯПАЕВА ИРИНА ВИКТОРОВНА updated in table employees
+[26.10.2011 12:47:43] Employee 8818 ТЯПАЕВА ИРИНА ВИКТОРОВНА inserted in table employees_history
+[26.10.2011 12:47:43] Employee 8861 КОНОВАЛОВА ДАРЬЯ СЕРГЕЕВНА inserted in table employees
+[26.10.2011 12:47:43] Employee 8861 КОНОВАЛОВА ДАРЬЯ СЕРГЕЕВНА inserted in table employees_history
+[26.10.2011 12:47:43] Employee 8862 КУРИЦЫН МИХАИЛ ВАСИЛЬЕВИЧ inserted in table employees
+[26.10.2011 12:47:43] Employee 8862 КУРИЦЫН МИХАИЛ ВАСИЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:47:43] In table employees inserted: 2 records, updated: 1 records.
+[26.10.2011 12:47:43] Old records in table employees: 365. Total: 368 records.
+[26.10.2011 12:47:43] In table employees_history inserted: 3 records, copied from table employees: 365 records.

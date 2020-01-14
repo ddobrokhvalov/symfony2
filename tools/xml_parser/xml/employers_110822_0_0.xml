@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08870">
+		<SirName>ВАСИЛЬЕВА</SirName>
+		<FirstName>ЕКАТЕРИНА</FirstName>
+		<PatronymicName>СЕРГЕЕВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>секретарь</Post>
+		<IDPost>00090</IDPost>
+		<Email/>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08797">
+		<SirName>ПРОНЯКИНА</SirName>
+		<FirstName>АЛИНА</FirstName>
+		<PatronymicName>СЕРГЕЕВНА</PatronymicName>
+		<IDManager>05431</IDManager>
+		<Department>Планово-экономический отдел</Department>
+		<IDDepartment>01319</IDDepartment>
+		<Post>экономист</Post>
+		<IDPost>00105</IDPost>
+		<Email>apronyakina@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08871">
+		<SirName>ХАИТ</SirName>
+		<FirstName>МАРИНА</FirstName>
+		<PatronymicName>ЛЕОНИДОВНА</PatronymicName>
+		<IDManager>01114</IDManager>
+		<Department>Департамент систем сбора информации</Department>
+		<IDDepartment>01295</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

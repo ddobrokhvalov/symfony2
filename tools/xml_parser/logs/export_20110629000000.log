@@ -1,0 +1,6 @@
+[26.10.2011 12:43:48] Found 1 employees in file ./employers_110629_0_0.xml
+[26.10.2011 12:43:54] Employee 8839 КМИТЮК АНДРЕЙ АЛЕКСАНДРОВИЧ inserted in table employees
+[26.10.2011 12:43:54] Employee 8839 КМИТЮК АНДРЕЙ АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:43:54] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:43:54] Old records in table employees: 344. Total: 345 records.
+[26.10.2011 12:43:54] In table employees_history inserted: 1 records, copied from table employees: 344 records.

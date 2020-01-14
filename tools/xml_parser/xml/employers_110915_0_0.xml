@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08888">
+		<SirName>ГУБАНОВ</SirName>
+		<FirstName>ПЕТР</FirstName>
+		<PatronymicName>НИКОЛАЕВИЧ</PatronymicName>
+		<IDManager>01000</IDManager>
+		<Department>Проектный отдел</Department>
+		<IDDepartment>01322</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email/>
+		<Category>1</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08889">
+		<SirName>КУШНИКОВ</SirName>
+		<FirstName>АЛЕКСАНДР</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>08575</IDManager>
+		<Department>Отдел внедрения систем управления предприятием (Титарев)</Department>
+		<IDDepartment>01227</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

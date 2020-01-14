@@ -1,0 +1,4 @@
+"Исполнитель";"Чел-часов";"Цена чел-часа";"На прошлой неделе";"Всего";
+{% for employee in reports %}"{{employee['title']}}";"{{employee['hours_sum']|replace({'.':','})}}";"{{employee['salary']}}";"{{employee['last_week_sum']}} руб. ({{employee['last_week_hours_sum']|replace({'.':','})}} чел-час)";"{{employee['sum']|replace({'.':','})}} руб.";
+{% endfor %}
+;"{{reports_hours_sum}}";;"{{reports_last_week_sum}} руб. ({{reports_last_week_hours_sum}} чел-час)";"{{reports_sum}} руб.";

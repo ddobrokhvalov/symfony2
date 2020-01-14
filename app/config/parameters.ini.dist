@@ -1,0 +1,33 @@
+; These parameters can be imported into other config files
+; by enclosing the key with % (like %database_user%)
+; Comments start with ';', as in php.ini
+;[parameters]
+;    database_driver   = pdo_mysql
+;    database_host     = localhost
+;    database_port     =
+;    database_name     = symfony
+;    database_user     = root
+;    database_password =
+;
+;    mailer_transport  = smtp
+;    mailer_host       = localhost
+;    mailer_user       =
+;    mailer_password   =
+;
+;    locale            = en
+;
+;    secret            = ThisTokenIsNotSoSecretChangeIt
+
+[parameters]
+    database_driver="pdo_mysql"
+    database_host="localhost"
+    database_port="3306"
+    database_name="report_stable"
+    database_user="stable"
+    database_password="qr6147uyaqxziknu"
+    mailer_transport="smtp"
+    mailer_host="submail.armd.ru"
+    mailer_user=""
+    mailer_password=""
+    locale="ru"
+    secret="2dc10f10ad58470b164f98f96fcc12bbf2"

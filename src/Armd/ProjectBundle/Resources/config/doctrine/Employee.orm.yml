@@ -1,0 +1,61 @@
+Armd\ProjectBundle\Entity\Employee:
+  type: entity
+  table: null
+  repositoryClass: Armd\ProjectBundle\Repository\EmployeeRepository
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    surname:
+      type: string
+      length: 255
+    name:
+      type: string
+      length: 255
+    patronymic:
+      type: string
+      length: 255
+      nullable: true
+    email:
+      type: string
+      length: 255
+      nullable: true
+    time:
+      type: integer
+      nullable: true
+    discharged:
+      type: boolean
+    subcontractor:
+      type: boolean
+      nullable: true
+  manyToOne:
+    department:
+      targetEntity: Armd\ProjectBundle\Entity\Department
+      cascade: {}
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        department_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+    post:
+      targetEntity: Armd\ProjectBundle\Entity\Post
+      cascade: {}
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        post_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+  oneToOne:
+    user:
+      targetEntity: User
+      inversedBy: employee
+      joinColumn:
+        name: user_id
+        referencedColumnName: id
+  lifecycleCallbacks: {  }

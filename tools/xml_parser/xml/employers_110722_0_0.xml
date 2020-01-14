@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08814">
+		<SirName>ПОСПЕЛОВ</SirName>
+		<FirstName>СЕРГЕЙ</FirstName>
+		<PatronymicName>ВИКТОРОВИЧ</PatronymicName>
+		<IDManager>01026</IDManager>
+		<Department>Департамент корпоративных продаж (Савчук)</Department>
+		<IDDepartment>00747</IDDepartment>
+		<Post>менеджер по работе с клиентами</Post>
+		<IDPost>00051</IDPost>
+		<Email>spospelov@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08854">
+		<SirName>ТАРАСОВА</SirName>
+		<FirstName>ОКСАНА</FirstName>
+		<PatronymicName>ИВАНОВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>Старший бухгалтер</Post>
+		<IDPost>00199</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

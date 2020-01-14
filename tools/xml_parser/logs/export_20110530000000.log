@@ -1,0 +1,6 @@
+[26.10.2011 12:40:58] Found 1 employees in file ./employers_110530_0_0.xml
+[26.10.2011 12:41:03] Employee 8828 ЛАГУТИН АНДРЕЙ НИКОЛАЕВИЧ inserted in table employees
+[26.10.2011 12:41:03] Employee 8828 ЛАГУТИН АНДРЕЙ НИКОЛАЕВИЧ inserted in table employees_history
+[26.10.2011 12:41:03] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:41:03] Old records in table employees: 333. Total: 334 records.
+[26.10.2011 12:41:03] In table employees_history inserted: 1 records, copied from table employees: 333 records.

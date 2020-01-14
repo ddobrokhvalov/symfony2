@@ -1,0 +1,10 @@
+[26.10.2011 12:34:43] Found 3 employees in file ./employers_110314_0_0.xml
+[26.10.2011 12:34:47] Employee 8804 ЗАХАРОВА ВАЛЕРИЯ СЕРГЕЕВНА inserted in table employees
+[26.10.2011 12:34:47] Employee 8804 ЗАХАРОВА ВАЛЕРИЯ СЕРГЕЕВНА inserted in table employees_history
+[26.10.2011 12:34:47] Employee 8803 ЛУКИЯН ДМИТРИЙ СЕРГЕЕВИЧ inserted in table employees
+[26.10.2011 12:34:47] Employee 8803 ЛУКИЯН ДМИТРИЙ СЕРГЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:34:47] Employee 8805 ПАСТУХОВ ДМИТРИЙ ЕВГЕНЬЕВИЧ inserted in table employees
+[26.10.2011 12:34:47] Employee 8805 ПАСТУХОВ ДМИТРИЙ ЕВГЕНЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:34:47] In table employees inserted: 3 records, updated: 0 records.
+[26.10.2011 12:34:47] Old records in table employees: 309. Total: 312 records.
+[26.10.2011 12:34:47] In table employees_history inserted: 3 records, copied from table employees: 309 records.

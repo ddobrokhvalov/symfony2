@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08886">
+		<SirName>КУХАРЕВА</SirName>
+		<FirstName>ОЛЬГА</FirstName>
+		<PatronymicName>ЮРЬЕВНА</PatronymicName>
+		<IDManager>01114</IDManager>
+		<Department>Департамент систем сбора информации</Department>
+		<IDDepartment>01295</IDDepartment>
+		<Post>Бизнес-аналитик</Post>
+		<IDPost>00375</IDPost>
+		<Email/>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08885">
+		<SirName>УКОЛОВ</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>ЮРЬЕВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел комплексных проектов</Department>
+		<IDDepartment>01293</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email/>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

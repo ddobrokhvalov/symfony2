@@ -1,0 +1,6 @@
+[26.10.2011 12:47:49] Found 1 employees in file ./employers_110810_0_0.xml
+[26.10.2011 12:47:56] Employee 8863 ХАРЧЕНКО ЕГОР ИГОРЕВИЧ inserted in table employees
+[26.10.2011 12:47:56] Employee 8863 ХАРЧЕНКО ЕГОР ИГОРЕВИЧ inserted in table employees_history
+[26.10.2011 12:47:56] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:47:56] Old records in table employees: 368. Total: 369 records.
+[26.10.2011 12:47:56] In table employees_history inserted: 1 records, copied from table employees: 368 records.

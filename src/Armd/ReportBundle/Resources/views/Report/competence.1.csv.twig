@@ -1,0 +1,4 @@
+"Название проекта";"Стоимость контракта";"Дата начала";"Дата окончания"
+{% for project in projects%}"{{project.title}}";"{{project.contractcost}} руб.";"{{project.begin|date('d.m.Y')}}";"{{project.end|date('d.m.Y')}}"
+{% endfor %}
+	

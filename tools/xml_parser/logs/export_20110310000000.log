@@ -1,0 +1,8 @@
+[26.10.2011 12:34:25] Found 2 employees in file ./employers_110310_0_0.xml
+[26.10.2011 12:34:28] Employee 8788 ПОЛОНСКИЙ МАКСИМ СЕРГЕЕВИЧ updated in table employees
+[26.10.2011 12:34:28] Employee 8788 ПОЛОНСКИЙ МАКСИМ СЕРГЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:34:30] Employee 8801 ГЛИНСКАЯ АНАСТАСИЯ ВЛАДИМИРОВНА inserted in table employees
+[26.10.2011 12:34:30] Employee 8801 ГЛИНСКАЯ АНАСТАСИЯ ВЛАДИМИРОВНА inserted in table employees_history
+[26.10.2011 12:34:30] In table employees inserted: 1 records, updated: 1 records.
+[26.10.2011 12:34:30] Old records in table employees: 307. Total: 309 records.
+[26.10.2011 12:34:30] In table employees_history inserted: 2 records, copied from table employees: 307 records.

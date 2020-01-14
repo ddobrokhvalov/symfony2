@@ -1,0 +1,39 @@
+Armd\ProjectBundle\Entity\Department:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    ext_id:
+      type: integer
+      nullable: true
+    title:
+      type: string
+      length: 255
+  manyToOne:
+    parent:
+      targetEntity: Armd\ProjectBundle\Entity\Department
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        parent_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+      nullable: true
+    boss:
+      targetEntity: Armd\ProjectBundle\Entity\Employee
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        employee_id:
+          referencedColumnName: id
+          onDelete: SET NULL
+      orphanRemoval: false
+      nullable: true
+  lifecycleCallbacks: {  }

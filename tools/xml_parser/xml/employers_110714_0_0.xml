@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08651">
+		<SirName>ИГИТЯН</SirName>
+		<FirstName>ТАЧАТ</FirstName>
+		<PatronymicName>АМБАРЦУМОВИЧ</PatronymicName>
+		<IDManager>01000</IDManager>
+		<Department>Коммерческий отдел</Department>
+		<IDDepartment>01321</IDDepartment>
+		<Post>Директор по работе с ключевыми клиентами</Post>
+		<IDPost>00751</IDPost>
+		<Email>tigityan@rbcsoft.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08614">
+		<SirName>САВЕЛЬЕВ</SirName>
+		<FirstName>МАКСИМ</FirstName>
+		<PatronymicName>ДМИТРИЕВИЧ</PatronymicName>
+		<IDManager>07325</IDManager>
+		<Department>Отдел комплексных проектов 2 (Кузнецов)</Department>
+		<IDDepartment>01171</IDDepartment>
+		<Post>инженер-программист</Post>
+		<IDPost>00035</IDPost>
+		<Email>msavelyev@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

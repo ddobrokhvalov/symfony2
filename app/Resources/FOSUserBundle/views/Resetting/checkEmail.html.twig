@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+	<div class="request-cont">
+    <div class="border-cont">
+<p>
+{{ 'resetting.check_email'|trans({'%email%': user.email}, 'FOSUserBundle') }}
+</p>
+	</div>
+	</div>
+{% endblock %}

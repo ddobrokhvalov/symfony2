@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08824">
+		<SirName>БОБОВ</SirName>
+		<FirstName>ПЕТР</FirstName>
+		<PatronymicName>КИРИЛЛОВИЧ</PatronymicName>
+		<IDManager>05640</IDManager>
+		<Department>Департамент комплексных проектов</Department>
+		<IDDepartment>00734</IDDepartment>
+		<Post>Руководитель проектов</Post>
+		<IDPost>00285</IDPost>
+		<Email>pbobov@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08826">
+		<SirName>ПЯТАЕВА</SirName>
+		<FirstName>МАРИЯ</FirstName>
+		<PatronymicName>ВАСИЛЬЕВНА</PatronymicName>
+		<IDManager>07233</IDManager>
+		<Department>Административно-хозяйственный департамент (СОФТ)</Department>
+		<IDDepartment>01209</IDDepartment>
+		<Post>уборщица</Post>
+		<IDPost>00104</IDPost>
+		<Email/>
+		<Category>1</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

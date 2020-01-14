@@ -1,0 +1,208 @@
+imports:
+    - { resource: parameters.ini }
+    - { resource: security.yml }
+
+framework:
+    #esi:             ~
+    translator:      { fallback: ru }
+    secret:          %secret%
+    charset:         UTF-8
+    router:          { resource: "%kernel.root_dir%/config/routing.yml" }
+    form:            true
+    csrf_protection: true
+    validation:      { enable_annotations: true }
+    templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
+    session:
+        default_locale: %locale%
+        auto_start:     true
+
+# Twig Configuration
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+
+# Assetic Configuration
+assetic:
+    debug:          %kernel.debug%
+    use_controller: false
+    filters:
+        cssrewrite: ~
+        # closure:
+        #     jar: %kernel.root_dir%/java/compiler.jar
+        # yui_css:
+        #     jar: %kernel.root_dir%/java/yuicompressor-2.4.2.jar
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   %database_driver%
+        host:     %database_host%
+        port:     %database_port%
+        dbname:   %database_name%
+        user:     %database_user%
+        password: %database_password%
+        charset:  UTF8
+
+    orm:
+        auto_generate_proxy_classes: %kernel.debug%
+        auto_mapping: true
+        mappings:
+            FOSUserBundle: ~
+            ArmdProjectBundle: ~
+#        entity_managers:
+#            default:
+#                mappings:
+#                    ArmdProjectBundle: ~
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: %mailer_transport%
+    host:      %mailer_host%
+    username:  %mailer_user%
+    password:  %mailer_password%
+
+jms_aop:
+    cache_dir: %kernel.cache_dir%/jms_aop
+
+#jms_security_extra:
+#    secure_controllers:  true
+#    secure_all_services: true
+
+services:
+   armd.project.admin.project:
+      class: Armd\ProjectBundle\Admin\ProjectAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Проекты }
+      arguments: [null, Armd\ProjectBundle\Entity\Project, ArmdProjectBundle:ProjectAdmin]
+   armd.project.admin.ProjectEmployee:
+      class: Armd\ProjectBundle\Admin\ProjectEmployeeAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Связи Проект-Сотрудник }
+      arguments: [null, Armd\ProjectBundle\Entity\ProjectEmployee, ArmdProjectBundle:ProjectEmployeeAdmin]
+   armd.project.admin.ProjectSubcontract:
+      class: Armd\ProjectBundle\Admin\ProjectSubcontractAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Связи Проект-Субподрядчик }
+      arguments: [null, Armd\ProjectBundle\Entity\ProjectSubcontract, ArmdProjectBundle:ProjectSubcontractAdmin]
+   armd.project.admin.projectgroup:
+      class: Armd\ProjectBundle\Admin\ProjectGroupAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Портфели }
+      arguments: [null, Armd\ProjectBundle\Entity\ProjectGroup, ArmdProjectBundle:ProjectGroupAdmin]
+   armd.project.admin.projecttype:
+      class: Armd\ProjectBundle\Admin\ProjectTypeAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Типы проектов }
+      arguments: [null, Armd\ProjectBundle\Entity\ProjectType, ArmdProjectBundle:ProjectTypeAdmin]
+   armd.project.admin.client:
+      class: Armd\ProjectBundle\Admin\ClientAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Клиенты }
+      arguments: [null, Armd\ProjectBundle\Entity\Client, ArmdProjectBundle:ClientAdmin]
+   armd.project.admin.subcontract:
+      class: Armd\ProjectBundle\Admin\SubcontractAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Субподрядчики }
+      arguments: [null, Armd\ProjectBundle\Entity\Subcontract, ArmdProjectBundle:SubcontractAdmin]
+   armd.project.admin.task:
+      class: Armd\ProjectBundle\Admin\TaskAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Ежедневные отчеты, label: Типы работ }
+      arguments: [null, Armd\ProjectBundle\Entity\Task, ArmdProjectBundle:TaskAdmin]
+   armd.project.admin.holiday:
+      class: Armd\ProjectBundle\Admin\HolidayAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Ежедневные отчеты, label: Нерабочие дни }
+      arguments: [null, Armd\ProjectBundle\Entity\Holiday, ArmdProjectBundle:HolidayAdmin]
+   armd.project.admin.reporttemplate:
+      class: Armd\ProjectBundle\Admin\ReportTemplateAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Ежедневные отчеты, label: Шаблоны отчетов }
+      arguments: [null, Armd\ProjectBundle\Entity\ReportTemplate, ArmdProjectBundle:ReportTemplateAdmin]
+   armd.project.admin.Employee:
+      class: Armd\ProjectBundle\Admin\EmployeeAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр сотрудников, label: Сотрудники }
+      arguments: [null, Armd\ProjectBundle\Entity\Employee, ArmdProjectBundle:EmployeeAdmin]
+#   armd.project.admin.User:
+#      class: Armd\ProjectBundle\Admin\UserAdmin
+#      tags:
+#        - { name: sonata.admin, manager_type: orm, group: Реестр сотрудников, label: Пользователи }
+#      arguments: [null, Armd\ProjectBundle\Entity\User, ArmdProjectBundle:UserAdmin]
+   armd.project.admin.Rate:
+      class: Armd\ProjectBundle\Admin\RateAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр сотрудников, label: Ставки }
+      arguments: [null, Armd\ProjectBundle\Entity\Rate, ArmdProjectBundle:RateAdmin]
+   armd.project.admin.Department:
+      class: Armd\ProjectBundle\Admin\DepartmentAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр сотрудников, label: Организационная структура }
+      arguments: [null, Armd\ProjectBundle\Entity\Department, ArmdProjectBundle:DepartmentAdmin]
+#   armd.project.admin.ProjectEmployee:
+#      class: Armd\ProjectBundle\Admin\ProjectEmployeeAdmin
+#      tags:
+#        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Связи Проект-Сотрудник }
+#      arguments: [null, Armd\ProjectBundle\Entity\ProjectEmployee, ArmdProjectBundle:ProjectEmployeeAdmin]
+#   armd.project.admin.ProjectSubcontract:
+#      class: Armd\ProjectBundle\Admin\ProjectSubcontractAdmin
+#      tags:
+#        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Связи Проект-Субподрядчик }
+#      arguments: [null, Armd\ProjectBundle\Entity\ProjectSubcontract, ArmdProjectBundle:ProjectSubcontractAdmin]
+   armd.project.admin.Legal:
+      class: Armd\ProjectBundle\Admin\LegalAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Юридические лица }
+      arguments: [null, Armd\ProjectBundle\Entity\Legal, ArmdProjectBundle:LegalAdmin]
+   armd.project.admin.Tag:
+      class: Armd\ProjectBundle\Admin\TagAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Технологии }
+      arguments: [null, Armd\ProjectBundle\Entity\Tag, ArmdProjectBundle:TagAdmin]
+#   armd.project.admin.ProjectStage:
+#      class: Armd\ProjectBundle\Admin\ProjectStageAdmin
+#      tags:
+#        - { name: sonata.admin, manager_type: orm, group: Реестр проектов, label: Этапы проектов }
+#      arguments: [null, Armd\ProjectBundle\Entity\ProjectStage, ArmdProjectBundle:ProjectStageAdmin]
+   armd.project.admin.Help:
+      class: Armd\ProjectBundle\Admin\HelpAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Дополнительно, label: Справка }
+      arguments: [null, Armd\ProjectBundle\Entity\Help, ArmdProjectBundle:HelpAdmin]
+   armd.project.admin.Post:
+      class: Armd\ProjectBundle\Admin\PostAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Реестр сотрудников, label: Должности }
+      arguments: [null, Armd\ProjectBundle\Entity\Post, ArmdProjectBundle:PostAdmin]
+
+
+#opensky_ldap:
+#    client:
+#        host: Dc01-don.hq.armd.ru 
+#        username: LDAP_searcher
+#        password: ReawtIlj6 
+#    user_base_dn:        CN=LDAP_searcher,ou=Special Users,DC=hq,DC=armd,DC=ru 
+#    user_filter:         (sAMAccountName=*) 
+##(objectClass=employee)
+#    username_attribute:  mail
+#    role_base_dn:        ou=Office_DON,dc=hq,dc=armd,dc=ru
+#    role_filter:         (memberOf=*)
+##(objectClass=role)
+#    role_name_attribute: cn
+#    role_user_attribute: memberuid
+#    security:
+#        role_prefix:   ROLE_LDAP_
+#        default_roles: [ROLE_ADMIN, ROLE_LDAP]
+
+fos_user:
+    from_email:
+        address: no-reply@report.armd.ru
+        sender_name: report
+    db_driver: orm
+    user_class: Armd\ProjectBundle\Entity\User
+    firewall_name: main
+    registration:
+        confirmation:
+            enabled:    false
+        form:
+            type: armd_user_registration

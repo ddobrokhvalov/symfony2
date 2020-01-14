@@ -1,0 +1,6 @@
+[26.10.2011 12:30:40] Found 1 employees in file ./employers_110117_0_0.xml
+[26.10.2011 12:30:44] Employee 8791 ДРУЖКОВА ЕЛЕНА ГРИГОРЬЕВНА inserted in table employees
+[26.10.2011 12:30:44] Employee 8791 ДРУЖКОВА ЕЛЕНА ГРИГОРЬЕВНА inserted in table employees_history
+[26.10.2011 12:30:44] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:30:44] Old records in table employees: 297. Total: 298 records.
+[26.10.2011 12:30:44] In table employees_history inserted: 1 records, copied from table employees: 297 records.

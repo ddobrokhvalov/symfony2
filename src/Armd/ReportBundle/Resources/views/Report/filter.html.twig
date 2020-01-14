@@ -1,0 +1,154 @@
+{% set ru_month = {1:"Января", 2:"Февраля", 3:"Марта", 4:"Апреля", 5:"Мая", 6:"Июня", 7:"Июля", 8:"Августа", 9:"Сентября", 10:"Октября", 11:"Ноября", 12:"Декабря"} %}
+
+{% extends '::base.html.twig' %}
+{% block title %}Корпоративная система отчетов{% endblock %}
+{% block header %}Корпоративная система отчетов. {{ user }}, <a href="{{ path('fos_user_security_logout') }}">выйти</a>. {% endblock %}
+{% block body %}
+<style>
+.main_cont_rep .tr2 td{
+			background:#ececec;
+			padding:4px;
+			border-bottom:4px #ffffff solid;
+		}
+		.time1{border-radius:0;margin-left:0px;box-shadow:none;border:1px solid #CCCCCC;}
+		.btn_edit{background:transparent url(/bundles/sonataadmin/famfamfam/application_edit.png) no-repeat left center;border-radius:0;padding-left:20px;}
+		.btn_edit a{color:#0099ff;text-decoration:underline;}
+		.btn_edit a:hover, .btn_edit a:focus{text-decoration:none;}
+		.chzn-container .chzn-results li {
+			line-height: 105%;
+		}
+		.chzn-container{float:left;margin-right:4px;}
+		.btn_filtr{float:left;margin-right:10px;margin-left:0px;margin-top:4px;}
+		.sTbl td{background:#fff!important;}
+		.sTbl .tr2 td{background:#ECECEC!important;}
+		.sTbl .tr2-generated td{background:#ECE0F9!important;}
+		.menu_left{min-width:950px;}
+</style>
+<link rel="stylesheet" href="/css/smoothness/jquery-ui-1.8.14.custom.css">
+<script type="text/javascript" src="/js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="/js/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+<script type="text/javascript"> 
+	jQuery(document).ready(function(){
+		$("a.iframe").fancybox({
+			'transitionIn'	:	'elastic',
+			'transitionOut'	:	'elastic',
+			'speedIn'		:	600, 
+			'speedOut'		:	200, 
+			'overlayShow'	:	true,
+			'width'         :   700,
+			'height'        :   300
+		});
+
+		$(".chzn-select").chosen();
+		$( "#begin" ).datepicker();
+		$( "#end" ).datepicker();
+    });
+
+	function resetFilters() {
+	  $(".chzn-select").val('');
+	  $(".chzn-select").trigger("liszt:updated")
+	}
+</script>
+<div class="append-1 prepend-1">  
+  <table class="main_cont">
+    <tr>
+      <td>
+	  <div class="menu_left" style="padding-top:0;">
+<form name="report_filter" action="{{ path('report_search') }}" method="get" {{ form_enctype(search_form) }}>
+    {{ form_widget(search_form) }}
+	<select class="chzn-select" name="project[]" style="width:148px;" multiple="multiple" data-placeholder="Проект">
+		{% for project in projects %}
+			<option value="{{ project.id }}" {% if project.id in post.project %}selected{% endif %}>{{ project.title }}</option>
+		{% endfor%}
+	</select> 
+
+	<select class="chzn-select" name="manager[]" style="width:148px;" multiple="multiple" data-placeholder="Менеджер проекта">
+		{% for manager in managers %}
+			<option value="{{ manager.id }}" {% if manager.id in post.manager %}selected{% endif %}>{{ manager.title }}</option>
+		{% endfor%}
+	</select>
+
+	<select class="chzn-select" name="subcontract[]" style="width:148px;" multiple="multiple" data-placeholder="Подразделение">
+		{% for subcontract in subcontracts %}
+			<option value="{{ subcontract.id }}" {% if subcontract.id in post.subcontract %}selected{% endif %}>{{ subcontract.title }}</option>
+		{% endfor%}
+	</select>
+
+	<select class="chzn-select" name="client[]" style="width:148px;" multiple="multiple" data-placeholder="Клиент">
+		{% for client in clients %}
+			<option value="{{ client.id }}" {% if client.id in post.client %}selected{% endif %}>{{ client.title }}</option>
+		{% endfor%}
+	</select>
+  
+	<select class="chzn-select" name="projectgroup[]" style="width:148px;" multiple="multiple" data-placeholder="Типы проекта">
+		{% for projectgroup in projectgroups %}
+			<option value="{{ projectgroup.id }}" {% if projectgroup.id in post.projectgroup %}selected{% endif %}>{{ projectgroup.title }}</option>
+		{% endfor%}
+	</select>
+
+  	<div class="span-4 small">
+  		<input type="text" name="text" style="width:148px;" value="{{text}}">
+  	</div>
+
+ 	 <div class="span-4 small">
+  		<input type="text" id="begin" name="begin" style="width:100px; margin-right:10px;" value="{{begin}}"/>
+  		<input type="text" id="end" name="end" style="width:100px;" value="{{end}}"/>
+  	</div>
+
+  <div class="btn_filtr" onClick="document.report_filter.submit()">Применить</div>
+<div style="clear:both;"></div>
+  <div class="btn_filtr" onClick="resetFilters()">Сбросить фильтр</div>
+  <div style="clear:both;"></div>
+</form>
+</div>
+      </td>
+</tr>
+<tr class="sTbl">	  
+      <td class="main_cont_2">
+	  <table class="main_cont_rep">
+          <tr>
+            <th class="th1">Проект</th>
+            <th class="th2">Отчет по проекту</th>
+            <th class="th3">Дата</th>
+			<th class="th4">Время</th>
+            <th class="th5">Тип работ</th>
+            <th class="th6">Сотрудник</th>
+          </tr>
+		  <tr>
+			<td colspan="6" style="background:#ffffff;">&nbsp;</td>
+		  </tr>
+    {% for entity in entities %}
+          <!--tr class="tr_razd_1">
+            <td><img src="/img/u1.png" alt=""></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><img src="/img/u2.png" alt="" align="right"></td>
+          </tr-->
+          <tr class="tr2{% if entity.generated == 1%}-generated{%endif%}">
+            <td class="td1">{{ entity.project }}</td>
+            <td><div style="width:400px;overflow:hidden;">{{ entity.description|raw }}</div></td>
+			<td>{{ entity.day|date("d.m.Y") }}</td>
+            <td><div class="time1">
+                <div class="div1">{{ entity.time }}</div>
+              </div></td>
+            <td class="td5">{{ entity.task }}</td>
+            <td class="td6">{{ entity.employee }}</td>
+          </tr>
+          <!--tr class="tr_razd_2">
+            <td><img src="/img/u4.png" alt=""></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><img src="/img/u3.png" alt="" align="right"></td>
+          </tr-->
+    {% endfor %}
+
+        </table>
+		</td>
+    </tr>
+  </table>
+</div>  
+{% endblock %}

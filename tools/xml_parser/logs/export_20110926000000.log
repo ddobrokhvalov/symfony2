@@ -1,0 +1,8 @@
+[26.10.2011 12:52:27] Found 2 employees in file ./employers_110926_0_0.xml
+[26.10.2011 12:52:34] Employee 8892 КУЛИКОВ ОЛЕГ ВАЛЕНТИНОВИЧ inserted in table employees
+[26.10.2011 12:52:34] Employee 8892 КУЛИКОВ ОЛЕГ ВАЛЕНТИНОВИЧ inserted in table employees_history
+[26.10.2011 12:52:34] Employee 8893 СОЛОВЬЁВ ВЛАДИМИР АЛЕКСАНДРОВИЧ inserted in table employees
+[26.10.2011 12:52:34] Employee 8893 СОЛОВЬЁВ ВЛАДИМИР АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:52:34] In table employees inserted: 2 records, updated: 0 records.
+[26.10.2011 12:52:34] Old records in table employees: 396. Total: 398 records.
+[26.10.2011 12:52:34] In table employees_history inserted: 2 records, copied from table employees: 396 records.

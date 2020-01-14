@@ -1,0 +1,4 @@
+"Наименование работ";"Трудоемкость";"Исполнитель";"Цена чел-часа";"Стоимость работы";"Разряд специалиста";
+{% for employee in employees %}"{{employee['title']|replace({'.':','})}}";"{{employee['hours']|replace({'.':','})}}";"{{employee['name']|replace({'.':','})}}";"{{employee['salary']|replace({'.':','})}}";"{{employee['total_cost']|replace({'.':','})}} руб.";"{{employee['rate']|replace({'.':','})}}";
+{% endfor %}
+;"{{total_hours|replace({'.':','})}}";;;"{{total_sum|replace({'.':','})}} руб.";;

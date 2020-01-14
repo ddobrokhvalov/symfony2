@@ -1,0 +1,30 @@
+client:
+    pattern:  /
+    defaults: { _controller: "ArmdProjectBundle:Client:index" }
+
+client_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ArmdProjectBundle:Client:show" }
+
+client_new:
+    pattern:  /new
+    defaults: { _controller: "ArmdProjectBundle:Client:new" }
+
+client_create:
+    pattern:  /create
+    defaults: { _controller: "ArmdProjectBundle:Client:create" }
+    requirements: { _method: post }
+
+client_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ArmdProjectBundle:Client:edit" }
+
+client_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ArmdProjectBundle:Client:update" }
+    requirements: { _method: post }
+
+client_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ArmdProjectBundle:Client:delete" }
+    requirements: { _method: post }

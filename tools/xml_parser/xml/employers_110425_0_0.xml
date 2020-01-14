@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08817">
+		<SirName>СМЯТКИН</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел комплексных проектов</Department>
+		<IDDepartment>01293</IDDepartment>
+		<Post>Юзабилити-специалист</Post>
+		<IDPost>00780</IDPost>
+		<Email>dsmyatkin@armd.ru</Email>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08818">
+		<SirName>ТЯПАЕВА</SirName>
+		<FirstName>ИРИНА</FirstName>
+		<PatronymicName>ВИКТОРОВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>бухгалтер</Post>
+		<IDPost>00005</IDPost>
+		<Email>ityapaeva@armd.ru</Email>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

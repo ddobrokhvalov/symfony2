@@ -1,0 +1,4 @@
+Проект;{% for day in human_days %}"{{ day }}";{% endfor %};
+{% for entity in entities%}"{{entity['title']}}";{% for day in human_days %}{{entity[human_days[loop.index0]]['time']|replace({'.': ','})}};{% endfor %}"{{entity['sum']|replace({'.': ','})}}"
+{% endfor %}
+;{% for day in human_days %}"{{day_sums[human_days[loop.index0]]|replace({'.': ','})}}";{% endfor %}"{{full_sum|replace({'.': ','})}}"

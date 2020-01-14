@@ -1,0 +1,6 @@
+[26.10.2011 12:44:34] Found 1 employees in file ./employers_110707_0_0.xml
+[26.10.2011 12:44:39] Employee 8847 БРАГИН АНДРЕЙ СЕРГЕЕВИЧ inserted in table employees
+[26.10.2011 12:44:39] Employee 8847 БРАГИН АНДРЕЙ СЕРГЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:44:39] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:44:39] Old records in table employees: 352. Total: 353 records.
+[26.10.2011 12:44:39] In table employees_history inserted: 1 records, copied from table employees: 352 records.

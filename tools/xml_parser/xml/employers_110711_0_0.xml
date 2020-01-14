@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08848">
+		<SirName>САЛТЫКОВ</SirName>
+		<FirstName>ЕВГЕНИЙ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>06976</IDManager>
+		<Department>Отдел портальных решений (Драгалин)</Department>
+		<IDDepartment>01316</IDDepartment>
+		<Post>Руководитель проектов</Post>
+		<IDPost>00285</IDPost>
+		<Email/>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08849">
+		<SirName>ФРОЛОВ</SirName>
+		<FirstName>ИГОРЬ</FirstName>
+		<PatronymicName>ВЯЧЕСЛАВОВИЧ</PatronymicName>
+		<IDManager>08575</IDManager>
+		<Department>Отдел внедрения систем управления предприятием (Титарев)</Department>
+		<IDDepartment>01227</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email/>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

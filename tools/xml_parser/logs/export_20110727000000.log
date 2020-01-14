@@ -1,0 +1,6 @@
+[26.10.2011 12:46:28] Found 1 employees in file ./employers_110727_0_0.xml
+[26.10.2011 12:46:34] Employee 8856 ПРЫТКОВ АРКАДИЙ ДМИТРИЕВИЧ inserted in table employees
+[26.10.2011 12:46:34] Employee 8856 ПРЫТКОВ АРКАДИЙ ДМИТРИЕВИЧ inserted in table employees_history
+[26.10.2011 12:46:34] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:46:34] Old records in table employees: 360. Total: 361 records.
+[26.10.2011 12:46:34] In table employees_history inserted: 1 records, copied from table employees: 360 records.

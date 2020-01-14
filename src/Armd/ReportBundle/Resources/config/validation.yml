@@ -1,0 +1,4 @@
+Armd\ReportBundle\Entity\Report:
+    properties:
+        minutes:
+            - Type: { type: real, message: "qzd"}

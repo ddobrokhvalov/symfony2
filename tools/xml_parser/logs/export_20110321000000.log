@@ -1,0 +1,6 @@
+[26.10.2011 12:35:14] Found 1 employees in file ./employers_110321_0_0.xml
+[26.10.2011 12:35:18] Employee 8808 АЛЕКСЕЕВ НИКОЛАЙ ВАЛЕРЬЕВИЧ inserted in table employees
+[26.10.2011 12:35:18] Employee 8808 АЛЕКСЕЕВ НИКОЛАЙ ВАЛЕРЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:35:18] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:35:18] Old records in table employees: 313. Total: 314 records.
+[26.10.2011 12:35:18] In table employees_history inserted: 1 records, copied from table employees: 313 records.

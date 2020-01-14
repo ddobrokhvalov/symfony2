@@ -1,0 +1,6 @@
+[26.10.2011 12:39:28] Found 1 employees in file ./employers_110512_0_0.xml
+[26.10.2011 12:39:33] Employee 8823 КОРНИЛОВ ВИКТОР АЛЕКСАНДРОВИЧ inserted in table employees
+[26.10.2011 12:39:33] Employee 8823 КОРНИЛОВ ВИКТОР АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:39:33] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:39:33] Old records in table employees: 329. Total: 330 records.
+[26.10.2011 12:39:33] In table employees_history inserted: 1 records, copied from table employees: 329 records.

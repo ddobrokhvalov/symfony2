@@ -1,0 +1,8 @@
+[26.10.2011 12:40:47] Found 2 employees in file ./employers_110528_0_0.xml
+[26.10.2011 12:40:49] Employee 8683 КУЗНЕЦОВА МАРИЯ НИКОЛАЕВНА updated in table employees
+[26.10.2011 12:40:49] Employee 8683 КУЗНЕЦОВА МАРИЯ НИКОЛАЕВНА inserted in table employees_history
+[26.10.2011 12:40:52] Employee 8796 МАШАРОВА ТАТЬЯНА НИКОЛАЕВНА updated in table employees
+[26.10.2011 12:40:52] Employee 8796 МАШАРОВА ТАТЬЯНА НИКОЛАЕВНА inserted in table employees_history
+[26.10.2011 12:40:52] In table employees inserted: 0 records, updated: 2 records.
+[26.10.2011 12:40:52] Old records in table employees: 331. Total: 333 records.
+[26.10.2011 12:40:52] In table employees_history inserted: 2 records, copied from table employees: 331 records.

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08752">
+		<SirName>РЫЖКОВА</SirName>
+		<FirstName>ДАРЬЯ</FirstName>
+		<PatronymicName>СТАНИСЛАВОВНА</PatronymicName>
+		<IDManager>04527</IDManager>
+		<Department>Отдел комплексных проектов 1 (Тарасов)</Department>
+		<IDDepartment>01170</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email>dryzhkova@armd.ru</Email>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08744">
+		<SirName>СПИРИНА</SirName>
+		<FirstName>ЛЮДМИЛА</FirstName>
+		<PatronymicName>ПЕТРОВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>секретарь</Post>
+		<IDPost>00090</IDPost>
+		<Email>lspirina@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

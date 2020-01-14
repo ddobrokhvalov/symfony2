@@ -1,0 +1,6 @@
+[26.10.2011 12:47:27] Found 1 employees in file ./employers_110806_0_0.xml
+[26.10.2011 12:47:28] Employee 8723 ГРИЦАЙ ГЕОРГИЙ АНАТОЛЬЕВИЧ updated in table employees
+[26.10.2011 12:47:28] Employee 8723 ГРИЦАЙ ГЕОРГИЙ АНАТОЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:47:32] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:47:32] Old records in table employees: 365. Total: 366 records.
+[26.10.2011 12:47:32] In table employees_history inserted: 1 records, copied from table employees: 365 records.

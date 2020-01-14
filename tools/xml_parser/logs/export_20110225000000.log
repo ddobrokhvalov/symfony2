@@ -1,0 +1,6 @@
+[26.10.2011 12:33:28] Found 1 employees in file ./employers_110225_0_0.xml
+[26.10.2011 12:33:31] Employee 8744 СПИРИНА ЛЮДМИЛА ПЕТРОВНА updated in table employees
+[26.10.2011 12:33:31] Employee 8744 СПИРИНА ЛЮДМИЛА ПЕТРОВНА inserted in table employees_history
+[26.10.2011 12:33:32] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:33:32] Old records in table employees: 305. Total: 306 records.
+[26.10.2011 12:33:32] In table employees_history inserted: 1 records, copied from table employees: 305 records.

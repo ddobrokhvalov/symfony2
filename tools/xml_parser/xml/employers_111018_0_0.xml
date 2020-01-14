@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08903">
+		<SirName>БОХОНОВА</SirName>
+		<FirstName>ЕЛЕНА</FirstName>
+		<PatronymicName>ВЛАДИМИРОВНА</PatronymicName>
+		<IDManager>08853</IDManager>
+		<Department>Бухгалтерия 1 (Макеева)</Department>
+		<IDDepartment>01326</IDDepartment>
+		<Post>Главный бухгалтер</Post>
+		<IDPost>00015</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="06016">
+		<SirName>ПАЧАЙ</SirName>
+		<FirstName>АНДРЕЙ</FirstName>
+		<PatronymicName>ВАДИМОВИЧ</PatronymicName>
+		<IDManager>08051</IDManager>
+		<Department>Отдел контент-проектов</Department>
+		<IDDepartment>01314</IDDepartment>
+		<Post>Системный аналитик</Post>
+		<IDPost>00209</IDPost>
+		<Email>apachay@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

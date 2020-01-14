@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08761">
+		<SirName>ВОЛКОВ</SirName>
+		<FirstName>АРТЕМ</FirstName>
+		<PatronymicName>ВАЛЕРЬЕВИЧ</PatronymicName>
+		<IDManager>08366</IDManager>
+		<Department>Отдел систем сбора информации 1 (Поздняков)</Department>
+		<IDDepartment>01296</IDDepartment>
+		<Post>Специалист технической поддержки</Post>
+		<IDPost>00778</IDPost>
+		<Email>avolkov@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

@@ -1,0 +1,10 @@
+[26.10.2011 12:48:18] Found 3 employees in file ./employers_110815_0_0.xml
+[26.10.2011 12:48:23] Employee 8865 КАСЬЯНЕНКО ОЛЬГА НИКОЛАЕВНА inserted in table employees
+[26.10.2011 12:48:23] Employee 8865 КАСЬЯНЕНКО ОЛЬГА НИКОЛАЕВНА inserted in table employees_history
+[26.10.2011 12:48:23] Employee 8866 ПОМИЛУЙКО ДМИТРИЙ ЮРЬЕВИЧ inserted in table employees
+[26.10.2011 12:48:23] Employee 8866 ПОМИЛУЙКО ДМИТРИЙ ЮРЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:48:23] Employee 8868 САФРОНОВ ЕГОР ВАЛЕРЬЕВИЧ inserted in table employees
+[26.10.2011 12:48:23] Employee 8868 САФРОНОВ ЕГОР ВАЛЕРЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:48:23] In table employees inserted: 3 records, updated: 0 records.
+[26.10.2011 12:48:23] Old records in table employees: 370. Total: 373 records.
+[26.10.2011 12:48:23] In table employees_history inserted: 3 records, copied from table employees: 370 records.

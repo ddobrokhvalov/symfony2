@@ -1,0 +1,8 @@
+[26.10.2011 12:45:12] Found 2 employees in file ./employers_110714_0_0.xml
+[26.10.2011 12:45:14] Employee 8651 ИГИТЯН ТАЧАТ АМБАРЦУМОВИЧ updated in table employees
+[26.10.2011 12:45:14] Employee 8651 ИГИТЯН ТАЧАТ АМБАРЦУМОВИЧ inserted in table employees_history
+[26.10.2011 12:45:16] Employee 8614 САВЕЛЬЕВ МАКСИМ ДМИТРИЕВИЧ updated in table employees
+[26.10.2011 12:45:16] Employee 8614 САВЕЛЬЕВ МАКСИМ ДМИТРИЕВИЧ inserted in table employees_history
+[26.10.2011 12:45:18] In table employees inserted: 0 records, updated: 2 records.
+[26.10.2011 12:45:18] Old records in table employees: 354. Total: 356 records.
+[26.10.2011 12:45:18] In table employees_history inserted: 2 records, copied from table employees: 354 records.

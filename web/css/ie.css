@@ -1,0 +1,47 @@
+
+.btn_dell {
+		border-radius:4px;
+	   -moz-border-radius:4px;
+	   -webkit-border-radius:4px;
+	   -khtml-border-radius:4px;
+	   behavior: url(/js/PIE.htc);}
+.btn_edit {
+		border-radius:4px;
+	   -moz-border-radius:4px;
+	   -webkit-border-radius:4px;
+	   -khtml-border-radius:4px;
+	   behavior: url(/js/PIE.htc);
+	   }
+
+	.voskl .div1 {
+		border-radius:4px;
+	   -moz-border-radius:4px;
+	   -webkit-border-radius:4px;
+	   -khtml-border-radius:4px;
+	   behavior: url(/js/PIE.htc)	
+	}
+
+.time1 {
+		border-radius:4px;
+	   -moz-border-radius:4px;
+	   -webkit-border-radius:4px;
+	   -khtml-border-radius:4px;
+	   box-shadow:inset 2px 2px 1px #949494;
+	   behavior: url(/js/PIE.htc)
+	   }
+
+	.menu_left .menu1 {
+		border-radius:4px;
+	   -moz-border-radius:4px;
+	   -webkit-border-radius:4px;
+	   -khtml-border-radius:4px;
+	   box-shadow:inset 4px 4px 4px #dddddd;
+	   behavior: url(/js/PIE.htc);}
+
+.btn_filtr {
+		border-radius:2px;
+	   -moz-border-radius:2px;
+	   -webkit-border-radius:2px;
+	   -khtml-border-radius:2px;
+	   behavior: url(/js/PIE.htc)
+}

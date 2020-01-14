@@ -1,0 +1,5 @@
+"Дата начала";"{{project.begin|date('d.m.Y')}}";"Клиент";"{{project.client}}"
+"Дата окончания";"{{project.end|date('d.m.Y')}}";"Портфель";"{{project.projectgroup}}"
+"Менеджер";"{{project.manager}}";"Юридическое лицо";"{{project.legal}}"
+"Хозяин";"{{project.owner}}";"Список технологий";"{%for tag in project.tag%}{{tag}}{%if loop.last != true%}, {%endif%}{%endfor%}"
+"Аккаунт";"{{project.salesmanager}}"

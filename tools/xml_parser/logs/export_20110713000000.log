@@ -1,0 +1,6 @@
+[26.10.2011 12:45:07] Found 1 employees in file ./employers_110713_0_0.xml
+[26.10.2011 12:45:12] Employee 8850 ЗАВТУР АНТОН АНАТОЛЬЕВИЧ inserted in table employees
+[26.10.2011 12:45:12] Employee 8850 ЗАВТУР АНТОН АНАТОЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:45:12] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:45:12] Old records in table employees: 355. Total: 356 records.
+[26.10.2011 12:45:12] In table employees_history inserted: 1 records, copied from table employees: 355 records.

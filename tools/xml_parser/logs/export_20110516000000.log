@@ -1,0 +1,8 @@
+[26.10.2011 12:39:47] Found 2 employees in file ./employers_110516_0_0.xml
+[26.10.2011 12:39:52] Employee 8824 БОБОВ ПЕТР КИРИЛЛОВИЧ inserted in table employees
+[26.10.2011 12:39:52] Employee 8824 БОБОВ ПЕТР КИРИЛЛОВИЧ inserted in table employees_history
+[26.10.2011 12:39:52] Employee 8826 ПЯТАЕВА МАРИЯ ВАСИЛЬЕВНА inserted in table employees
+[26.10.2011 12:39:52] Employee 8826 ПЯТАЕВА МАРИЯ ВАСИЛЬЕВНА inserted in table employees_history
+[26.10.2011 12:39:52] In table employees inserted: 2 records, updated: 0 records.
+[26.10.2011 12:39:52] Old records in table employees: 330. Total: 332 records.
+[26.10.2011 12:39:52] In table employees_history inserted: 2 records, copied from table employees: 330 records.

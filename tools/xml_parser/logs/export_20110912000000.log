@@ -1,0 +1,8 @@
+[26.10.2011 12:51:08] Found 2 employees in file ./employers_110912_0_0.xml
+[26.10.2011 12:51:11] Employee 7797 СОЛОВЬЕВ АЛЕКСЕЙ АЛЕКСАНДРОВИЧ updated in table employees
+[26.10.2011 12:51:11] Employee 7797 СОЛОВЬЕВ АЛЕКСЕЙ АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:51:14] Employee 8887 ПОЛЕТАЕВА ИРИНА РАГИМОВНА inserted in table employees
+[26.10.2011 12:51:14] Employee 8887 ПОЛЕТАЕВА ИРИНА РАГИМОВНА inserted in table employees_history
+[26.10.2011 12:51:14] In table employees inserted: 1 records, updated: 1 records.
+[26.10.2011 12:51:14] Old records in table employees: 390. Total: 392 records.
+[26.10.2011 12:51:14] In table employees_history inserted: 2 records, copied from table employees: 390 records.

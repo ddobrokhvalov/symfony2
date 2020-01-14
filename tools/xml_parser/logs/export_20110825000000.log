@@ -1,0 +1,6 @@
+[26.10.2011 12:49:15] Found 1 employees in file ./employers_110825_0_0.xml
+[26.10.2011 12:49:21] Employee 8883 ЗУБРЕЕВ АНТОН ЛЕОНИДОВИЧ inserted in table employees
+[26.10.2011 12:49:21] Employee 8883 ЗУБРЕЕВ АНТОН ЛЕОНИДОВИЧ inserted in table employees_history
+[26.10.2011 12:49:21] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:49:21] Old records in table employees: 387. Total: 388 records.
+[26.10.2011 12:49:21] In table employees_history inserted: 1 records, copied from table employees: 387 records.

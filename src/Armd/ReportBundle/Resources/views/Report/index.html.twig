@@ -1,0 +1,286 @@
+{% set ru_month = {1:"Января", 2:"Февраля", 3:"Марта", 4:"Апреля", 5:"Мая", 6:"Июня", 7:"Июля", 8:"Августа", 9:"Сентября", 10:"Октября", 11:"Ноября", 12:"Декабря"} %}
+
+{% extends '::base.html.twig' %}
+{% block title %}Корпоративная система отчетов {% endblock %}
+{% block header %}Корпоративная система отчетов. {{ user }}, <a href="{{ path('fos_user_security_logout') }}">выйти</a>. {% endblock %}
+{% block body %}
+  
+<style>
+	.red_calendar  a {
+	background: #FFCCCC !important;
+	}
+	.green_calendar  a {
+	background: #CCFFCC !important;
+	}
+	.yellow_calendar  a {
+	background: #FFE28E !important;
+	}
+	#fancybox-outer{
+		background:#fff url("/img/ajax-loader-big.gif") no-repeat 50% 50% !important;
+	}
+	.main_cont_rep .tr2 td{
+		background:#ececec;
+		padding:4px;
+	}
+	.time1{border-radius:0;margin-left:0px;box-shadow:none;border:1px solid #CCCCCC;}
+	.btn_edit{background:transparent url(/bundles/sonataadmin/famfamfam/application_edit.png) no-repeat left center;border-radius:0;padding-left:20px;}
+	.btn_edit a{color:#0099ff;text-decoration:underline;}
+	.btn_edit a:hover, .btn_edit a:focus{text-decoration:none;}
+	.chzn-container .chzn-results li {
+		line-height: 105%;
+	}
+	
+	.span-4{width:154px;}
+	.span-22{width:900px;}
+	.hdrTbl{width:1100px!important;margin-bottom:0px;float:left;}
+	.hdrTbl td{background:#ffffff!important}
+	.ui-datepicker{width:100%!important;}
+	#content-main{clear:both;float:none;}
+	.deCont{width:350px;}
+	.date1{white-space:nowrap;}
+</style>
+<!--[if IE]>
+<style>
+
+</style>
+<![endif]-->  
+<link rel="stylesheet" href="/css/smoothness/jquery-ui-1.8.14.custom.css">
+<script type="text/javascript" src="/js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="/js/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+<script type="text/javascript"> 
+	jQuery(document).ready(function(){
+		$("a.iframe").fancybox({
+			'transitionIn'	:	'fade',
+			'transitionOut'	:	'fade',
+			'speedIn'		:	200, 
+			'speedOut'		:	200, 
+			'overlayShow'	:	true,
+			'width'         :   600,
+			'height'        :   370
+		});
+
+		$(".chzn-select").chosen();
+
+		var not_closed_dates = [{% for day in not_closed_days %}'{{day}}'{% if loop.last != true%},{%endif%}{% endfor %}];
+
+		var this_week = [{% for day in this_week %}'{{day}}'{% if loop.last != true%},{%endif%}{% endfor %}];
+			
+		var date = '{{ datetime }}';
+		date = date.split('.');
+		$('#day').val(date[0]);
+		$('#month').val(date[1]);
+		$('#year').val(date[2]);
+
+		$( "#datepicker" ).datepicker({
+
+			dateFormat: 'dd.mm.yy',
+			defaultDate: '{{ datetime }}',
+			onSelect: function(dateText, inst) {
+					window.location.search = '?day='+dateText;
+					var date = dateText.split('.');
+					$('#day').val(date[0]);
+					$('#month').val(date[1]);
+					$('#year').val(date[2]);
+			},
+			beforeShowDay: function(date) { 
+					var dmy = 		((date.getDate() > 9)?date.getDate():'0'+date.getDate()) +
+									"." +
+									(((date.getMonth()+1)> 9)?(date.getMonth()+1):'0'+(date.getMonth()+1)) +
+									"." +
+									date.getFullYear();
+					if (($.inArray(dmy, this_week) != -1) && ($.inArray(dmy, not_closed_dates) != -1)) {
+							return [true, 'yellow_calendar', ''];
+					} else if ($.inArray(dmy, this_week) != -1) {
+							return [true, 'green_calendar', ''];
+					} else if ($.inArray(dmy, not_closed_dates) != -1) {
+							return [true, 'red_calendar', 'Осталось несписанное время'];
+					} else { return [true];}
+			},
+			onChangeMonthYear: function(year, month, inst) {
+				  $.ajax({
+						url: '/ajax/getDays?begin=01.'+month+'.'+year,
+						async:false,
+						success: function(data){
+							  not_closed_dates = eval(data);
+							  $( "#datepicker" ).datepicker( "refresh" );
+						}
+				  }); 
+			}
+		});
+		$( "#begin" ).datepicker();
+		$( "#end" ).datepicker();
+
+	    });
+	
+	function resetFilters() {
+		$(".chzn-select").val('');
+		$(".chzn-select").trigger("liszt:updated")
+	}
+</script>
+<div id="container" class="append-1 prepend-1">
+<div id="content-main" class="span-29 last">
+<table class="hdrTbl">
+<tr>
+	<td rowspan="2" style="padding-bottom:1px;width:200px;">
+		<div id="datepicker" class="span-5 last" style="width:96%;height:170px;float:none;clear:both;display:block;vertical-align:top;"></div>
+	</td>
+	<td width="167px">  
+		<div class="span-4 error" style="float:none;margin-left:10px"><a class="iframe" href="{{ path('report_new') }}">Добавить отчет</a></div>
+	</td>
+{% if show_report_links %}
+	<td width="260px" style="padding-bottom:6px;">
+		<!--div class="span-6" style="float:none;"--><nobr><a href="user_day"><img border="0" src="/css/blueprint/plugins/link-icons/icons/xls.png"/></a>
+		<a href="user_day">Заполняемость&nbsp;ежедневных&nbsp;отчетов по сотрудникам</a>,
+		<a href="/report_project">по проектам</a>,
+		<a href="/report_task">по типам задач</a></nobr><!--/div--><br/>
+		
+		<!--div class="span-14 last" style="float:none;"--><nobr><a href="user_day"><img border="0" src="/css/blueprint/plugins/link-icons/icons/xls.png"/></a> <a href="cost">Плановая&nbsp;и&nbsp;фактическая&nbsp;себестоимость</a></nobr>
+		<br/><nobr><a href="user_day"><img border="0" src="/css/blueprint/plugins/link-icons/icons/xls.png"/></a> <a href="/competence">Реестр&nbsp;компетенций</a></nobr>
+		<!--/div-->
+	</td><td style="overflow:hidden;"><div style="width:350px">&nbsp;</div></td>
+</tr>	
+{% else %}
+  <td><div class="span-24 last"></div></td><td>&nbsp;</td></tr>
+{% endif %}
+<tr>
+<td colspan="3" style="padding-left:10px;">
+<div class="last" style="clear:both;float:none;">
+<form class="inline" name="report_filter" action="{{ path('report_search') }}" method="get" {{ form_enctype(search_form) }}>
+  <div class="span-4 small">
+  <select class="chzn-select" name="project[]" style="width:148px;" multiple="multiple" data-placeholder="Проект">
+  {% for project in projects %}
+      <option value="{{ project.id }}">{{ project.title }}</option>
+  {% endfor%}
+  </select>
+  </div>
+
+  <div class="span-4 small">
+  <select class="chzn-select" name="manager[]" style="width:148px;" multiple="multiple" data-placeholder="Менеджер проекта">
+  {% for manager in managers %}
+      <option value="{{ manager.id }}">{{ manager.title }}</option>
+  {% endfor%}
+  </select>
+  </div>
+
+  <div class="span-4 small">
+  <select class="chzn-select" name="subcontract[]" style="width:148px;" multiple="multiple" data-placeholder="Подразделение">
+  {% for subcontract in subcontracts %}
+      <option value="{{ subcontract.id }}">{{ subcontract.title }}</option>
+  {% endfor%}
+  </select>
+  </div>
+
+  <div class="span-4 small">
+  <select class="chzn-select" name="client[]" style="width:148px;" multiple="multiple" data-placeholder="Клиент">
+  {% for client in clients %}
+      <option value="{{ client.id }}">{{ client.title }}</option>
+  {% endfor%}
+  </select>
+  </div>
+
+  <div class="span-4 small">
+  <select class="chzn-select" name="projectgroup[]" style="width:148px;" multiple="multiple" data-placeholder="Группы проектов">
+  {% for projectgroup in projectgroups %}
+      <option value="{{ projectgroup.id }}">{{ projectgroup.title }}</option>
+  {% endfor%}
+  </select>
+  </div>
+  
+	<div class="span-4 small">
+		<input type="text" name="text" id="text" style="width:148px;">
+	</div>
+
+	<div class="span-4 small">
+		<input type="text" id="begin" name="begin" style="width:100px; margin-right:10px;" value=""/>
+  		<input type="text" id="end" name="end" style="width:100px;" value=""/>
+	</div>
+
+  	<div class="span-2 small last">
+    	{{ form_widget(search_form) }}
+    <input type="submit" value="Найти" class="button">
+<!--  <div class="btn_filtr" onClick="document.report_filter.submit()">Применить</div><br />
+  <div class="btn_filtr" onClick="resetFilters()">Сбросить фильтр</div>
+-->
+  </div>
+</form>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr class="space" style="margin:0px;clear:both;"/>
+<div class="span-27" style="float:none;clear:both;display:block;padding-top:10px;">
+
+      <table class="main_cont_rep">
+          <tr>
+            <th class="th1">Проект</th>
+            <th class="th2">Отчет по проекту</th>
+            <th class="th3">Время</th>
+            <th class="th4">Тип работ</th>
+            <th class="th6">&nbsp;</th>
+          </tr>
+    {% for day in days|reverse %}
+	{% if day['show'] %}
+          <tr class="tr1">
+            <td><div class="date1">{{day["ts"]|date("d")}} {{ru_month[day["ts"]|date("n")]}} {{day["ts"]|date("Y")}}</div></td>
+            <td>&nbsp;</td>
+            <td colspan="3">
+            {% if not day["weekend"] %}
+				  {% if day["sum"] < time%}
+				  <div class="voskl">
+						<div class="div1">
+							  <div class="div2">
+									<a class="iframe" href="{{ path('report_new', { 'day': day["ts"] }) }}">Распишите еще {{ time-day["sum"] }} час рабочего времени</a>
+							  </div>
+						</div>
+				  </div>
+				  {%endif%}
+            {% endif %}
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+    {% for entity in entities[day["ts"]] %}
+          <!--tr class="tr_razd_1">
+            <td><img src="/img/u1.png" alt=""></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><img src="/img/u2.png" alt="" align="right"></td>
+          </tr-->
+          <tr class="tr2{% if entity.generated == 1%}-generated{%endif%}">
+            <td class="td1">
+				  <a href="{{ path('report_search', { 'project': entity.project.id }) }}">{{ entity.project }}</a>
+			</td>
+            <td class="desc">		  
+				<div class="deCont">{{ entity.description|raw }}</div>
+			</td>
+            <td>
+				  <div class="time1">
+						<div class="div1">
+							  {{ entity.time }}
+						</div>
+				  </div>
+			</td>
+            <td class="td4">
+				  {{ entity.task }}
+			</td>
+            <td class="td6">
+				  <div class="btn_edit">
+						<a class="iframe" href="{{ path('report_edit', { 'id': entity.id }) }}">редактировать</a>
+				  </div>
+			</td>
+          </tr>
+          <!--tr class="tr_razd_2">
+            <td><img src="/img/u4.png" alt=""></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><img src="/img/u3.png" alt="" align="right"></td>
+          </tr-->
+    {% endfor %}
+	{%endif%}
+    {% endfor %}
+        </table>
+</div>
+</div>
+{% endblock %}

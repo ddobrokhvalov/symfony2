@@ -1,0 +1,6 @@
+[26.10.2011 12:48:40] Found 1 employees in file ./employers_110819_0_0.xml
+[26.10.2011 12:48:46] Employee 8869 ВОРОБЬЕВА ЕКАТЕРИНА СЕРГЕЕВНА updated in table employees
+[26.10.2011 12:48:46] Employee 8869 ВОРОБЬЕВА ЕКАТЕРИНА СЕРГЕЕВНА inserted in table employees_history
+[26.10.2011 12:48:46] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:48:46] Old records in table employees: 373. Total: 374 records.
+[26.10.2011 12:48:46] In table employees_history inserted: 1 records, copied from table employees: 373 records.

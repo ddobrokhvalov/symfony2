@@ -1,0 +1,6 @@
+Сотрудник;{% for month in months %}"{{ month }}";{% endfor %}Сумма;
+
+{% for entity in entities%}"{{entity['employee']}}";{% for month,key in months %}"{{entity[months[key]]|replace({'.': ','})}}";{% endfor %}{{entity['sum']|replace({'.': ','})}}
+{% endfor %}
+Сумма;{% for month, key in months %}{{month_sums[months[key]]|replace({'.': ','})}};{% endfor %}{{full_sum|replace({'.': ','})}}
+

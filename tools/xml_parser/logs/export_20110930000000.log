@@ -1,0 +1,8 @@
+[26.10.2011 12:52:51] Found 2 employees in file ./employers_110930_0_0.xml
+[26.10.2011 12:52:53] Employee 8724 ЛАВРЕНОВА ТАТЬЯНА АНАТОЛЬЕВНА updated in table employees
+[26.10.2011 12:52:53] Employee 8724 ЛАВРЕНОВА ТАТЬЯНА АНАТОЛЬЕВНА inserted in table employees_history
+[26.10.2011 12:52:57] Employee 8897 ЕВТЮХИН ИВАН ВАЛЕНТИНОВИЧ inserted in table employees
+[26.10.2011 12:52:57] Employee 8897 ЕВТЮХИН ИВАН ВАЛЕНТИНОВИЧ inserted in table employees_history
+[26.10.2011 12:52:57] In table employees inserted: 1 records, updated: 1 records.
+[26.10.2011 12:52:57] Old records in table employees: 400. Total: 402 records.
+[26.10.2011 12:52:57] In table employees_history inserted: 2 records, copied from table employees: 400 records.

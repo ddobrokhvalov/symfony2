@@ -1,0 +1,8 @@
+[26.10.2011 12:29:50] Found 2 employees in file ./employers_110105_0_0.xml
+[26.10.2011 12:29:53] Employee 8752 РЫЖКОВА ДАРЬЯ СТАНИСЛАВОВНА updated in table employees
+[26.10.2011 12:29:53] Employee 8752 РЫЖКОВА ДАРЬЯ СТАНИСЛАВОВНА inserted in table employees_history
+[26.10.2011 12:29:54] Employee 8744 СПИРИНА ЛЮДМИЛА ПЕТРОВНА updated in table employees
+[26.10.2011 12:29:54] Employee 8744 СПИРИНА ЛЮДМИЛА ПЕТРОВНА inserted in table employees_history
+[26.10.2011 12:29:54] In table employees inserted: 0 records, updated: 2 records.
+[26.10.2011 12:29:54] Old records in table employees: 295. Total: 297 records.
+[26.10.2011 12:29:54] In table employees_history inserted: 2 records, copied from table employees: 295 records.

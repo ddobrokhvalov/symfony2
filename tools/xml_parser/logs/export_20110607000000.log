@@ -1,0 +1,6 @@
+[26.10.2011 12:41:40] Found 1 employees in file ./employers_110607_0_0.xml
+[26.10.2011 12:41:42] Employee 6845 КРИЧУН АЛЕКСАНДР АЛЕКСАНДРОВИЧ updated in table employees
+[26.10.2011 12:41:42] Employee 6845 КРИЧУН АЛЕКСАНДР АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:41:46] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:41:46] Old records in table employees: 336. Total: 337 records.
+[26.10.2011 12:41:46] In table employees_history inserted: 1 records, copied from table employees: 336 records.

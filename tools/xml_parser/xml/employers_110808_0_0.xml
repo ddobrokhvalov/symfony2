@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08861">
+		<SirName>КОНОВАЛОВА</SirName>
+		<FirstName>ДАРЬЯ</FirstName>
+		<PatronymicName>СЕРГЕЕВНА</PatronymicName>
+		<IDManager>01114</IDManager>
+		<Department>Департамент систем сбора информации</Department>
+		<IDDepartment>01295</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email/>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08862">
+		<SirName>КУРИЦЫН</SirName>
+		<FirstName>МИХАИЛ</FirstName>
+		<PatronymicName>ВАСИЛЬЕВИЧ</PatronymicName>
+		<IDManager/>
+		<Department>Отдел тендеров</Department>
+		<IDDepartment>00804</IDDepartment>
+		<Post>Начальник РСО</Post>
+		<IDPost>00781</IDPost>
+		<Email/>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08818">
+		<SirName>ТЯПАЕВА</SirName>
+		<FirstName>ИРИНА</FirstName>
+		<PatronymicName>ВИКТОРОВНА</PatronymicName>
+		<IDManager>08853</IDManager>
+		<Department>Бухгалтерия 1 (Макеева)</Department>
+		<IDDepartment>01326</IDDepartment>
+		<Post>бухгалтер</Post>
+		<IDPost>00005</IDPost>
+		<Email>ityapaeva@armd.ru</Email>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

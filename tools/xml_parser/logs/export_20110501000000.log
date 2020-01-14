@@ -1,0 +1,24 @@
+[26.10.2011 12:38:35] Found 10 employees in file ./employers_110501_0_0.xml
+[26.10.2011 12:38:35] Employee 8679 БАСОВ АЛЕКСЕЙ ВЛАДИМИРОВИЧ updated in table employees
+[26.10.2011 12:38:36] Employee 8679 БАСОВ АЛЕКСЕЙ ВЛАДИМИРОВИЧ inserted in table employees_history
+[26.10.2011 12:38:37] Employee 979 КРУГЛЯКОВ РОМАН АЛЕКСАНДРОВИЧ updated in table employees
+[26.10.2011 12:38:37] Employee 979 КРУГЛЯКОВ РОМАН АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:38:38] Employee 1103 МИРАКОВ АЛЕКСАНДР ВЛАДИМИРОВИЧ updated in table employees
+[26.10.2011 12:38:38] Employee 1103 МИРАКОВ АЛЕКСАНДР ВЛАДИМИРОВИЧ inserted in table employees_history
+[26.10.2011 12:38:39] Employee 8644 СТЕПАНОВ АНДРЕЙ АЛЕКСАНДРОВИЧ updated in table employees
+[26.10.2011 12:38:39] Employee 8644 СТЕПАНОВ АНДРЕЙ АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:38:39] Employee 4527 ТАРАСОВ АЛЕКСАНДР СЕРГЕЕВИЧ updated in table employees
+[26.10.2011 12:38:39] Employee 4527 ТАРАСОВ АЛЕКСАНДР СЕРГЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:38:40] Employee 8791 ДРУЖКОВА ЕЛЕНА ГРИГОРЬЕВНА updated in table employees
+[26.10.2011 12:38:40] Employee 8791 ДРУЖКОВА ЕЛЕНА ГРИГОРЬЕВНА inserted in table employees_history
+[26.10.2011 12:38:40] Employee 8819 АРХИПОВ СЕРГЕЙ НИКОЛАЕВИЧ updated in table employees
+[26.10.2011 12:38:40] Employee 8819 АРХИПОВ СЕРГЕЙ НИКОЛАЕВИЧ inserted in table employees_history
+[26.10.2011 12:38:40] Employee 8822 ИРХИНА ОЛЬГА АНАТОЛЬЕВНА updated in table employees
+[26.10.2011 12:38:40] Employee 8822 ИРХИНА ОЛЬГА АНАТОЛЬЕВНА inserted in table employees_history
+[26.10.2011 12:38:40] Employee 8820 КАДЗАСОВ АНТОН АЛЕКСЕЕВИЧ updated in table employees
+[26.10.2011 12:38:40] Employee 8820 КАДЗАСОВ АНТОН АЛЕКСЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:38:40] Employee 8821 МАРТЫНОВ НИКОЛАЙ СЕРГЕЕВИЧ inserted in table employees
+[26.10.2011 12:38:40] Employee 8821 МАРТЫНОВ НИКОЛАЙ СЕРГЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:38:40] In table employees inserted: 1 records, updated: 9 records.
+[26.10.2011 12:38:40] Old records in table employees: 318. Total: 328 records.
+[26.10.2011 12:38:40] In table employees_history inserted: 10 records, copied from table employees: 318 records.

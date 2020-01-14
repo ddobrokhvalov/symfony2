@@ -1,0 +1,18 @@
+Armd\ProjectBundle\Entity\Help:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+      length: 255
+    anchor:
+      type: string
+      length: 255
+    text:
+      type: text
+  lifecycleCallbacks: {  }

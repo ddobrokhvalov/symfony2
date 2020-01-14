@@ -1,0 +1,26 @@
+[26.10.2011 12:49:03] Found 11 employees in file ./employers_110823_0_0.xml
+[26.10.2011 12:49:09] Employee 8874 АЩЕУЛОВ ЕВГЕНИЙ СЕРГЕЕВИЧ inserted in table employees
+[26.10.2011 12:49:09] Employee 8874 АЩЕУЛОВ ЕВГЕНИЙ СЕРГЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8875 БЕЛАВИН ВАЛЕРИЙ ВАЛЕРЬЕВИЧ inserted in table employees
+[26.10.2011 12:49:09] Employee 8875 БЕЛАВИН ВАЛЕРИЙ ВАЛЕРЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8876 БОБОРЫКИН АЛЕКСЕЙ ИГОРЕВИЧ inserted in table employees
+[26.10.2011 12:49:09] Employee 8876 БОБОРЫКИН АЛЕКСЕЙ ИГОРЕВИЧ inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8872 БУЯНОВА ОЛЬГА АЛЕКСАНДРОВНА inserted in table employees
+[26.10.2011 12:49:09] Employee 8872 БУЯНОВА ОЛЬГА АЛЕКСАНДРОВНА inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8873 ВОЛКОВА НАТАЛЬЯ ВЛАДИМИРОВНА inserted in table employees
+[26.10.2011 12:49:09] Employee 8873 ВОЛКОВА НАТАЛЬЯ ВЛАДИМИРОВНА inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8877 ЗАЦЕПИН АЛЕКСАНДР ВЛАДИСЛАВОВИЧ inserted in table employees
+[26.10.2011 12:49:09] Employee 8877 ЗАЦЕПИН АЛЕКСАНДР ВЛАДИСЛАВОВИЧ inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8878 КИЩЕНКО ИВАН СЕРГЕЕВИЧ inserted in table employees
+[26.10.2011 12:49:09] Employee 8878 КИЩЕНКО ИВАН СЕРГЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8879 ЛЕОНОВ ВЛАДИМИР НИКОЛАЕВИЧ inserted in table employees
+[26.10.2011 12:49:09] Employee 8879 ЛЕОНОВ ВЛАДИМИР НИКОЛАЕВИЧ inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8880 МЕШКОВ ВЯЧЕСЛАВ ВАСИЛЬЕВИЧ inserted in table employees
+[26.10.2011 12:49:09] Employee 8880 МЕШКОВ ВЯЧЕСЛАВ ВАСИЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8881 МУКОВНИКОВ АНДРЕЙ СЕРГЕЕВИЧ inserted in table employees
+[26.10.2011 12:49:09] Employee 8881 МУКОВНИКОВ АНДРЕЙ СЕРГЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:49:09] Employee 8882 СТОЛЯРОВ СЕРГЕЙ ВАСИЛЬЕВИЧ inserted in table employees
+[26.10.2011 12:49:09] Employee 8882 СТОЛЯРОВ СЕРГЕЙ ВАСИЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:49:09] In table employees inserted: 11 records, updated: 0 records.
+[26.10.2011 12:49:09] Old records in table employees: 376. Total: 387 records.
+[26.10.2011 12:49:09] In table employees_history inserted: 11 records, copied from table employees: 376 records.

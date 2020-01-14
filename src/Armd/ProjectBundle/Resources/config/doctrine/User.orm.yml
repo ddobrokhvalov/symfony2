@@ -1,0 +1,17 @@
+Armd\ProjectBundle\Entity\User:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+  oneToOne:
+    employee:
+      targetEntity: Employee
+      inversedBy: user
+      joinColumn:
+        name: employee_id
+        referencedColumnName: id
+  lifecycleCallbacks: {  }

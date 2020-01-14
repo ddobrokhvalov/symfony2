@@ -1,0 +1,12 @@
+Armd\ProjectBundle\Entity\Holiday:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    day:
+      type: date
+  lifecycleCallbacks: {  }

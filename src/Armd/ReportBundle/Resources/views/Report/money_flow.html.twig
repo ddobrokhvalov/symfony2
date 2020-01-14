@@ -1,0 +1,27 @@
+<table>
+    <tr>
+        <td>дата</td>
+        <td>сумма</td>
+        <td>контрагент</td>
+        <td>клиент</td>
+        <td>тикер</td>
+        <td>юр лицо</td>
+        <td>аналитика управленческого учета</td>
+    </tr>
+{% for row in flow %}
+<tr {% if loop.index is odd %}} style="background: #EEEEEE;" {% endif %}>
+    <td>{{ row.date }}</td>
+    <td>{{ row.value }} руб.</td>
+    <td>{{ row.contractor }}</td>
+    <td>{{ row.client }}</td>
+    <td>{{ row.ticker }}</td>
+    <td>{{ row.legal }}</td>
+    <td>{{ row.analytics }}</td>
+</tr>
+{% endfor %}
+<tr>
+    <td><b>ИТОГО:</b></td>
+    <td>{{ sum }} руб.</td>
+    <td colspan="5"></td>
+</tr>
+</table>

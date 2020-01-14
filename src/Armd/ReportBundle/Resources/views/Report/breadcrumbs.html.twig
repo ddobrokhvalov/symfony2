@@ -1,0 +1,8 @@
+<div id="breadcrumbs">
+	<a href="/">Главная</a> &gt;
+	{% if breadcrumbs %}
+		{% for breadcrumb in breadcrumbs %}
+			<a href="{{ breadcrumb['link'] }}">{{ breadcrumb['title'] }}</a> {% if loop.last != true %} &gt; {% endif %}
+		{% endfor %}
+	{% endif %}
+</div>

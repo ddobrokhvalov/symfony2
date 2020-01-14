@@ -1,0 +1,10 @@
+[26.10.2011 12:36:18] Found 3 employees in file ./employers_110404_0_0.xml
+[26.10.2011 12:36:20] Employee 8703 КУКСИН АЛЕКСЕЙ АНАТОЛЬЕВИЧ updated in table employees
+[26.10.2011 12:36:20] Employee 8703 КУКСИН АЛЕКСЕЙ АНАТОЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:36:23] Employee 8811 ВОЛОДКЕВИЧ ВАДИМ ИГОРЕВИЧ inserted in table employees
+[26.10.2011 12:36:23] Employee 8811 ВОЛОДКЕВИЧ ВАДИМ ИГОРЕВИЧ inserted in table employees_history
+[26.10.2011 12:36:23] Employee 8812 СЕМЕНОВ АНАТОЛИЙ АЛЕКСАНДРОВИЧ inserted in table employees
+[26.10.2011 12:36:23] Employee 8812 СЕМЕНОВ АНАТОЛИЙ АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:36:23] In table employees inserted: 2 records, updated: 1 records.
+[26.10.2011 12:36:23] Old records in table employees: 319. Total: 322 records.
+[26.10.2011 12:36:23] In table employees_history inserted: 3 records, copied from table employees: 319 records.

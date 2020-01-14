@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08730">
+		<SirName>ВЕТРЯКОВ</SirName>
+		<FirstName>МАКСИМ</FirstName>
+		<PatronymicName>ЮРЬЕВИЧ</PatronymicName>
+		<IDManager>08051</IDManager>
+		<Department>Отдел контент-проектов</Department>
+		<IDDepartment>01314</IDDepartment>
+		<Post>Программист</Post>
+		<IDPost>00662</IDPost>
+		<Email>mvetryakov@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08864">
+		<SirName>СТЕПАНОВА</SirName>
+		<FirstName>АЛИНА</FirstName>
+		<PatronymicName>АНДРЕЕВНА</PatronymicName>
+		<IDManager>01026</IDManager>
+		<Department>Департамент корпоративных продаж (Савчук)</Department>
+		<IDDepartment>00747</IDDepartment>
+		<Post>менеджер по маркетингу</Post>
+		<IDPost>00135</IDPost>
+		<Email/>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

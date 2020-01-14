@@ -1,0 +1,6 @@
+[26.10.2011 12:45:01] Found 1 employees in file ./employers_110712_0_0.xml
+[26.10.2011 12:45:01] Employee 7314 АФАНАСЬЕВА ЕЛИЗАВЕТА АНДРЕЕВНА updated in table employees
+[26.10.2011 12:45:01] Employee 7314 АФАНАСЬЕВА ЕЛИЗАВЕТА АНДРЕЕВНА inserted in table employees_history
+[26.10.2011 12:45:06] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:45:06] Old records in table employees: 354. Total: 355 records.
+[26.10.2011 12:45:06] In table employees_history inserted: 1 records, copied from table employees: 354 records.

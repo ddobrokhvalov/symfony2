@@ -1,0 +1,8 @@
+[26.10.2011 12:41:46] Found 2 employees in file ./employers_110608_0_0.xml
+[26.10.2011 12:41:49] Employee 8600 ТУКМАНОВ АНДРЕЙ АНДРЕЕВИЧ updated in table employees
+[26.10.2011 12:41:49] Employee 8600 ТУКМАНОВ АНДРЕЙ АНДРЕЕВИЧ inserted in table employees_history
+[26.10.2011 12:41:50] Employee 8796 МАШАРОВА ТАТЬЯНА НИКОЛАЕВНА updated in table employees
+[26.10.2011 12:41:50] Employee 8796 МАШАРОВА ТАТЬЯНА НИКОЛАЕВНА inserted in table employees_history
+[26.10.2011 12:41:51] In table employees inserted: 0 records, updated: 2 records.
+[26.10.2011 12:41:51] Old records in table employees: 335. Total: 337 records.
+[26.10.2011 12:41:51] In table employees_history inserted: 2 records, copied from table employees: 335 records.

@@ -1,0 +1,8 @@
+Названия строк;Затраченное время в часах;Стоимость в рублях;С учетом коэффициента 3,6
+{% for entity in entities%}"{{ entity['title'] }}";"{{ entity['sum']['time'] }}";"{{ entity['sum']['cost'] }} р.";"{{ entity['sum']['cost_multiplied'] }} р.";
+{% for project in entity['projects'] %}"{{ project['title'] }}";"{{ project['project_sum']['time'] }}";"{{ project['project_sum']['cost'] }} р.";"{{ project['project_sum']['cost_multiplied'] }} р.";
+{% for employee in project['employees'] %}"{{ employee['name'] }}";"{{ employee['time'] }}";"{{ employee['cost'] }} р.";"{{ employee['cost_multiplied'] }} р.";
+{% endfor %}
+{% endfor %}
+{% endfor %}
+"Общий итог";"{{ sum['time'] }}";"{{ sum['cost'] }} р.";"{{ sum['cost_multiplied'] }} р.";

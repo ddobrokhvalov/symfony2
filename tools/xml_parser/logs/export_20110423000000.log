@@ -1,0 +1,10 @@
+[26.10.2011 12:37:56] Found 3 employees in file ./employers_110423_0_0.xml
+[26.10.2011 12:37:57] Employee 8781 ДАВЫДОВА ЮЛИЯ СЕРГЕЕВНА updated in table employees
+[26.10.2011 12:37:57] Employee 8781 ДАВЫДОВА ЮЛИЯ СЕРГЕЕВНА inserted in table employees_history
+[26.10.2011 12:37:57] Employee 8731 КАЙТАЗ АЛЕКСЕЙ АЛЕКСАНДРОВИЧ updated in table employees
+[26.10.2011 12:37:57] Employee 8731 КАЙТАЗ АЛЕКСЕЙ АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:37:59] Employee 8711 ПРОТОПОПОВ СЕРГЕЙ ВЛАДИМИРОВИЧ updated in table employees
+[26.10.2011 12:37:59] Employee 8711 ПРОТОПОПОВ СЕРГЕЙ ВЛАДИМИРОВИЧ inserted in table employees_history
+[26.10.2011 12:38:01] In table employees inserted: 0 records, updated: 3 records.
+[26.10.2011 12:38:01] Old records in table employees: 322. Total: 325 records.
+[26.10.2011 12:38:01] In table employees_history inserted: 3 records, copied from table employees: 322 records.

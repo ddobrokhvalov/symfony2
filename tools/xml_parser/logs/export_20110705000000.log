@@ -1,0 +1,8 @@
+[26.10.2011 12:44:22] Found 2 employees in file ./employers_110705_0_0.xml
+[26.10.2011 12:44:29] Employee 8846 БОГОМОЛОВА МАРИЯ ЛЬВОВНА inserted in table employees
+[26.10.2011 12:44:29] Employee 8846 БОГОМОЛОВА МАРИЯ ЛЬВОВНА inserted in table employees_history
+[26.10.2011 12:44:29] Employee 8845 КАЗАКОВА ВАСИЛИСА ГЕННАДЬЕВНА inserted in table employees
+[26.10.2011 12:44:29] Employee 8845 КАЗАКОВА ВАСИЛИСА ГЕННАДЬЕВНА inserted in table employees_history
+[26.10.2011 12:44:29] In table employees inserted: 2 records, updated: 0 records.
+[26.10.2011 12:44:29] Old records in table employees: 350. Total: 352 records.
+[26.10.2011 12:44:29] In table employees_history inserted: 2 records, copied from table employees: 350 records.

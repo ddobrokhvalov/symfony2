@@ -1,0 +1,8 @@
+[26.10.2011 12:50:25] Found 2 employees in file ./employers_110905_0_0.xml
+[26.10.2011 12:50:32] Employee 8886 КУХАРЕВА ОЛЬГА ЮРЬЕВНА inserted in table employees
+[26.10.2011 12:50:32] Employee 8886 КУХАРЕВА ОЛЬГА ЮРЬЕВНА inserted in table employees_history
+[26.10.2011 12:50:32] Employee 8885 УКОЛОВ ДМИТРИЙ ЮРЬЕВИЧ inserted in table employees
+[26.10.2011 12:50:32] Employee 8885 УКОЛОВ ДМИТРИЙ ЮРЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:50:32] In table employees inserted: 2 records, updated: 0 records.
+[26.10.2011 12:50:32] Old records in table employees: 389. Total: 391 records.
+[26.10.2011 12:50:32] In table employees_history inserted: 2 records, copied from table employees: 389 records.

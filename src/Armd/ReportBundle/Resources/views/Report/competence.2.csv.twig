@@ -1,0 +1,3 @@
+"ФИО";"Должность";"Подразделение";"Кол-во часов";"Список проектов"
+{% for employee in employees %}"{{ employee.surname }} {{ employee.name }} {{ employee.patronymic }}";"{{ employee.pst_title }}";"{{ employee.d_title }}";"{{ employee.sm }} ч.";"{% for employee_project in employee_projects[employee.id]%}{{ employee_project.title }}{% if loop.last != true%}, {% endif %}{% endfor %}"
+{%endfor%}

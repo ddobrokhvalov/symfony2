@@ -1,0 +1,10 @@
+[26.10.2011 12:38:31] Found 3 employees in file ./employers_110430_0_0.xml
+[26.10.2011 12:38:31] Employee 8049 ВИЛЬДАНОВА АЛФИЕ ХАСЯНОВНА updated in table employees
+[26.10.2011 12:38:31] Employee 8049 ВИЛЬДАНОВА АЛФИЕ ХАСЯНОВНА inserted in table employees_history
+[26.10.2011 12:38:34] Employee 8682 ТРИФОНОВА ЮЛИЯ ДМИТРИЕВНА updated in table employees
+[26.10.2011 12:38:34] Employee 8682 ТРИФОНОВА ЮЛИЯ ДМИТРИЕВНА inserted in table employees_history
+[26.10.2011 12:38:35] Employee 8625 ЧУДНОВСКИЙ АНДРЕЙ ЮРЬЕВИЧ updated in table employees
+[26.10.2011 12:38:35] Employee 8625 ЧУДНОВСКИЙ АНДРЕЙ ЮРЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:38:35] In table employees inserted: 0 records, updated: 3 records.
+[26.10.2011 12:38:35] Old records in table employees: 324. Total: 327 records.
+[26.10.2011 12:38:35] In table employees_history inserted: 3 records, copied from table employees: 324 records.

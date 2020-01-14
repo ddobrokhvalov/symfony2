@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08629">
+		<SirName>ГОРЯЧЕВА</SirName>
+		<FirstName>ОЛЬГА</FirstName>
+		<PatronymicName>ИГОРЕВНА</PatronymicName>
+		<IDManager>01026</IDManager>
+		<Department>Департамент корпоративных продаж (Савчук)</Department>
+		<IDDepartment>00747</IDDepartment>
+		<Post>менеджер по маркетингу</Post>
+		<IDPost>00135</IDPost>
+		<Email>ogoryacheva@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

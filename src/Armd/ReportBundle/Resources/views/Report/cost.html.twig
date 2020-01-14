@@ -1,0 +1,310 @@
+{% extends '::base.html.twig' %}
+{% block title %}Корпоративная система отчетов {% endblock %}
+{% block header %}Корпоративная система отчетов. {{ user }}, <a href="{{ path('fos_user_security_logout') }}">выйти</a>. {% endblock %}
+{% block body %}
+<style>
+    table,tr,td {
+        border-collapse: collapse;
+    }
+	.project_type_7 {
+		background: #D9E8F7;
+	}
+	.project_type_7 td, #tbody tr.project_type_7:nth-child(even) td,  tbody tr.even.project_type_7 td{
+		background: #D9E8F7;}
+	.project_type_8 {
+		background: #F9E1E0;
+	}
+	.project_type_8 td, #tbody tr.project_type_8:nth-child(even) td,  tbody tr.even.project_type_8 td{
+		background: #F9E1E0;}
+	.project_type_9 {
+		background: #ECE0F9;
+	}
+	.project_type_9 td, #tbody tr.project_type_9:nth-child(even) td,  tbody tr.even.project_type_9 td{
+		background: #ECE0F9;}
+	span.project_type_7, span.project_type_8, span.project_type_9{padding:4px;margin-right:4px;} 
+	#legend {
+		bottom: 50px;
+		right: 20px;
+		margin: 30px 0 0 0;
+		padding: 5px;
+		text-align: right;
+		border: 1px solid;
+		background: #FFFFFF;
+		cursor: move;
+		width:100px;
+	}
+	.append-1{min-width:1030px;}
+	.tblHd{float:left;margin:0px;padding:0px 40px 0px 0px;font-size:13px;font-weight:bold;}
+	.fltTbl td{padding-rigth:10px;}
+</style>
+<link rel="stylesheet" href="/css/smoothness/jquery-ui-1.8.14.custom.css">
+<script type="text/javascript" src="/js/jquery-ui-1.8.14.custom.min.js"></script>
+	<script type="text/javascript" src="/js/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-draggable.custom.min.js"></script>
+<script type="text/javascript"> 
+	jQuery(document).ready(function(){
+		
+		$("#legend").draggable();
+		
+		$('#department').change(function(){
+           if ($(this).val() != '0') {
+                window.location.search = '?department='+$(this).val()+'&begin={{begin}}&end={{end}}'+($('#selected_manager').val()?'&manager='+$('#selected_manager').val():'')+($('#selected_client').val()?'&client='+$('#selected_client').val():'')+($('#selected_type').val()?'&type='+$('#selected_type').val():'');
+           } else {
+                window.location.search = '?begin={{begin}}&end={{end}}'+($('#selected_manager').val()?'&manager='+$('#selected_manager').val():'')+($('#selected_client').val()?'&client='+$('#selected_client').val():'')+($('#selected_type').val()?'&type='+$('#selected_type').val():'');
+           }
+        });
+		
+		$('#manager').change(function(){
+           if ($(this).val() != '0') {
+                window.location.search = '?manager='+$(this).val()+'&begin={{begin}}&end={{end}}'+($('#selected_department').val()?'&department='+$('#selected_department').val():'')+($('#selected_client').val()?'&client='+$('#selected_client').val():'')+($('#selected_type').val()?'&type='+$('#selected_type').val():'');
+           } else {
+                window.location.search = '?begin={{begin}}&end={{end}}'+($('#selected_department').val()?'&department='+$('#selected_department').val():'')+($('#selected_client').val()?'&client='+$('#selected_client').val():'')+($('#selected_type').val()?'&type='+$('#selected_type').val():'');
+           }
+        });
+		
+		$('#client').change(function(){
+           if ($(this).val() != '0') {
+                window.location.search = '?client='+$(this).val()+'&begin={{begin}}&end={{end}}'+($('#selected_department').val()?'&department='+$('#selected_department').val():'')+($('#selected_type').val()?'&type='+$('#selected_type').val():'');
+           } else {
+                window.location.search = '?begin={{begin}}&end={{end}}'+($('#selected_department').val()?'&department='+$('#selected_department').val():'')+($('#selected_type').val()?'&type='+$('#selected_type').val():'');
+           }
+        });
+		
+		$('#type').change(function(){
+           if ($(this).val() != '0') {
+                window.location.search = '?type='+$(this).val()+'&begin={{begin}}&end={{end}}'+($('#selected_department').val()?'&department='+$('#selected_department').val():'')+($('#selected_client').val()?'&client='+$('#selected_client').val():'');
+           } else {
+                window.location.search = '?begin={{begin}}&end={{end}}'+($('#selected_department').val()?'&department='+$('#selected_department').val():'')+($('#selected_client').val()?'&client='+$('#selected_client').val():'');
+           }
+        });
+		
+		$( "#begin" ).datepicker({
+			onSelect: function(dateText, inst) {
+					window.location.search = '?begin='+dateText+'&end={{end}}'+($('#selected_department').val()?'&department='+$('#selected_department').val():'')+($('#selected_manager').val()?'&manager='+$('#selected_manager').val():'')+($('#selected_client').val()?'&client='+$('#selected_client').val():'')+($('#selected_type').val()?'&type='+$('#selected_type').val():'');		
+			}
+		});
+		$( "#end" ).datepicker({
+			onSelect: function(dateText, inst) {
+					window.location.search = '?begin={{begin}}&end='+dateText+($('#selected_department').val()?'&department='+$('#selected_department').val():'')+($('#selected_manager').val()?'&manager='+$('#selected_manager').val():'')+($('#selected_client').val()?'&client='+$('#selected_client').val():'')+($('#selected_type').val()?'&type='+$('#selected_type').val():'');		
+			}
+		});
+		
+		$('.money').each(function(index, element) {
+			var split = $(element).text().split('.');
+			split[0] = split[0].split('').reverse();
+			var result = '';
+			for (i=0;i<split[0].length;i++){
+				if (i % 3 == 0) {
+					result = result + ' ';
+				}
+				result = result + split[0][i];
+			}
+			var money = result.split('').reverse().join('').trim();
+			if (split[1] != undefined) {
+				money = money + '.' + split[1];
+			}
+			$(element).text(money);
+			
+		});
+		
+		$('#only_opened_checkbox').change(function(){
+			if ($(this).is(':checked')) {
+				$('.closed_project').hide();
+			} else {
+				$('.closed_project').show();
+			}
+		});
+		$('#only_opened_checkbox').change();
+    });
+  </script>
+{% include "ArmdReportBundle:Report:breadcrumbs.html.twig" %}
+<div class="append-1 prepend-1">
+	<form method="get" action="">
+<div class="span-26">
+<table class="fltTbl">
+</tr>
+<td>
+  <!--div class="span-5"-->
+  {# список подразделений #}
+  <label>Подразделение</label>
+  <p><select class="filter" id="department" name="department">
+	<option value="0">Все</option>
+	{%for department in departments%}
+		<option value="{{department.id}}" {% if department.selected %} selected="selected" id="selected_department" {%endif%}>{{department.title|raw}}
+	{%endfor%}
+  </select></p>
+  {# /список подразделений #}
+<!--/div-->
+</td>
+<td>
+<!--div class="span-5"-->
+<label>Менеджер</label>
+<p><select class="filter" id="manager" name="manager">
+	<option value="0">Все</option>
+	{%for manager in managers%}
+		<option value="{{manager['id']}}" {% if manager['selected'] %} selected="selected" id="selected_manager" {%endif%}>{{manager['title']}}
+	{%endfor%}
+</select></p>
+<!--/div-->
+</td>
+<td>
+<!--div class="span-5"-->
+<label>Клиент</label>
+<p><select class="filter" id="client" name="client">
+	<option value="0">Все</option>
+	{%for client in clients%}
+		<option value="{{client['id']}}" {% if client['selected'] %} selected="selected" id="selected_client" {%endif%}>{{client['title']}}
+	{%endfor%}
+</select></p>
+<!--/div-->
+</td>
+<td>
+<!--div class="span-5"-->
+<label>Тип</label>
+<p><select class="filter" id="type" name="type">
+	<option value="0">Все
+	{%for type in types%}
+		<option value="{{type.id}}" {% if type.selected %} selected="selected" id="selected_type" {%endif%}>{{type.title}}
+	{%endfor%}
+</select></p>
+<!--/div-->
+</td>
+<td>
+  <!--div class="span-5" style="width:220px;"-->
+  <label>Период</label>
+  <p><input type="text" id="begin" name="begin" style="width:100px; margin-right:10px;" value="{{begin}}"/>
+  <input type="text" id="end" name="end" style="width:100px;" value="{{end}}"/>
+  </p>
+  <!--/div--> 
+  <!--div class="span-5" style="width:220px;"-->
+  
+  <p><br><input type="checkbox" id="only_opened_checkbox" checked="checked" /> <label for="only_opened_checkbox">Только открытые проекты</label>
+  </p>
+  <!--/div-->
+</td>
+<td style="padding-top:22px;">		
+	<!--div class="span-5"-->
+		<input type="submit" value="Применить">
+	<!--/div-->
+</td>
+</tr>
+</table>
+</div>
+		</form>
+
+<table style="clear:both;">
+<tr>
+<td>
+	<h2 class="tblHd">Плановая и фактическая себестоимость</h2>	
+</td>
+<td>
+
+  <div class="span-10">
+        <span class="project_type_7">инвестиционный</span>
+        <span class="project_type_8">коммерческий</span>
+        <span class="project_type_9">пресейл</span>
+  </div>
+</td>
+<td>
+  <div class="span-2" style="width:150px;float:right;margin-right:0px;">
+  Экспортировать в <a href="cost?export=csv"><img border="0" src="/css/blueprint/plugins/link-icons/icons/xls.png"/></a> <a href="cost?export=csv" id="export_link">CSV</a>
+  </div>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border:none;background:#ffffff;">
+<table class="projectTbl">
+    <thead>
+    <tr>
+	<th rowspan="2"></th>
+        <th rowspan="2">Проект</th>
+	<th rowspan="2">Подразделение</th>
+	<th rowspan="2">Менеджер</th>
+	<!--th rowspan="2">Аккаунт</th-->
+	<th colspan="3" align="center" style="border-left:1px #ffffff solid;">План</th>
+	<th colspan="3" align="center" style="border-left:1px #ffffff solid; border-right:1px #ffffff solid;">Факт</th>
+	<th rowspan="2">Разница в процентах</th>
+	<!--th rowspan="2">Процент выполнения проекта</th-->
+	<!--th rowspan="2"></th-->
+    </tr>
+    <tr>
+	<th style="border-left:1px #ffffff solid;">Себестоимость</th>
+	<th>Стоимость по договору</th>
+	<th>Маржа</th>
+	<th style="border-left:1px #ffffff solid;">Себестоимость</th>
+	<th>Приходы по договору</th>
+	<th style="border-right:1px #ffffff solid;">Маржа</th>
+    </tr>
+    </thead>
+
+    <tbody>
+{% for entity in entities%}
+    {% if entity['title'] %}
+	<tr style="background:#EEEEEE;">
+		<td style="vertical-align:middle;">
+		{% if entity['sums']['notice'] %}<img src="/bundles/sonataadmin/famfamfam/exclamation.png" title="Фактическая себестоимость приближается к плановому значению"/>{% endif %}</td>
+        <td colspan="3">
+			<strong>{{entity['title']}}</strong>
+			{% if entity['clients'] %} 
+				{% for client in entity['clients'] %}
+					{% if loop.first %}<br>Клиенты: {% endif %}{{ client }}{% if loop.last != true %}, {% endif %}
+				{% endfor %}
+			{% endif %}
+		</td>
+		<td style="border-left:1px #ffffff solid;"><nobr><span class="money">{{entity['sums']['plan_sum']}}</span> руб.</nobr></td>
+		<td><nobr><span class="money">{{entity['sums']['contract_cost']}}</span> руб.</nobr></td>
+		<td><nobr><span class="money">{{entity['sums']['plan_margin']}}</span> руб.</nobr></td>
+		<td style="border-left:1px #ffffff solid;"><nobr><span class="money">{{entity['sums']['report_sum']}}</span> руб.</nobr></td>
+		<td><nobr><span class="money">{{entity['sums']['income_sum']}}</span> руб.</td>
+		<td style="border-right:1px #ffffff solid;"><nobr><span class="money">{{entity['sums']['margin']}}</span> руб.</nobr></td>
+		<td>{% if entity['sums']['diff'] != NULL %}{{entity['sums']['diff']}}%{%endif%}</td>
+		<!--td></td-->
+		<!--td></td-->
+	</tr>
+	{% endif %}
+        {% for project in entity['projects'] %}
+		<tr class="project_type_{{ project.type }} {% if project['open'] == true %}opened_project{% else %}closed_project{% endif %}">
+		<td style="vertical-align:middle;">
+		{% if project['notice'] %}<img src="/bundles/sonataadmin/famfamfam/exclamation.png" title="Фактическая себестоимость приближается к плановому значению"/>{% endif %}</td>
+            <td> <a href="{{ path('report_project_card', { 'id': project['id'] }) }}">{{project['title']}}</a> (Выполнено на {{project['done_percentage']}}%)</td>
+			<td>{{project['department']}}</td>
+			<td>{{project['manager']}}</td>
+			<!--td>{{project['sales_manager']}}</td-->
+			<td style="border-left:1px #ffffff solid;"><nobr><span class="money">{{project['plan_sum']}}</span> руб.</nobr></td>
+			<td><nobr><span class="money">{{project['contract_cost']}}</span> руб.</nobr></td>
+			<td><nobr><span class="money">{{project['plan_margin']}}</span> руб.</nobr></td>
+			<td style="border-left:1px #ffffff solid;"><nobr><span class="money">{{project['report_sum']}}</span> руб.</nobr></td>
+			<td><nobr><span class="money">{{project['income_sum']}}</span> руб.</td>
+			<td style="border-right:1px #ffffff solid;"><nobr><span class="money">{{project['margin']}}</span> руб.</nobr></td>
+			<td>{% if project['diff'] != NULL %}{{project['diff']}}%{%endif%}</td>
+			<!td--></td-->
+			<!--td></td-->
+			
+		</tr>
+        {% endfor %}
+    
+{% endfor %}
+    </tbody>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+{% for item in nav  %}
+	{% if item['selected'] %}
+		{{item['title']}}&nbsp;&nbsp;
+	{% else %}
+		<a href="?from={{item['linkid']}}">{{item['title']}}</a>&nbsp;&nbsp;
+	{% endif %}
+{% endfor %}
+
+<!--div align="right">
+<div id="legend">
+<h6>Типы проектов</h6>
+	<font class="project_type_7">инвестиционный</font><br>
+	<font class="project_type_8">коммерческий</font><br>
+	<font class="project_type_9">пресейл</font><br>
+</div>
+</div-->
+{% endblock %}

@@ -1,0 +1,8 @@
+[26.10.2011 12:51:58] Found 2 employees in file ./employers_110921_0_0.xml
+[26.10.2011 12:52:04] Employee 8891 АЛАБЯН МАРИЯ АНДРЕЕВНА inserted in table employees
+[26.10.2011 12:52:04] Employee 8891 АЛАБЯН МАРИЯ АНДРЕЕВНА inserted in table employees_history
+[26.10.2011 12:52:04] Employee 8890 ПЕТРОВА ОЛЬГА АЛЕКСАНДРОВНА inserted in table employees
+[26.10.2011 12:52:04] Employee 8890 ПЕТРОВА ОЛЬГА АЛЕКСАНДРОВНА inserted in table employees_history
+[26.10.2011 12:52:04] In table employees inserted: 2 records, updated: 0 records.
+[26.10.2011 12:52:04] Old records in table employees: 394. Total: 396 records.
+[26.10.2011 12:52:04] In table employees_history inserted: 2 records, copied from table employees: 394 records.

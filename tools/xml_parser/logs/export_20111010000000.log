@@ -1,0 +1,10 @@
+[26.10.2011 12:53:52] Found 3 employees in file ./employers_111010_0_0.xml
+[26.10.2011 12:53:59] Employee 963 ЗАЙЦЕВА АЛЕКСАНДРА СЕРГЕЕВНА inserted in table employees
+[26.10.2011 12:53:59] Employee 963 ЗАЙЦЕВА АЛЕКСАНДРА СЕРГЕЕВНА inserted in table employees_history
+[26.10.2011 12:53:59] Employee 8900 КОРОБЕЙНИКОВ АНТОН ВАЛЕНТИНОВИЧ inserted in table employees
+[26.10.2011 12:53:59] Employee 8900 КОРОБЕЙНИКОВ АНТОН ВАЛЕНТИНОВИЧ inserted in table employees_history
+[26.10.2011 12:53:59] Employee 8901 ОСТРОУХОВ ЕВГЕНИЙ ВАЛЕРЬЕВИЧ inserted in table employees
+[26.10.2011 12:53:59] Employee 8901 ОСТРОУХОВ ЕВГЕНИЙ ВАЛЕРЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:53:59] In table employees inserted: 3 records, updated: 0 records.
+[26.10.2011 12:53:59] Old records in table employees: 404. Total: 407 records.
+[26.10.2011 12:53:59] In table employees_history inserted: 3 records, copied from table employees: 404 records.

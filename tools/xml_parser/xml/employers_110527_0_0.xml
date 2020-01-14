@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08610">
+		<SirName>БУНЬКОВ</SirName>
+		<FirstName>АЛЕКСЕЙ</FirstName>
+		<PatronymicName>ВАСИЛЬЕВИЧ</PatronymicName>
+		<IDManager>06976</IDManager>
+		<Department>Отдел портальных решений (Драгалин)</Department>
+		<IDDepartment>01316</IDDepartment>
+		<Post>ведущий аналитик</Post>
+		<IDPost>00211</IDPost>
+		<Email>abunkov@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08393">
+		<SirName>ЕРОФЕЕВ</SirName>
+		<FirstName>ИЛЬЯ</FirstName>
+		<PatronymicName>ИВАНОВИЧ</PatronymicName>
+		<IDManager>01088</IDManager>
+		<Department>Отдел информационных систем управления №3 (Толмачев)</Department>
+		<IDDepartment>01300</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email>ierofeev@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>1</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

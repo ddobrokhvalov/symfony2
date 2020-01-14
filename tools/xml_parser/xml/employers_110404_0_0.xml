@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08811">
+		<SirName>ВОЛОДКЕВИЧ</SirName>
+		<FirstName>ВАДИМ</FirstName>
+		<PatronymicName>ИГОРЕВИЧ</PatronymicName>
+		<IDManager>01026</IDManager>
+		<Department>Департамент корпоративных продаж (Савчук)</Department>
+		<IDDepartment>00747</IDDepartment>
+		<Post>Менеджер по развитию продукта</Post>
+		<IDPost>00779</IDPost>
+		<Email>vvolodkevich@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08703">
+		<SirName>КУКСИН</SirName>
+		<FirstName>АЛЕКСЕЙ</FirstName>
+		<PatronymicName>АНАТОЛЬЕВИЧ</PatronymicName>
+		<IDManager/>
+		<Department>Отдел тендеров</Department>
+		<IDDepartment>00804</IDDepartment>
+		<Post>Главный специалист</Post>
+		<IDPost>00190</IDPost>
+		<Email>akuksin@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08812">
+		<SirName>СЕМЕНОВ</SirName>
+		<FirstName>АНАТОЛИЙ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>01026</IDManager>
+		<Department>Департамент корпоративных продаж (Савчук)</Department>
+		<IDDepartment>00747</IDDepartment>
+		<Post>Директор по работе с клиентами</Post>
+		<IDPost>00117</IDPost>
+		<Email/>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

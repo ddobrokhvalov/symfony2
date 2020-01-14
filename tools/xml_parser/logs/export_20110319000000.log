@@ -1,0 +1,6 @@
+[26.10.2011 12:35:05] Found 1 employees in file ./employers_110319_0_0.xml
+[26.10.2011 12:35:07] Employee 8402 КАМЫШЕВА СВЕТЛАНА ИВАНОВНА updated in table employees
+[26.10.2011 12:35:07] Employee 8402 КАМЫШЕВА СВЕТЛАНА ИВАНОВНА inserted in table employees_history
+[26.10.2011 12:35:10] In table employees inserted: 0 records, updated: 1 records.
+[26.10.2011 12:35:10] Old records in table employees: 312. Total: 313 records.
+[26.10.2011 12:35:10] In table employees_history inserted: 1 records, copied from table employees: 312 records.

@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08891">
+		<SirName>АЛАБЯН</SirName>
+		<FirstName>МАРИЯ</FirstName>
+		<PatronymicName>АНДРЕЕВНА</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email/>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08689">
+		<SirName>БАРБОЛИН</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>НИКОЛАЕВИЧ</PatronymicName>
+		<IDManager>08694</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>инженер-программист</Post>
+		<IDPost>00035</IDPost>
+		<Email>dbarbolin@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08742">
+		<SirName>БОБРОВА</SirName>
+		<FirstName>СВЕТЛАНА</FirstName>
+		<PatronymicName>ВЛАДИМИРОВНА</PatronymicName>
+		<IDManager>08694</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email>sbobrova@armd.ru</Email>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08872">
+		<SirName>БУЯНОВА</SirName>
+		<FirstName>ОЛЬГА</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВНА</PatronymicName>
+		<IDManager>08694</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email/>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08873">
+		<SirName>ВОЛКОВА</SirName>
+		<FirstName>НАТАЛЬЯ</FirstName>
+		<PatronymicName>ВЛАДИМИРОВНА</PatronymicName>
+		<IDManager>08694</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>Руководитель проектов</Post>
+		<IDPost>00285</IDPost>
+		<Email/>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08708">
+		<SirName>ВОРОНЦОВА</SirName>
+		<FirstName>ОЛЬГА</FirstName>
+		<PatronymicName>ВЛАДИМИРОВНА</PatronymicName>
+		<IDManager>00979</IDManager>
+		<Department>Отдел персонала</Department>
+		<IDDepartment>01337</IDDepartment>
+		<Post>Заместитель директора департамента по социальным вопросам</Post>
+		<IDPost>00651</IDPost>
+		<Email>ovoroncova@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="05647">
+		<SirName>ГВОЗДЕВ</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>ПЕТРОВИЧ</PatronymicName>
+		<IDManager>00982</IDManager>
+		<Department>Администрация АРМАДА СОФТ</Department>
+		<IDDepartment>00730</IDDepartment>
+		<Post>директор по развитию</Post>
+		<IDPost>00481</IDPost>
+		<Email>dgvozdev@armd.ru</Email>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="00946">
+		<SirName>ГОРДОН</SirName>
+		<FirstName>АРКАДИЙ</FirstName>
+		<PatronymicName>ЛЬВОВИЧ</PatronymicName>
+		<IDManager>00979</IDManager>
+		<Department>Департамент тендеров и специальных проектов</Department>
+		<IDDepartment>01334</IDDepartment>
+		<Post>Директор департамента</Post>
+		<IDPost>00129</IDPost>
+		<Email>orast@armd.ru</Email>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08686">
+		<SirName>ГРЕХОВ</SirName>
+		<FirstName>ВЛАДИМИР</FirstName>
+		<PatronymicName>ЛЕОНИДОВИЧ</PatronymicName>
+		<IDManager>08694</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>Ведущий инженер-программист</Post>
+		<IDPost>00267</IDPost>
+		<Email>vgrehov@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08460">
+		<SirName>ЗЕЛИНСКИЙ</SirName>
+		<FirstName>АЛЕКСАНДР</FirstName>
+		<PatronymicName>ВАЛЕРЬЕВИЧ</PatronymicName>
+		<IDManager>00946</IDManager>
+		<Department>Департамент тендеров и специальных проектов</Department>
+		<IDDepartment>01334</IDDepartment>
+		<Post>Главный специалист</Post>
+		<IDPost>00190</IDPost>
+		<Email>azelinskiy@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08834">
+		<SirName>ИВАНКОВА</SirName>
+		<FirstName>АНАСТАСИЯ</FirstName>
+		<PatronymicName>ВИКТОРОВНА</PatronymicName>
+		<IDManager>00979</IDManager>
+		<Department>Отдел персонала</Department>
+		<IDDepartment>01337</IDDepartment>
+		<Post>Менеджер по подбору персонала</Post>
+		<IDPost>00478</IDPost>
+		<Email/>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="06419">
+		<SirName>КОНДРАТОВ</SirName>
+		<FirstName>ОЛЕГ</FirstName>
+		<PatronymicName>ВИТАЛЬЕВИЧ</PatronymicName>
+		<IDManager>00946</IDManager>
+		<Department>Департамент тендеров и специальных проектов</Department>
+		<IDDepartment>01334</IDDepartment>
+		<Post>Заместитель директора департамента</Post>
+		<IDPost>00422</IDPost>
+		<Email>okondratov@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="06610">
+		<SirName>КРАСЮК</SirName>
+		<FirstName>ЛЮБОВЬ</FirstName>
+		<PatronymicName>НИКОЛАЕВНА</PatronymicName>
+		<IDManager>01103</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>Руководитель отдела</Post>
+		<IDPost>00160</IDPost>
+		<Email>lkrassuk@armd.ru</Email>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="00979">
+		<SirName>КРУГЛЯКОВ</SirName>
+		<FirstName>РОМАН</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>00945</IDManager>
+		<Department>Генеральный директор Кругляков Р.А.</Department>
+		<IDDepartment>00733</IDDepartment>
+		<Post>генеральный директор</Post>
+		<IDPost>00014</IDPost>
+		<Email>kpc@armd.ru</Email>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08807">
+		<SirName>КУЗЬМИНА</SirName>
+		<FirstName>ЛИДИЯ</FirstName>
+		<PatronymicName>СЕРГЕЕВНА</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email/>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08703">
+		<SirName>КУКСИН</SirName>
+		<FirstName>АЛЕКСЕЙ</FirstName>
+		<PatronymicName>АНАТОЛЬЕВИЧ</PatronymicName>
+		<IDManager>00946</IDManager>
+		<Department>Департамент тендеров и специальных проектов</Department>
+		<IDDepartment>01334</IDDepartment>
+		<Post>Главный специалист</Post>
+		<IDPost>00190</IDPost>
+		<Email>akuksin@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08762">
+		<SirName>КУРЕНЕВ</SirName>
+		<FirstName>АРТЕМ</FirstName>
+		<PatronymicName>ВИТАЛЬЕВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>Креативный дизайнер</Post>
+		<IDPost>00587</IDPost>
+		<Email>akurenev@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08862">
+		<SirName>КУРИЦЫН</SirName>
+		<FirstName>МИХАИЛ</FirstName>
+		<PatronymicName>ВАСИЛЬЕВИЧ</PatronymicName>
+		<IDManager>00946</IDManager>
+		<Department>Департамент тендеров и специальных проектов</Department>
+		<IDDepartment>01334</IDDepartment>
+		<Post>Начальник РСО</Post>
+		<IDPost>00781</IDPost>
+		<Email/>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="00995">
+		<SirName>МАСЛЕННИКОВ</SirName>
+		<FirstName>МИХАИЛ</FirstName>
+		<PatronymicName>ИГОРЕВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email>mmaslennikov@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08694">
+		<SirName>МАТВЕЕВ</SirName>
+		<FirstName>АЛЕКСЕЙ</FirstName>
+		<PatronymicName>ЕВГЕНЬЕВИЧ</PatronymicName>
+		<IDManager>01074</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>Заместитель директора департамента</Post>
+		<IDPost>00422</IDPost>
+		<Email>amatveev@armd.ru</Email>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08830">
+		<SirName>МАТВЕЕВА</SirName>
+		<FirstName>АННА</FirstName>
+		<PatronymicName>ВЛАДИМИРОВНА</PatronymicName>
+		<IDManager>01074</IDManager>
+		<Department>Отдел интеграционных решений</Department>
+		<IDDepartment>01234</IDDepartment>
+		<Post>ведущий аналитик</Post>
+		<IDPost>00211</IDPost>
+		<Email>amatveeva@armd.ru</Email>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="01103">
+		<SirName>МИРАКОВ</SirName>
+		<FirstName>АЛЕКСАНДР</FirstName>
+		<PatronymicName>ВЛАДИМИРОВИЧ</PatronymicName>
+		<IDManager>00979</IDManager>
+		<Department>Технический директор Мираков А.В.</Department>
+		<IDDepartment>01336</IDDepartment>
+		<Post>Заместитель генерального директора</Post>
+		<IDPost>00451</IDPost>
+		<Email>daa@armd.ru</Email>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08690">
+		<SirName>МОРОЗОВ</SirName>
+		<FirstName>АЛЕКСЕЙ</FirstName>
+		<PatronymicName>ЮРЬЕВИЧ</PatronymicName>
+		<IDManager>08694</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>ведущий аналитик</Post>
+		<IDPost>00211</IDPost>
+		<Email>amorozov@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08789">
+		<SirName>МОЧАЛИН</SirName>
+		<FirstName>АЛЕКСАНДР</FirstName>
+		<PatronymicName>СЕРГЕЕВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>Верстальщик</Post>
+		<IDPost>00453</IDPost>
+		<Email>amochalin@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08901">
+		<SirName>ОСТРОУХОВ</SirName>
+		<FirstName>ЕВГЕНИЙ</FirstName>
+		<PatronymicName>ВАЛЕРЬЕВИЧ</PatronymicName>
+		<IDManager>08694</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>инженер-программист</Post>
+		<IDPost>00035</IDPost>
+		<Email/>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="05552">
+		<SirName>ПЕТИН</SirName>
+		<FirstName>ОЛЕГ</FirstName>
+		<PatronymicName>СЕРГЕЕВИЧ</PatronymicName>
+		<IDManager>00946</IDManager>
+		<Department>Департамент тендеров и специальных проектов</Department>
+		<IDDepartment>01334</IDDepartment>
+		<Post>Заместитель директора департамента</Post>
+		<IDPost>00422</IDPost>
+		<Email>opetin@armd.ru</Email>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08866">
+		<SirName>ПОМИЛУЙКО</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>ЮРЬЕВИЧ</PatronymicName>
+		<IDManager>00946</IDManager>
+		<Department>Департамент тендеров и специальных проектов</Department>
+		<IDDepartment>01334</IDDepartment>
+		<Post>Главный специалист</Post>
+		<IDPost>00190</IDPost>
+		<Email/>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08536">
+		<SirName>РЕЗЕПОВ</SirName>
+		<FirstName>МАКСИМ</FirstName>
+		<PatronymicName>ВЛАДИМИРОВИЧ</PatronymicName>
+		<IDManager>01088</IDManager>
+		<Department>Департамент информационных систем управления (Каушанский)</Department>
+		<IDDepartment>01226</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email>mrezepov@armd.ru</Email>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="06676">
+		<SirName>РЗЯНИН</SirName>
+		<FirstName>АЛЕКСЕЙ</FirstName>
+		<PatronymicName>ВЛАДИМИРОВИЧ</PatronymicName>
+		<IDManager>01088</IDManager>
+		<Department>Департамент информационных систем управления (Каушанский)</Department>
+		<IDDepartment>01226</IDDepartment>
+		<Post>ведущий программист</Post>
+		<IDPost>00649</IDPost>
+		<Email>arzyanin@armd.ru</Email>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08007">
+		<SirName>СЕЛЕЗНЕВА</SirName>
+		<FirstName>ВЕРА</FirstName>
+		<PatronymicName>НИКОЛАЕВНА</PatronymicName>
+		<IDManager>00945</IDManager>
+		<Department>Секретариат</Department>
+		<IDDepartment>01294</IDDepartment>
+		<Post>секретарь</Post>
+		<IDPost>00090</IDPost>
+		<Email>vselezneva@armd.ru</Email>
+		<Category>1</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08817">
+		<SirName>СМЯТКИН</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>Юзабилити-специалист</Post>
+		<IDPost>00780</IDPost>
+		<Email>dsmyatkin@armd.ru</Email>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08449">
+		<SirName>СОКОЛОВА</SirName>
+		<FirstName>ТАТЬЯНА</FirstName>
+		<PatronymicName>ВЛАДИМИРОВНА</PatronymicName>
+		<IDManager>01088</IDManager>
+		<Department>Департамент информационных систем управления (Каушанский)</Department>
+		<IDDepartment>01226</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email>tsokolova@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08827">
+		<SirName>СОЛДАТОВ</SirName>
+		<FirstName>ЕВГЕНИЙ</FirstName>
+		<PatronymicName>ВЛАДИМИРОВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>Верстальщик</Post>
+		<IDPost>00453</IDPost>
+		<Email>esoldatov@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08644">
+		<SirName>СТЕПАНОВ</SirName>
+		<FirstName>АНДРЕЙ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>ведущий программист</Post>
+		<IDPost>00649</IDPost>
+		<Email>astepanov@armd.ru</Email>
+		<Category>6</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08790">
+		<SirName>СУХИНИН</SirName>
+		<FirstName>ИЛЬЯ</FirstName>
+		<PatronymicName>ВАЛЕНТИНОВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>Программист</Post>
+		<IDPost>00662</IDPost>
+		<Email>isuhinin@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08885">
+		<SirName>УКОЛОВ</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>ЮРЬЕВИЧ</PatronymicName>
+		<IDManager>06610</IDManager>
+		<Department>Отдел интернет-проектов</Department>
+		<IDDepartment>01335</IDDepartment>
+		<Post>менеджер проектов</Post>
+		<IDPost>00052</IDPost>
+		<Email/>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08843">
+		<SirName>ХРАПА</SirName>
+		<FirstName>АЛЕКСАНДР</FirstName>
+		<PatronymicName>АНАТОЛЬЕВИЧ</PatronymicName>
+		<IDManager>08694</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email/>
+		<Category>3</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08773">
+		<SirName>ЧИЛИКИН</SirName>
+		<FirstName>КИРИЛЛ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>08694</IDManager>
+		<Department>Отдел систем электронного правительства (Матвеев)</Department>
+		<IDDepartment>01333</IDDepartment>
+		<Post>инженер-программист</Post>
+		<IDPost>00035</IDPost>
+		<Email>kchilikin@armd.ru</Email>
+		<Category>5</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="01050">
+		<SirName>ЧУРСИН</SirName>
+		<FirstName>ДМИТРИЙ</FirstName>
+		<PatronymicName>АЛЕКСАНДРОВИЧ</PatronymicName>
+		<IDManager>00982</IDManager>
+		<Department>Администрация АРМАДА СОФТ</Department>
+		<IDDepartment>00730</IDDepartment>
+		<Post>Заместитель генерального директора</Post>
+		<IDPost>00451</IDPost>
+		<Email>dmc@armd.ru</Email>
+		<Category>7</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="05888">
+		<SirName>ШЛЯХОВАЯ</SirName>
+		<FirstName>ЕЛЕНА</FirstName>
+		<PatronymicName>МИХАЙЛОВНА</PatronymicName>
+		<IDManager>01103</IDManager>
+		<Department>Технический директор Мираков А.В.</Department>
+		<IDDepartment>01336</IDDepartment>
+		<Post>Аналитик</Post>
+		<IDPost>00002</IDPost>
+		<Email>eshlyakhovaya@armd.ru</Email>
+		<Category>0</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

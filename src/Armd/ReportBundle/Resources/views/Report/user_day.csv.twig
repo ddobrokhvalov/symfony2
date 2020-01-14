@@ -1,0 +1,6 @@
+Сотрудник;{% for day in human_days %}"{{ day }}";{% endfor %}Сумма;
+
+{% for entity in entities%}"{{entity['employee']}}";{% for day in human_days %}"{{entity[human_days[loop.index0]]['time']|replace({'.': ','})}}";{% endfor %}{{entity['sum']|replace({'.': ','})}}
+{% endfor %}
+Сумма;{% for day in human_days %}{{day_sums[human_days[loop.index0]]|replace({'.': ','})}};{% endfor %}{{full_sum|replace({'.': ','})}}
+

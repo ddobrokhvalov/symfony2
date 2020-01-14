@@ -1,0 +1,260 @@
+<style>
+	#armd_reportbundle_reporttype_description {
+		width: 570px;
+        height: 100px;
+		position:relative;
+		margin-left:-190px;
+	}
+    
+    #armd_reportbundle_reporttype_project {
+        width: 380px;
+		clear:left;
+    }
+    
+    #armd_reportbundle_reporttype_task {
+        width: 380px;
+		clear:left;
+    }
+    
+    #armd_reportbundle_reporttype_minutes{
+        width: 380px;    
+    }
+    
+    .red_asterisk {
+        color: #FF0000;
+    }
+
+	.red_calendar  a {
+		background: #FFCCCC !important;
+	}
+
+	.labelP {
+		padding:0;
+		margin:0;
+	}
+	
+	@media all and (min-width: 0px) {
+		.ui-datepicker-header {
+			height:19px;
+			overflow:hidden;
+		}
+		#datepicker .ui-datepicker{
+			height:156px;
+			overflow:hidden;
+		}
+	}
+</style>
+
+<!--[if IE]>
+<style>
+	.append-0{width:590px;overflow:hidden;padding-left:10px;}
+</style>
+<![endif]--> 
+
+<link rel="stylesheet" href="/css/smoothness/jquery-ui-1.8.14.custom.css">
+<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen">
+<script type="text/javascript" src="/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="/js/ui/i18n/jquery.ui.datepicker-ru.js"></script>
+<script type="text/javascript"> 
+	function applyReportTemplate()
+	{
+		var report_templates = new Array;
+		{% for report_template in report_templates %}
+		report_templates[{{ report_template.id }}] = "{{ report_template.body|raw }}";
+		{% endfor %}
+		
+		if (
+		(($('#armd_reportbundle_reporttype_description').val() != '') && confirm('Заменить текст отчета на шаблон?'))
+		||
+		($('#armd_reportbundle_reporttype_description').val() == '')
+		) {
+			if ($('#report_template').val() == '') {
+				$('#armd_reportbundle_reporttype_description').val('');
+			} else {
+				$('#armd_reportbundle_reporttype_description').val(report_templates[$('#report_template').val()]);
+			}
+		}
+	}
+		
+	var not_closed_dates = [{% for day in not_closed_days %}'{{day}}'{% if loop.last != true%},{%endif%}{% endfor %}];
+	var this_week = [{% for day in this_week %}'{{day}}'{% if loop.last != true%},{%endif%}{% endfor %}];
+	
+    function formSubmit()
+    {
+        $('#armd_reportbundle_reporttype_minutes').val($('#armd_reportbundle_reporttype_minutes').val().replace('.',','));
+        
+        if ($('#form').valid()) {
+			var date = $('#day').val()+'.'+$('#month').val()+'.'+$('#year').val();
+			if ($.inArray(date, this_week) != -1) {
+				if (parseFloat($('#armd_reportbundle_reporttype_minutes').val().replace(',','.')) > {{time}}) {
+					alert('Вы не можете указать более {{time}} час');
+				} else {
+					$('#loader').show();
+					$.post(
+						'{{ path('report_create') }}',
+						$('#form').serialize(),
+						function(data) {
+							if (data == 'true') {
+								parent.window.location=parent.window.location;
+							} else {
+								$('#loader').hide();
+								alert(data);
+							}
+						}
+					);
+				}
+			} else {
+				alert('Вы можете заполнить отчет только за текущую неделю');
+			}
+        }
+    }
+    $(document).ready(function(){
+        $("#form").validate({
+            ignore: ".ignore",
+            focusInvalid: true,
+            errorPlacement: function(error,element) {
+                return true;
+            },
+            rules: {
+                "armd_reportbundle_reporttype[minutes]": {required:true },
+                "armd_reportbundle_reporttype[description]": {required:true }
+            }
+        });
+			
+		var date = '{{ datetime }}';
+		date = date.split('.');
+		$('#day').val(date[0]);
+		$('#month').val(date[1]);
+		$('#year').val(date[2]);
+		
+		$( "#datepicker" ).datepicker({
+			dateFormat: 'dd.mm.yy',
+			defaultDate: '{{ datetime }}',
+			onSelect: function(dateText, inst) {
+				var date = dateText.split('.');
+				$('#day').val(date[0]);
+				$('#month').val(date[1]);
+				$('#year').val(date[2]);
+			},
+			beforeShowDay: function(date) {
+				var dmy = 		
+					((date.getDate() > 9)?date.getDate():'0'+date.getDate()) +
+					"." +
+					(((date.getMonth()+1)> 9)?(date.getMonth()+1):'0'+(date.getMonth()+1)) +
+					"." +
+					date.getFullYear();
+
+				if ($.inArray(dmy, not_closed_dates) != -1) {
+					return [true, 'red_calendar', 'Осталось несписанное время'];
+				} else { 
+					return [true];
+				}
+			},
+			onChangeMonthYear: function(year, month, inst) {
+			  	$.ajax({
+					url: '/ajax/getDays?begin=01.'+month+'.'+year,
+					async:false,
+					success: function(data){
+						not_closed_dates = eval(data);
+						$( "#datepicker" ).datepicker( "refresh" );
+					}
+			  	}); 
+			}
+		});
+
+		$('.minutes').change(function(){
+			var value = $(this).val();
+			if (value == 0) {
+				$('#armd_reportbundle_reporttype_minutes').val('8');
+				$('#armd_reportbundle_reporttype_minutes').show();
+				$('#armd_reportbundle_reporttype_minutes').removeAttr('readonly');
+				$('#armd_reportbundle_reporttype_minutes').focus();
+			} else {
+				$('#armd_reportbundle_reporttype_minutes').hide();
+				$('#armd_reportbundle_reporttype_minutes').attr('readonly', 'readonly');
+				$('#armd_reportbundle_reporttype_minutes').val(value);	
+			}
+		});
+    });
+</script>
+    
+
+<div class="append-0 prepend-0 prepend-top">
+	<table style="margin:auto;width:570px;">
+		<tr>
+			<td style="vertical-align:top;padding:0px;">
+				<div class="span-5" style="margin:0px;">
+					<div id="datepicker" style="width: 96%; height: 170px; float: none; clear: both; display: block; vertical-align: top;">
+					</div>
+					<div></div>
+				</div>
+			</td>
+			<td style="padding:0px;">
+				<form action="{{ path('report_create') }}" method="post" {{ form_enctype(form) }} id="form">
+		    		<div style="display:block;">
+						<input type="hidden" id="day" name="armd_reportbundle_reporttype[day][day]" value="">
+						<input type="hidden" id="month" name="armd_reportbundle_reporttype[day][month]" value="">
+						<input type="hidden" id="year" name="armd_reportbundle_reporttype[day][year]" value="">
+				    </div>
+		    		
+		    		{{ form_widget(form._token) }}
+		    		
+		    		{{ form_errors(form.minutes) }}
+		            
+		            <p class="labelP">
+		            	{{ form_label(form.project, 'Проект')}} <span class="red_asterisk">*</span>
+		            </p>
+		            
+					<select id="armd_reportbundle_reporttype_project" name="armd_reportbundle_reporttype[project]" required="required">
+						{% for project in projects%}
+							<option value="{{project['id']}}">{{project['title']}}</option>
+						{%endfor%}
+					</select> 
+
+		            <p class="labelP">
+		            	{{ form_label(form.task, 'Тип работ')}} <span class="red_asterisk">*</span>
+		            </p>
+
+					<select id="armd_reportbundle_reporttype_task" required="required" name="armd_reportbundle_reporttype[task]" required="required">
+						{% for task in report_tasks %}
+							<option value="{{task.id}}">{{task.title}}</option>
+						{%endfor%}
+					</select>
+
+		            <p class="labelP">
+		            	{{ form_label(form.minutes, 'Затраченное время (часы)')}} <span class="red_asterisk">*</span>
+		            </p>
+		            
+		            <input type="radio" name="minutes" class="minutes" value="8" id="minutes_8" checked="checked"> <label for="minutes_8">8</label>
+		            <input type="radio" name="minutes" class="minutes" value="7" id="minutes_7"> <label for="minutes_7">7</label>
+		            <input type="radio" name="minutes" class="minutes" value="6" id="minutes_6"> <label for="minutes_6">6</label>
+		            <input type="radio" name="minutes" class="minutes" value="5" id="minutes_5"> <label for="minutes_5">5</label>
+		            <input type="radio" name="minutes" class="minutes" value="4" id="minutes_4"> <label for="minutes_4">4</label>
+		            <input type="radio" name="minutes" class="minutes" value="3" id="minutes_3"> <label for="minutes_3">3</label>
+		            <input type="radio" name="minutes" class="minutes" value="2" id="minutes_2"> <label for="minutes_2">2</label>
+		            <input type="radio" name="minutes" class="minutes" value="1" id="minutes_1"> <label for="minutes_1">1</label>
+		            <input type="radio" name="minutes" class="minutes" value="0" id="minutes_0"> <label for="minutes_0">другое</label>
+		            <input id="armd_reportbundle_reporttype_minutes" type="text" value="8" required="required" name="armd_reportbundle_reporttype[minutes]" style=" display: none; width:30px;" readonly="readonly">
+
+		            <nobr>
+						<label for="report_template">Шаблон отчета</label>
+						<select id="report_template" onchange="javascript:applyReportTemplate();">
+							<option value="">нет</option>
+							{% for report_template in report_templates %}
+								<option value="{{ report_template.id }}">{{ report_template.title }}</option>
+							{% endfor %}
+						</select>
+					</nobr>		
+
+		            {{ form_widget(form.description) }}
+					<p>
+					    <button type="button" name="submit" onclick="javascript:formSubmit();">Сохранить</button>
+					    <img src="/img/ajax-loader.gif" id="loader" style="display:none;">
+					</p>
+				</form>
+			</td>
+		</tr>
+	</table>
+</div>

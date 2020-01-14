@@ -1,0 +1,8 @@
+[26.10.2011 12:36:58] Found 2 employees in file ./employers_110412_0_0.xml
+[26.10.2011 12:36:59] Employee 8715 ДАВЫДОВ МАРК МИХАЙЛОВИЧ updated in table employees
+[26.10.2011 12:36:59] Employee 8715 ДАВЫДОВ МАРК МИХАЙЛОВИЧ inserted in table employees_history
+[26.10.2011 12:37:03] Employee 8814 ПОСПЕЛОВ СЕРГЕЙ ВИКТОРОВИЧ inserted in table employees
+[26.10.2011 12:37:03] Employee 8814 ПОСПЕЛОВ СЕРГЕЙ ВИКТОРОВИЧ inserted in table employees_history
+[26.10.2011 12:37:03] In table employees inserted: 1 records, updated: 1 records.
+[26.10.2011 12:37:03] Old records in table employees: 321. Total: 323 records.
+[26.10.2011 12:37:03] In table employees_history inserted: 2 records, copied from table employees: 321 records.

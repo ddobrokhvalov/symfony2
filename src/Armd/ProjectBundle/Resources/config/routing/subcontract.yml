@@ -1,0 +1,30 @@
+subcontract:
+    pattern:  /
+    defaults: { _controller: "ArmdProjectBundle:Subcontract:index" }
+
+subcontract_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ArmdProjectBundle:Subcontract:show" }
+
+subcontract_new:
+    pattern:  /new
+    defaults: { _controller: "ArmdProjectBundle:Subcontract:new" }
+
+subcontract_create:
+    pattern:  /create
+    defaults: { _controller: "ArmdProjectBundle:Subcontract:create" }
+    requirements: { _method: post }
+
+subcontract_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ArmdProjectBundle:Subcontract:edit" }
+
+subcontract_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ArmdProjectBundle:Subcontract:update" }
+    requirements: { _method: post }
+
+subcontract_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ArmdProjectBundle:Subcontract:delete" }
+    requirements: { _method: post }

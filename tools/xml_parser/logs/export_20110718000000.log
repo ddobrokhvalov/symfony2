@@ -1,0 +1,14 @@
+[26.10.2011 12:45:36] Found 5 employees in file ./employers_110718_0_0.xml
+[26.10.2011 12:45:37] Employee 8624 ВИХРОВА ОКСАНА АЛЕКСАНДРОВНА updated in table employees
+[26.10.2011 12:45:37] Employee 8624 ВИХРОВА ОКСАНА АЛЕКСАНДРОВНА inserted in table employees_history
+[26.10.2011 12:45:38] Employee 4658 КУЛТАШЕВА ЕЛЕНА АЛЕКСАНДРОВНА updated in table employees
+[26.10.2011 12:45:38] Employee 4658 КУЛТАШЕВА ЕЛЕНА АЛЕКСАНДРОВНА inserted in table employees_history
+[26.10.2011 12:45:41] Employee 8853 МАКЕЕВА ИРИНА АЛЕКСЕЕВНА inserted in table employees
+[26.10.2011 12:45:41] Employee 8853 МАКЕЕВА ИРИНА АЛЕКСЕЕВНА inserted in table employees_history
+[26.10.2011 12:45:41] Employee 8854 ТАРАСОВА ОКСАНА ИВАНОВНА inserted in table employees
+[26.10.2011 12:45:41] Employee 8854 ТАРАСОВА ОКСАНА ИВАНОВНА inserted in table employees_history
+[26.10.2011 12:45:41] Employee 8852 ЩЕРБАКОВ АЛЕКСАНДР ВЛАДИМИРОВИЧ inserted in table employees
+[26.10.2011 12:45:41] Employee 8852 ЩЕРБАКОВ АЛЕКСАНДР ВЛАДИМИРОВИЧ inserted in table employees_history
+[26.10.2011 12:45:41] In table employees inserted: 3 records, updated: 2 records.
+[26.10.2011 12:45:41] Old records in table employees: 355. Total: 360 records.
+[26.10.2011 12:45:41] In table employees_history inserted: 5 records, copied from table employees: 355 records.

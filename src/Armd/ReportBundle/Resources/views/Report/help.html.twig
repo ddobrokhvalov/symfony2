@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Справка</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
+		<style>
+		a.headerlink {
+			color: #EEEEEE;
+			font-size: 60%;
+			padding: 2px;
+			text-decoration: none;
+		}
+		a.headerlink:hover {
+			color: #000000;
+		}
+        h2 {
+            padding: 2px;
+            padding-top: 8px;
+        }
+		</style>
+	</head>
+	<body>
+        <div style="padding: 10px;">
+		{% for article in articles %}
+        <h2>{{ article.title }}<a class="headerlink" href="#{{article.anchor}}" name="{{article.anchor}}">¶</a></h2>
+		<p>{{ article.text|raw }}</p>
+        {% endfor %}
+        </div>
+	</body>
+</html>

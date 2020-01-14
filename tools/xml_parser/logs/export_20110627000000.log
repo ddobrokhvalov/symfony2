@@ -1,0 +1,6 @@
+[26.10.2011 12:43:36] Found 1 employees in file ./employers_110627_0_0.xml
+[26.10.2011 12:43:42] Employee 8838 ТАШКИНОВА ТАТЬЯНА НИКОЛАЕВНА inserted in table employees
+[26.10.2011 12:43:42] Employee 8838 ТАШКИНОВА ТАТЬЯНА НИКОЛАЕВНА inserted in table employees_history
+[26.10.2011 12:43:42] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:43:42] Old records in table employees: 343. Total: 344 records.
+[26.10.2011 12:43:42] In table employees_history inserted: 1 records, copied from table employees: 343 records.

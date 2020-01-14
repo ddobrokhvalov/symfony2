@@ -1,0 +1,8 @@
+[26.10.2011 12:44:16] Found 2 employees in file ./employers_110704_0_0.xml
+[26.10.2011 12:44:18] Employee 8703 КУКСИН АЛЕКСЕЙ АНАТОЛЬЕВИЧ updated in table employees
+[26.10.2011 12:44:18] Employee 8703 КУКСИН АЛЕКСЕЙ АНАТОЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:44:22] Employee 8844 АНДРЮЩЕНКО ИГОРЬ ВИКТОРОВИЧ inserted in table employees
+[26.10.2011 12:44:22] Employee 8844 АНДРЮЩЕНКО ИГОРЬ ВИКТОРОВИЧ inserted in table employees_history
+[26.10.2011 12:44:22] In table employees inserted: 1 records, updated: 1 records.
+[26.10.2011 12:44:22] Old records in table employees: 348. Total: 350 records.
+[26.10.2011 12:44:22] In table employees_history inserted: 2 records, copied from table employees: 348 records.

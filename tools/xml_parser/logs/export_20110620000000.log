@@ -1,0 +1,8 @@
+[26.10.2011 12:42:53] Found 2 employees in file ./employers_110620_0_0.xml
+[26.10.2011 12:43:00] Employee 8837 КАЛЮЖНОВА СВЕТЛАНА ИВАНОВНА inserted in table employees
+[26.10.2011 12:43:00] Employee 8837 КАЛЮЖНОВА СВЕТЛАНА ИВАНОВНА inserted in table employees_history
+[26.10.2011 12:43:00] Employee 8835 ПОПОВ АЛЕКСЕЙ ВАСИЛЬЕВИЧ inserted in table employees
+[26.10.2011 12:43:00] Employee 8835 ПОПОВ АЛЕКСЕЙ ВАСИЛЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:43:00] In table employees inserted: 2 records, updated: 0 records.
+[26.10.2011 12:43:00] Old records in table employees: 340. Total: 342 records.
+[26.10.2011 12:43:00] In table employees_history inserted: 2 records, copied from table employees: 340 records.

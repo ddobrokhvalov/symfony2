@@ -1,0 +1,117 @@
+# messages.ru.yml
+
+breadcrumb.link_employee_list: Сотрудники
+breadcrumb.link_project_list: Проекты
+breadcrumb.link_projectgroup_list: Группы проектов
+breadcrumb.link_projecttype_list: Типы проектов
+breadcrumb.link_client_list: Клиенты
+breadcrumb.link_subcontract_list: Субподрядчики
+breadcrumb.link_task_list: Типы работ
+breadcrumb.link_rate_list: Ставки
+breadcrumb.link_department_list: Организационная структура
+breadcrumb.link_projectemployee_list: Связи Проект-Сотрудник
+breadcrumb.link_projectsubcontract_list: Связи Проект-Субподрядчик
+breadcrumb.link_user_list: Пользователи
+breadcrumb.link_legal_list: Юридические лица
+breadcrumb.link_holiday_list: Нерабочие дни
+breadcrumb.link_reporttemplate_list: Шаблоны отчетов
+breadcrumb.link_projectstage_list: Этапы проектов
+breadcrumb.link_help_list: Справка
+breadcrumb.link_post_list: Должность
+breadcrumb.link_tag_list: Технологии
+
+breadcrumb.link_employee_edit: Редактирование
+breadcrumb.link_employee_edit: Редактирование
+breadcrumb.link_project_edit: Редактирование
+breadcrumb.link_projectgroup_edit: Редактирование
+breadcrumb.link_projecttype_edit: Редактирование
+breadcrumb.link_client_edit: Редактирование
+breadcrumb.link_subcontract_edit: Редактирование
+breadcrumb.link_task_edit: Редактирование
+breadcrumb.link_rate_edit: Редактирование
+breadcrumb.link_department_edit: Редактирование
+breadcrumb.link_projectemployee_edit: Редактирование
+breadcrumb.link_projectsubcontract_edit: Редактирование
+breadcrumb.link_user_edit: Редактирование
+breadcrumb.link_legal_edit: Редактирование
+breadcrumb.link_holiday_edit: Редактирование
+breadcrumb.link_reporttemplate_edit: Редактирование
+breadcrumb.link_projectstage_edit: Редактирование
+breadcrumb.link_help_edit: Редактирование
+breadcrumb.link_post_edit: Редактирование
+breadcrumb.link_tag_edit: Редактирование
+
+breadcrumb.link_employee_create: Добавление
+breadcrumb.link_project_create: Добавление
+breadcrumb.link_projectgroup_create: Добавление
+breadcrumb.link_projecttype_create: Добавление
+breadcrumb.link_client_create: Добавление
+breadcrumb.link_subcontract_create: Добавление
+breadcrumb.link_task_create: Добавление
+breadcrumb.link_rate_create: Добавление
+breadcrumb.link_department_create: Добавление
+breadcrumb.link_projectemployee_create: Добавление
+breadcrumb.link_projectsubcontract_create: Добавление
+breadcrumb.link_user_create: Добавление
+breadcrumb.link_legal_create: Добавление
+breadcrumb.link_holiday_create: Добавление
+breadcrumb.link_reporttemplate_create: Добавление
+breadcrumb.link_projectstage_create: Добавление
+breadcrumb.link_help_create: Добавление
+breadcrumb.link_post_create: Добавление
+breadcrumb.link_tag_create: Добавление
+
+flash_edit_success: Успешно изменено
+flash_create_success: Успешно добавлено
+flash_batch_empty: Не отмечено ни одного объекта
+
+label_type_contains: содержит
+label_type_not_contains: не содержит
+label_type_equals: соответствует
+
+Type: Тип
+Surname: Фамилия
+Name: Имя
+Patronymic: Отчество
+Department: Подразделение
+Rate: Ставка
+Discharged: ''
+
+Title: Название
+Parent: Родитель
+Boss: Руководитель
+
+Username: Имя пользователя
+Employee: Сотрудник
+
+label_type_yes: да
+label_type_no: нет
+
+employee: Сотрудник
+project: Проект
+title: ''
+hours: Кол-во часов
+subcontract: Субподрядчик
+salary: Стоимость
+project_group: ''
+department: ''
+Value: ''
+manager: ''
+full_title: ''
+Tag: ''
+surname: ''
+name: ''
+patronymic: ''
+#department: ''
+discharged: ''
+username: ''
+parent: ''
+boss: ''
+anchor: ''
+text: ''
+task: Тип работ
+open: ''
+
+title_batch_confirmation: Подтверждение
+The presented password is invalid.: Неправильные логин или пароль
+Bad credentials: Неправильные логин или пароль

@@ -1,0 +1,8 @@
+[26.10.2011 12:47:56] Found 2 employees in file ./employers_110811_0_0.xml
+[26.10.2011 12:47:57] Employee 8730 ВЕТРЯКОВ МАКСИМ ЮРЬЕВИЧ updated in table employees
+[26.10.2011 12:47:57] Employee 8730 ВЕТРЯКОВ МАКСИМ ЮРЬЕВИЧ inserted in table employees_history
+[26.10.2011 12:48:02] Employee 8864 СТЕПАНОВА АЛИНА АНДРЕЕВНА inserted in table employees
+[26.10.2011 12:48:02] Employee 8864 СТЕПАНОВА АЛИНА АНДРЕЕВНА inserted in table employees_history
+[26.10.2011 12:48:02] In table employees inserted: 1 records, updated: 1 records.
+[26.10.2011 12:48:02] Old records in table employees: 368. Total: 370 records.
+[26.10.2011 12:48:02] In table employees_history inserted: 2 records, copied from table employees: 368 records.

@@ -1,0 +1,7 @@
+parameters:
+#    armd_project.example.class: Armd\ProjectBundle\Example
+
+services:
+#    armd_project.example:
+#        class: %armd_project.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

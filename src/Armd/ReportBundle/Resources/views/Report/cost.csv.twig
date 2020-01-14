@@ -1,0 +1,6 @@
+;;;;;План;;;Факт;;;;
+Проект;Подразделение;Менеджер;Аккаунт;Себестоимость;Стоимость по договору;Маржа;Себестоимость;Приходы по договору;Маржа;Разница в процентах;Уведомления;
+{% for entity in entities%}{% if entity['title'] %}{{entity['title']}}{% if entity['clients'] %}{% for client in entity['clients'] %}{% if loop.first %}, Клиенты: {% endif %}{{ client|raw }}{% if loop.last != true %}, {% endif %}{% endfor %}{% endif %};;;;{{entity['sums']['plan_sum']}} руб.;{{entity['sums']['contract_cost']}} руб.;{{entity['sums']['plan_margin']}} руб.;{{entity['sums']['report_sum']}} руб.;{{entity['sums']['income_sum']}} руб.;{{entity['sums']['margin']}} руб.;{% if entity['sums']['diff'] != NULL %}{{entity['sums']['diff']}}%{%endif%};{% if entity['sums']['notice'] %}Фактическая себестоимость приближается к плановому значению{% endif %};
+{% endif %}
+{% for project in entity['projects'] %}{{project['title']}};{{project['department']}};{{project['manager']}};{{project['sales_manager']}};{{project['plan_sum']}} руб.;{{project['contract_cost']}} руб.;{{project['plan_margin']}} руб.;{{project['report_sum']}} руб.;{{project['income_sum']}} руб.;{{project['margin']}} руб.;{% if project['diff'] != NULL %}{{project['diff']}}%{%endif%};{% if project['notice'] %}Фактическая себестоимость приближается к плановому значению{% endif %};{% endfor %}
+{% endfor %}

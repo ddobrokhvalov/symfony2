@@ -1,0 +1,8 @@
+[26.10.2011 12:45:24] Found 2 employees in file ./employers_110716_0_0.xml
+[26.10.2011 12:45:27] Employee 8685 МАКАРОВА ОЛЬГА СТЕПАНОВНА updated in table employees
+[26.10.2011 12:45:27] Employee 8685 МАКАРОВА ОЛЬГА СТЕПАНОВНА inserted in table employees_history
+[26.10.2011 12:45:30] Employee 8812 СЕМЕНОВ АНАТОЛИЙ АЛЕКСАНДРОВИЧ updated in table employees
+[26.10.2011 12:45:30] Employee 8812 СЕМЕНОВ АНАТОЛИЙ АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:45:31] In table employees inserted: 0 records, updated: 2 records.
+[26.10.2011 12:45:31] Old records in table employees: 355. Total: 357 records.
+[26.10.2011 12:45:31] In table employees_history inserted: 2 records, copied from table employees: 355 records.

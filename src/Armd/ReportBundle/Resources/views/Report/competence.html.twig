@@ -1,0 +1,122 @@
+{% extends '::base.html.twig' %}
+{% block title %}Корпоративная система отчетов {% endblock %}
+{% block header %}Корпоративная система отчетов. {{ user }}, <a href="{{ path('fos_user_security_logout') }}">выйти</a>. {% endblock %}
+{% block body %}
+<style>
+    table,tr,td {
+        border-collapse: collapse;
+    }
+	.hor-minimalist-b{clear:both;margin-top:10px;}
+	.tblHd{float:left;margin:0px;padding:0px 40px 0px 0px;font-size:13px;font-weight:bold;}
+</style>
+<script type="text/javascript"> 
+	jQuery(document).ready(function(){
+		$('.money').each(function(index, element) {
+			var split = $(element).text().split('.');
+			split[0] = split[0].split('').reverse();
+			var result = '';
+			for (i=0;i<split[0].length;i++){
+				if (i % 3 == 0) {
+					result = result + ' ';
+				}
+				result = result + split[0][i];
+			}
+			var money = result.split('').reverse().join('').trim();
+			if (split[1] != undefined) {
+				money = money + '.' + split[1];
+			}
+			$(element).text(money);
+			
+		});
+		
+		$(".chzn-select").chosen();
+	});
+</script>
+{% include "ArmdReportBundle:Report:breadcrumbs.html.twig" %}
+<div class="append-1 prepend-1">
+	<form method="get">
+	<div style="float:left; margin-right:10px;">
+		<select class="chzn-select" name="tags[]" style="width:150px;" multiple="multiple" data-placeholder="Технология">
+		{% for tag in tags %}
+			<option value="{{ tag['id'] }}" {% if tag['checked'] %}selected{%endif%}>{{ tag['title'] }}</option>
+		{% endfor%}
+		</select>
+	</div>	
+		<input type="submit" value="Применить"/>
+	</form><br/>
+<div style="clear:both;">
+<table style="margin:0px;clear:both;">
+<tr>
+<td>
+	<h2 class="tblHd">Проекты</h2>	
+</td>
+<td>
+<div class="span-2" style="width:150px;float:right;margin-right:0px;">
+  Экспортировать в <a href="competence?export=csv&type=1{% for tag in tags %}{% if tag['checked'] %}&tags[]={{tag['id']}}{%endif%}{% endfor%}"><img border="0" src="/css/blueprint/plugins/link-icons/icons/xls.png"/></a> <a href="competence?export=csv&type=1{% for tag in tags %}{% if tag['checked'] %}&tags[]={{tag['id']}}{%endif%}{% endfor%}" id="export_link">CSV</a>
+  </div>
+</td>
+</tr>
+</table>  
+<table width="100%" id="hor-minimalist-b">
+	<thead>
+		<tr>
+			<th>Название проекта</th>
+			<th>Стоимость контракта</th>
+			<th>Дата начала</th>
+			<th>Дата окончания</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for project in projects%}
+		<tr>
+			<td>{{project.title}}</td>
+			<td><span class="money">{{project.contractcost}}</span> руб.</td>
+			<td>{{project.begin|date('d.m.Y')}}</td>
+			<td>{{project.end|date('d.m.Y')}}</td>
+		</tr>
+	{% endfor %}
+	</tbody>
+</table>
+
+<table style="margin:0px;clear:both;">
+<tr>
+<td>
+	<h2 class="tblHd">Сотрудники</h2>	
+</td>
+<td>
+<div class="span-2" style="width:150px;float:right;margin-right:0px;">
+  Экспортировать в <a href="competence?export=csv&type=2{% for tag in tags %}{% if tag['checked'] %}&tags[]={{tag['id']}}{%endif%}{% endfor%}"><img border="0" src="/css/blueprint/plugins/link-icons/icons/xls.png"/></a> <a href="competence?export=csv&type=2{% for tag in tags %}{% if tag['checked'] %}&tags[]={{tag['id']}}{%endif%}{% endfor%}" id="export_link">CSV</a>
+  </div>
+</td>
+</tr>
+</table>
+<table width="100%" id="hor-minimalist-b">
+	<thead>
+		<tr>
+			<th>ФИО</th>
+			<th>Должность</th>
+			<th>Подразделение</th>
+			<th>Кол-во часов</th>
+			<th>Список проектов</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for employee in employees %}
+		<tr>
+			<td>{{ employee.surname }} {{ employee.name }} {{ employee.patronymic }}</td>
+			<td>{{ employee.pst_title }}</td>
+			<td>{{ employee.d_title }}</td>
+			<td>{{ employee.sm }} ч.</td>
+			<td>
+				{% for employee_project in employee_projects[employee.id]%}
+					{{ employee_project.title }}<br>
+				{% endfor %}
+			</td>
+		</tr>
+		{%endfor%}
+	</tbody>		
+</table>
+</div>
+</div>
+{% endblock %}
+

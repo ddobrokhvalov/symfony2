@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User ID="08801">
+		<SirName>ГЛИНСКАЯ</SirName>
+		<FirstName>АНАСТАСИЯ</FirstName>
+		<PatronymicName>ВЛАДИМИРОВНА</PatronymicName>
+		<IDManager>01087</IDManager>
+		<Department>Департамент финансов</Department>
+		<IDDepartment>01054</IDDepartment>
+		<Post>Главный бухгалтер</Post>
+		<IDPost>00015</IDPost>
+		<Email>aglinskaya@armd.ru</Email>
+		<Category>4</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+	<User ID="08788">
+		<SirName>ПОЛОНСКИЙ</SirName>
+		<FirstName>МАКСИМ</FirstName>
+		<PatronymicName>СЕРГЕЕВИЧ</PatronymicName>
+		<IDManager>01142</IDManager>
+		<Department>Технический департамент</Department>
+		<IDDepartment>01266</IDDepartment>
+		<Post>инженер-системотехник</Post>
+		<IDPost>00037</IDPost>
+		<Email>mpolonsky@armd.ru</Email>
+		<Category>2</Category>
+		<Discharged>0</Discharged>
+		<Outside>0</Outside>
+	</User>
+</Users>

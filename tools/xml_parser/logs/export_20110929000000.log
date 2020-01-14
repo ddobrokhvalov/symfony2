@@ -1,0 +1,12 @@
+[26.10.2011 12:52:45] Found 4 employees in file ./employers_110929_0_0.xml
+[26.10.2011 12:52:50] Employee 8839 КМИТЮК АНДРЕЙ АЛЕКСАНДРОВИЧ updated in table employees
+[26.10.2011 12:52:50] Employee 8839 КМИТЮК АНДРЕЙ АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:52:51] Employee 8896 БОЛДЕЦОВ ДМИТРИЙ ВЯЧЕСЛАВОВИЧ inserted in table employees
+[26.10.2011 12:52:51] Employee 8896 БОЛДЕЦОВ ДМИТРИЙ ВЯЧЕСЛАВОВИЧ inserted in table employees_history
+[26.10.2011 12:52:51] Employee 8895 КАЩЕЕВ АЛЕКСАНДР НИКОЛАЕВИЧ inserted in table employees
+[26.10.2011 12:52:51] Employee 8895 КАЩЕЕВ АЛЕКСАНДР НИКОЛАЕВИЧ inserted in table employees_history
+[26.10.2011 12:52:51] Employee 8894 ШМАЛЕНЮК ЕВГЕНИЯ АЛЕКСАНДРОВНА inserted in table employees
+[26.10.2011 12:52:51] Employee 8894 ШМАЛЕНЮК ЕВГЕНИЯ АЛЕКСАНДРОВНА inserted in table employees_history
+[26.10.2011 12:52:51] In table employees inserted: 3 records, updated: 1 records.
+[26.10.2011 12:52:51] Old records in table employees: 397. Total: 401 records.
+[26.10.2011 12:52:51] In table employees_history inserted: 4 records, copied from table employees: 397 records.

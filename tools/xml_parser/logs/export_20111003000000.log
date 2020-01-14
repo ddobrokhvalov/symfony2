@@ -1,0 +1,8 @@
+[26.10.2011 12:53:09] Found 2 employees in file ./employers_111003_0_0.xml
+[26.10.2011 12:53:15] Employee 8899 ЗОРИН АНДРЕЙ МИХАЙЛОВИЧ inserted in table employees
+[26.10.2011 12:53:15] Employee 8899 ЗОРИН АНДРЕЙ МИХАЙЛОВИЧ inserted in table employees_history
+[26.10.2011 12:53:15] Employee 8898 ЛЕСИКОВ АНТОН АЛЕКСАНДРОВИЧ inserted in table employees
+[26.10.2011 12:53:15] Employee 8898 ЛЕСИКОВ АНТОН АЛЕКСАНДРОВИЧ inserted in table employees_history
+[26.10.2011 12:53:15] In table employees inserted: 2 records, updated: 0 records.
+[26.10.2011 12:53:15] Old records in table employees: 402. Total: 404 records.
+[26.10.2011 12:53:15] In table employees_history inserted: 2 records, copied from table employees: 402 records.

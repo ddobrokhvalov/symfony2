@@ -1,0 +1,6 @@
+[26.10.2011 12:40:21] Found 1 employees in file ./employers_110523_0_0.xml
+[26.10.2011 12:40:26] Employee 8827 СОЛДАТОВ ЕВГЕНИЙ ВЛАДИМИРОВИЧ inserted in table employees
+[26.10.2011 12:40:26] Employee 8827 СОЛДАТОВ ЕВГЕНИЙ ВЛАДИМИРОВИЧ inserted in table employees_history
+[26.10.2011 12:40:26] In table employees inserted: 1 records, updated: 0 records.
+[26.10.2011 12:40:26] Old records in table employees: 332. Total: 333 records.
+[26.10.2011 12:40:26] In table employees_history inserted: 1 records, copied from table employees: 332 records.

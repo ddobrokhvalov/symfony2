@@ -1,0 +1,8 @@
+flash_department_batch_delete_error_has_employees: Невозможно удалить. У отдела есть сотрудники.
+flash_batch_delete_success: Успешно удалено
+flash_edit_success : Успешно отредактировано
+link_delete: Удалить
+
+title_batch_confirmation: Подтверждение
+message_batch_confirmation: Продолжить выполнение пакетной обработки объектов?
+btn_execute_batch_action: Продолжить
